@@ -11,9 +11,12 @@ namespace Analizator9000
 {
     public partial class Form1 : Form
     {
+        private DealerParser parser;
+
         public Form1()
         {
             InitializeComponent();
+            this.parser = new DealerParser();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,9 +26,9 @@ namespace Analizator9000
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            DealerParser parser = new DealerParser();
             try
             {
+                this.parser = new DealerParser();
                 parser.loadFile(generateFileDialog.FileName);
                 if (parser.produce > 0) produceBox.Text = parser.produce.ToString();
                 if (parser.generate > 0) generateBox.Text = parser.generate.ToString();
@@ -64,6 +67,32 @@ namespace Analizator9000
             {
                 MessageBox.Show("Błąd wczytywania pliku: " + ex.Message, "Błąd wczytywania pliku", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.parser.generate = Convert.ToInt64(generateBox.Text);
+                this.parser.produce = Convert.ToInt64(produceBox.Text);
+                parser.condition = conditionBox.Text;
+                parser.predeal["north"] = new String[] { predealNorthSpadesBox.Text, predealNorthHeartsBox.Text, predealNorthDiamondsBox.Text, predealNorthClubsBox.Text };
+                parser.predeal["south"] = new String[] { predealSouthSpadesBox.Text, predealSouthHeartsBox.Text, predealSouthDiamondsBox.Text, predealSouthClubsBox.Text };
+                parser.predeal["west"] = new String[] { predealWestSpadesBox.Text, predealWestHeartsBox.Text, predealWestDiamondsBox.Text, predealWestClubsBox.Text };
+                parser.predeal["east"] = new String[] { predealEastSpadesBox.Text, predealEastHeartsBox.Text, predealEastDiamondsBox.Text, predealEastClubsBox.Text };
+                foreach (KeyValuePair<String, String[]> predeal in parser.predeal)
+                {
+                    for (int i = 0; i < predeal.Value.Length; i++)
+                    {
+                        predeal.Value[i] = predeal.Value[i].ToUpper().Replace('D', 'Q').Replace('W', 'J').Replace("10", "T");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Błąd wprowadzania danych: " + ex.Message, "Błąd wprowadzania danych", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            String outputFileName = parser.saveFile();
         }
     }
 }

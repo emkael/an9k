@@ -108,5 +108,45 @@ namespace Analizator9000
                 }
             }
         }
+        public String saveFile()
+        {
+            String filename = "an9k-" + DateTime.Now.ToString("yyyyMMddHHmmssFFF") + ".dealer";
+            StreamWriter file = new StreamWriter("files\\"+filename);
+            String predealStr = "";
+            String suitLetters = "SHDC";
+            foreach (KeyValuePair<String, String[]> pre in this.predeal)
+            {
+                List<String> hand = new List<String>();
+                for (int i = 0; i < pre.Value.Length; i++)
+                {
+                    if (pre.Value[i].Trim().Length > 0)
+                    {
+                        hand.Add(suitLetters[i] + pre.Value[i].Trim());
+                    }
+                }
+                if (hand.Count > 0)
+                {
+                    predealStr += pre.Key + " " + hand.Aggregate((a, b) => a + ", " + b) + "\n";
+                }
+            }
+            if (predealStr.Length > 0)
+            {
+                file.WriteLine("predeal");
+                file.Write(predealStr);
+            }
+            if (this.condition.Trim().Length > 0)
+            {
+                file.WriteLine("condition");
+                file.Write(this.condition);
+            }
+            file.WriteLine("generate");
+            file.WriteLine(this.generate);
+            file.WriteLine("produce");
+            file.WriteLine(this.produce);
+            file.WriteLine("action");
+            file.WriteLine("printoneline");
+            file.Close();
+            return filename;
+        }
     }
 }

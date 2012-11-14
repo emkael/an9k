@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.conditionBox = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.generateButton = new System.Windows.Forms.Button();
             this.produceBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.generateBox = new System.Windows.Forms.TextBox();
@@ -87,7 +87,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.conditionBox);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.generateButton);
             this.groupBox1.Controls.Add(this.produceBox);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.generateBox);
@@ -113,14 +113,15 @@
             this.conditionBox.TabIndex = 11;
             this.conditionBox.Text = "";
             // 
-            // button2
+            // generateButton
             // 
-            this.button2.Location = new System.Drawing.Point(10, 398);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(497, 40);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "GENERUJ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.generateButton.Location = new System.Drawing.Point(10, 398);
+            this.generateButton.Name = "generateButton";
+            this.generateButton.Size = new System.Drawing.Size(497, 40);
+            this.generateButton.TabIndex = 10;
+            this.generateButton.Text = "GENERUJ";
+            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
             // 
             // produceBox
             // 
@@ -688,7 +689,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.TextBox produceBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox generateBox;

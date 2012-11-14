@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-
 namespace Analizator9000
 {
     static class Program
