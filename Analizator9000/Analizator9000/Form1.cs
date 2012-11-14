@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Analizator9000
 {
@@ -71,6 +72,8 @@ namespace Analizator9000
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+            generateGroup.Enabled = false;
+            progressBar.Value = 0;
             try
             {
                 this.parser.generate = Convert.ToInt64(generateBox.Text);
@@ -92,7 +95,81 @@ namespace Analizator9000
             {
                 MessageBox.Show("Błąd wprowadzania danych: " + ex.Message, "Błąd wprowadzania danych", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            String outputFileName = parser.saveFile();
+            try
+            {
+                String outputFileName = parser.saveFile();
+                DealerWrapper dealer = new DealerWrapper("files/" + outputFileName, this, this.parser.produce);
+                dealer.run(this.generateEnd);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Nie można utworzyć pliku. Sprawdź, czy w katalogu programu istnieje katalog 'files'", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Błąd generatora: " + ex.Message, "Błąd generatora", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        private delegate void endDelegate(String filename);
+        private void generateEnd(String filename)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new endDelegate(generateEnd), new object[] { filename });
+            }
+            else
+            {
+                progressBar.Value = 100;
+                if (filename != null)
+                {
+                    this.addStatusLine("Zapisano do pliku: " + filename);
+                }
+                analyzeFileNameTexBox.Text = Path.GetFullPath(filename);
+                generateGroup.Enabled = true;
+            }
+        }
+
+        private delegate void AddStatusDelegate(String line);
+        public void addStatusLine(String line)
+        {
+            if (line != null)
+            {
+                if (statusListBox.InvokeRequired)
+                {
+                    this.Invoke(new AddStatusDelegate(addStatusLine), new object[] { line });
+                }
+                else
+                {
+                    statusListBox.Items.Add(line);
+                    statusListBox.SelectedIndex = statusListBox.Items.Count - 1;
+                }
+            }
+        }
+
+        private delegate void SetProgressDelegate(int progress);
+        public void setProgress(int progress)
+        {
+            if (progressBar.InvokeRequired)
+            {
+                this.Invoke(new SetProgressDelegate(setProgress), new object[]{ progress });
+            }
+            else
+            {
+                progressBar.Value = progress;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            declarerList.SelectedIndex = 0;
+            contractList.SelectedIndex = 0;
+        }
+
+        private void analyzeFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
     }
 }

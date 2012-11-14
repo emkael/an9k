@@ -111,7 +111,7 @@ namespace Analizator9000
         public String saveFile()
         {
             String filename = "an9k-" + DateTime.Now.ToString("yyyyMMddHHmmssFFF") + ".dealer";
-            StreamWriter file = new StreamWriter("files\\"+filename);
+            StreamWriter file = new StreamWriter("files\\" + filename);
             String predealStr = "";
             String suitLetters = "SHDC";
             foreach (KeyValuePair<String, String[]> pre in this.predeal)
@@ -137,7 +137,7 @@ namespace Analizator9000
             if (this.condition.Trim().Length > 0)
             {
                 file.WriteLine("condition");
-                file.Write(this.condition);
+                file.WriteLine(this.condition);
             }
             file.WriteLine("generate");
             file.WriteLine(this.generate);

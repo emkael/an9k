@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.generateGroup = new System.Windows.Forms.GroupBox();
             this.conditionBox = new System.Windows.Forms.RichTextBox();
             this.generateButton = new System.Windows.Forms.Button();
             this.produceBox = new System.Windows.Forms.TextBox();
@@ -67,42 +67,42 @@
             this.generateFileNameTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.contractList = new System.Windows.Forms.ComboBox();
+            this.declarerList = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.analyzeFileNameTexBox = new System.Windows.Forms.TextBox();
             this.generateFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.statusListBox = new System.Windows.Forms.ListBox();
+            this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // generateGroup
             // 
-            this.groupBox1.Controls.Add(this.conditionBox);
-            this.groupBox1.Controls.Add(this.generateButton);
-            this.groupBox1.Controls.Add(this.produceBox);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.generateBox);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.generateFileNameTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(513, 444);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Generowanie";
+            this.generateGroup.Controls.Add(this.conditionBox);
+            this.generateGroup.Controls.Add(this.generateButton);
+            this.generateGroup.Controls.Add(this.produceBox);
+            this.generateGroup.Controls.Add(this.label12);
+            this.generateGroup.Controls.Add(this.generateBox);
+            this.generateGroup.Controls.Add(this.label11);
+            this.generateGroup.Controls.Add(this.label10);
+            this.generateGroup.Controls.Add(this.tableLayoutPanel1);
+            this.generateGroup.Controls.Add(this.label1);
+            this.generateGroup.Controls.Add(this.button1);
+            this.generateGroup.Controls.Add(this.generateFileNameTextBox);
+            this.generateGroup.Location = new System.Drawing.Point(12, 12);
+            this.generateGroup.Name = "generateGroup";
+            this.generateGroup.Size = new System.Drawing.Size(513, 444);
+            this.generateGroup.TabIndex = 0;
+            this.generateGroup.TabStop = false;
+            this.generateGroup.Text = "Generowanie";
             // 
             // conditionBox
             // 
@@ -499,13 +499,13 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.contractList);
+            this.groupBox2.Controls.Add(this.declarerList);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox21);
+            this.groupBox2.Controls.Add(this.analyzeFileNameTexBox);
             this.groupBox2.Location = new System.Drawing.Point(531, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(513, 179);
@@ -522,36 +522,36 @@
             this.button4.Text = "ANALIZUJ";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // contractList
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.contractList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.contractList.FormattingEnabled = true;
+            this.contractList.Items.AddRange(new object[] {
             "Wszystkie",
             "Bez atu",
             "Piki",
             "Kiery",
             "Kara",
             "Trefle"});
-            this.comboBox2.Location = new System.Drawing.Point(89, 101);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 6;
+            this.contractList.Location = new System.Drawing.Point(89, 101);
+            this.contractList.Name = "contractList";
+            this.contractList.Size = new System.Drawing.Size(121, 21);
+            this.contractList.TabIndex = 6;
             // 
-            // comboBox1
+            // declarerList
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.declarerList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.declarerList.FormattingEnabled = true;
+            this.declarerList.Items.AddRange(new object[] {
             "Wszyscy",
             "N",
             "E",
             "S",
             "W"});
-            this.comboBox1.Location = new System.Drawing.Point(89, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.declarerList.Location = new System.Drawing.Point(89, 73);
+            this.declarerList.Name = "declarerList";
+            this.declarerList.Size = new System.Drawing.Size(121, 21);
+            this.declarerList.TabIndex = 5;
             // 
             // label15
             // 
@@ -589,36 +589,37 @@
             this.button3.Text = "Wybierz plik";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox21
+            // analyzeFileNameTexBox
             // 
-            this.textBox21.Location = new System.Drawing.Point(7, 20);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(419, 20);
-            this.textBox21.TabIndex = 0;
+            this.analyzeFileNameTexBox.Location = new System.Drawing.Point(7, 20);
+            this.analyzeFileNameTexBox.Name = "analyzeFileNameTexBox";
+            this.analyzeFileNameTexBox.ReadOnly = true;
+            this.analyzeFileNameTexBox.Size = new System.Drawing.Size(419, 20);
+            this.analyzeFileNameTexBox.TabIndex = 0;
             // 
             // generateFileDialog
             // 
             this.generateFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(531, 312);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(513, 23);
-            this.progressBar1.TabIndex = 2;
+            this.progressBar.Location = new System.Drawing.Point(531, 312);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(513, 23);
+            this.progressBar.TabIndex = 2;
             // 
-            // listBox1
+            // statusListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(531, 343);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(513, 108);
-            this.listBox1.TabIndex = 3;
+            this.statusListBox.FormattingEnabled = true;
+            this.statusListBox.Location = new System.Drawing.Point(531, 343);
+            this.statusListBox.Name = "statusListBox";
+            this.statusListBox.Size = new System.Drawing.Size(513, 108);
+            this.statusListBox.TabIndex = 3;
             // 
-            // openFileDialog2
+            // analyzeFileDialog
             // 
-            this.openFileDialog2.FileName = "openFileDialog2";
+            this.analyzeFileDialog.FileName = "openFileDialog2";
+            this.analyzeFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.analyzeFileDialog_FileOk);
             // 
             // textBox22
             // 
@@ -634,18 +635,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 463);
             this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.statusListBox);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.generateGroup);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Analizator9000";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.generateGroup.ResumeLayout(false);
+            this.generateGroup.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -657,7 +659,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox generateGroup;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.OpenFileDialog generateFileDialog;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -694,16 +696,16 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox generateBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.ListBox statusListBox;
+        private System.Windows.Forms.ComboBox contractList;
+        private System.Windows.Forms.ComboBox declarerList;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.TextBox analyzeFileNameTexBox;
+        private System.Windows.Forms.OpenFileDialog analyzeFileDialog;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.RichTextBox conditionBox;
