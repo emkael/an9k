@@ -125,7 +125,7 @@ namespace Analizator9000
                 {
                     this.addStatusLine("Zapisano do pliku: " + filename);
                 }
-                analyzeFileNameTexBox.Text = Path.GetFullPath(filename);
+                analyzeFileNameTextBox.Text = Path.GetFullPath(filename);
                 generateGroup.Enabled = true;
             }
         }
@@ -168,7 +168,16 @@ namespace Analizator9000
 
         private void analyzeFileDialog_FileOk(object sender, CancelEventArgs e)
         {
+            analyzeFileNameTextBox.Text = analyzeFileDialog.FileName;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            analyzeFileDialog.ShowDialog();
+        }
+
+        private void analyzeButton_Click(object sender, EventArgs e)
+        {
         }
 
     }

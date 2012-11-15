@@ -51,7 +51,7 @@ namespace Analizator9000
                         this.lineCount++;
                     }
                 }
-                int progress = ((int)(Convert.ToDouble(this.lineCount) / Convert.ToDouble(this.produce) * 100));
+                int progress = ((int)(100 * this.lineCount / this.produce));
                 this.debugForm.setProgress(progress);
                 this.debugWriteLine(data);
                 return true;
