@@ -41,7 +41,7 @@ namespace Analizator9000
             String eStr = Marshal.PtrToStringAnsi(error);
             if (eStr != null)
             {
-                throw new Exception(eStr);
+                throw new Exception("bcalc", (new Exception(eStr)));
             }
             int ret = 13 - BCalcWrapper.bcalcDDS_getTricksToTake(solver);
             BCalcWrapper.bcalcDDS_delete(solver);
