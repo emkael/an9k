@@ -51,19 +51,20 @@ namespace Analizator9000
             this.outputFile = TextWriter.Synchronized(File.AppendText(@"files\"+this.filename));
         }
 
-        private int portionSize;
-        private int threadsRunning;
+        private int portionSize = 10;
+        private int threadsRunning = 0;
         public int run(int portionSize = 0)
         {
-            if (portionSize > 0)
+            if (portionSize == 0)
             {
-                this.portionSize = portionSize;
+                portionSize = this.portionSize;
             }
-            this.threadsRunning = Math.Min(this.portionSize, this.deals.Count);
-            for (int i = 0; i < this.threadsRunning; i++)
+            int toRun = Math.Min(portionSize, this.deals.Count);
+            for (int i = 0; i < toRun; i++)
             {
                 Action<String> worker = this.analyzeDeal;
                 worker.BeginInvoke(this.deals.Pop(), this.endAnalyze, worker);
+                this.threadsRunning++;
             }
             return this.deals.Count;
         }
@@ -134,18 +135,15 @@ namespace Analizator9000
                 this.threadsRunning--;
                 this.analyzed++;
                 this.form.setProgress((int)(100 * this.analyzed / this.toAnalyze));
+                if (threadsRunning == 0 && this.deals.Count == 0)
+                {
+                    this.form.setProgress(100);
+                    this.form.addStatusLine("Analiza zakończona. Wyniki w pliku: " + this.filename);
+                    finished = true;
+                } 
                 if (threadsRunning < this.portionSize)
                 {
-                    if (this.deals.Count > 0)
-                    {
-                        this.run(1);
-                    }
-                    else
-                    {
-                        this.form.setProgress(100);
-                        this.form.addStatusLine("Analiza zakończona. Wyniki w pliku: " + this.filename);
-                        finished = true;
-                    }
+                    this.run(1);
                 }
             }
             if (finished)
