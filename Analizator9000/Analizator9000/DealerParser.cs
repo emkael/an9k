@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
 namespace Analizator9000
@@ -110,8 +109,8 @@ namespace Analizator9000
         }
         public String saveFile()
         {
-            String filename = "an9k-" + DateTime.Now.ToString("yyyyMMddHHmmssFFF") + ".dealer";
-            StreamWriter file = new StreamWriter("files\\" + filename);
+            String filename = Utils.getFilename("dealer");
+            StreamWriter file = new StreamWriter(@"files\" + filename);
             String predealStr = "";
             String suitLetters = "SHDC";
             foreach (KeyValuePair<String, String[]> pre in this.predeal)

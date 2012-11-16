@@ -73,6 +73,7 @@ namespace Analizator9000
         private void generateButton_Click(object sender, EventArgs e)
         {
             generateGroup.Enabled = false;
+            analyzeGroup.Enabled = false;
             progressBar.Value = 0;
             try
             {
@@ -94,6 +95,8 @@ namespace Analizator9000
             catch (Exception ex)
             {
                 MessageBox.Show("Błąd wprowadzania danych: " + ex.Message, "Błąd wprowadzania danych", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                generateGroup.Enabled = true;
+                analyzeGroup.Enabled = true;
             }
             try
             {
@@ -104,10 +107,14 @@ namespace Analizator9000
             catch (FileNotFoundException)
             {
                 MessageBox.Show("Nie można utworzyć pliku. Sprawdź, czy w katalogu programu istnieje katalog 'files'", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                generateGroup.Enabled = true;
+                analyzeGroup.Enabled = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Błąd generatora: " + ex.Message, "Błąd generatora", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                generateGroup.Enabled = true;
+                analyzeGroup.Enabled = true;
             }
         }
 
@@ -125,8 +132,9 @@ namespace Analizator9000
                 {
                     this.addStatusLine("Zapisano do pliku: " + filename);
                 }
-                analyzeFileNameTextBox.Text = Path.GetFullPath(filename);
+                analyzeFileNameTextBox.Text = Path.GetFullPath(@"files\" + filename);
                 generateGroup.Enabled = true;
+                analyzeGroup.Enabled = true;
             }
         }
 
@@ -162,8 +170,6 @@ namespace Analizator9000
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            declarerList.SelectedIndex = 0;
-            contractList.SelectedIndex = 0;
         }
 
         private void analyzeFileDialog_FileOk(object sender, CancelEventArgs e)
@@ -176,9 +182,142 @@ namespace Analizator9000
             analyzeFileDialog.ShowDialog();
         }
 
+        private Accumulator ac;
         private void analyzeButton_Click(object sender, EventArgs e)
         {
+            analyzeGroup.Enabled = false;
+            generateGroup.Enabled = false;
+            abortButton.Enabled = true;
+            this.addStatusLine("Otwieram plik: " + analyzeFileNameTextBox.Text);
+            try
+            {
+                String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
+                List<Tuple<int, int>> cons = new List<Tuple<int,int>>();
+                foreach (int i in Enumerable.Range(1, 5))
+                {
+                    foreach (int j in Enumerable.Range(1, 4))
+                    {
+                        if (((CheckBox)contractTable.GetControlFromPosition(i, j)).Checked)
+                        {
+                            cons.Add(new Tuple<int, int>(5 - i, j - 1));
+                        }
+                    }
+                }
+                if (cons.Count == 0)
+                {
+                    throw new Exception("Nie podano kontraktów");
+                }
+                this.ac = new Accumulator(deals, cons, this);
+                this.ac.run(10);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Błąd analizy: " + ex.Message, "Błąd analizy", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.setProgress(0);
+                abortButton.Enabled = false;
+                analyzeGroup.Enabled = true;
+                generateGroup.Enabled = true;
+            }
         }
 
+        private delegate void EndAnalysisDelegate();
+        public void endAnalysis()
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new EndAnalysisDelegate(endAnalysis));
+            }
+            else
+            {
+                this.setProgress(100);
+                abortButton.Enabled = false;
+                analyzeGroup.Enabled = true;
+                generateGroup.Enabled = true;
+                this.ac = null;
+            }
+        }
+
+        private delegate void SetResultDelegate(String res);
+        public void setResult(String res)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new SetResultDelegate(setResult), new object[] { res });
+            }
+            else
+            {
+                resultTextBox.Text = res;
+            }
+        }
+
+        private void abortButton_Click(object sender, EventArgs e)
+        {
+            if (this.ac != null)
+            {
+                this.ac.abortAnalysis();
+            }
+        }
+
+        private void toggleBoxes(IEnumerable<int> xRange, IEnumerable<int> yRange)
+        {
+            foreach (int x in xRange)
+            {
+                foreach (int y in yRange)
+                {
+                    CheckBox cb = ((CheckBox)contractTable.GetControlFromPosition(x, y));
+                    cb.Checked = !cb.Checked;
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 4));
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 1), Enumerable.Range(1, 4));
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(2, 1), Enumerable.Range(1, 4));
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(3, 1), Enumerable.Range(1, 4));
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(4, 1), Enumerable.Range(1, 4));
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(5, 1), Enumerable.Range(1, 4));
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 1));
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(2, 1));
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(3, 1));
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(4, 1));
+        }
     }
 }

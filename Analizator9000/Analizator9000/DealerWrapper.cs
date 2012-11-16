@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -44,11 +43,12 @@ namespace Analizator9000
                 String[] dataLines = data.Split('\n');
                 foreach (String line in dataLines)
                 {
-                    Match lineMatch = Regex.Match(line.Trim(), "^n\\s*(\\S*)\\s*e\\s*(\\S*)\\s*s\\s*(\\S*)\\s*w\\s*(\\S*)$");
+                    Match lineMatch = Regex.Match(line.Trim(), @"^n\s*(\S*)\s*e\s*(\S*)\s*s\s*(\S*)\s*w\s*(\S*)$");
                     if (lineMatch.Success)
                     {
-                        this.outputFile.WriteLine(lineMatch.Result("${1} ${2} ${3} ${4}"));
                         this.lineCount++;
+                        this.outputFile.Write(this.lineCount);
+                        this.outputFile.WriteLine(lineMatch.Result(": ${1} ${2} ${3} ${4}"));
                     }
                 }
                 int progress = ((int)(100 * this.lineCount / this.produce));
@@ -71,10 +71,10 @@ namespace Analizator9000
             {
                 this.running = true;
                 this.lineCount = 0;
-                String filename = "an9k-" + DateTime.Now.ToString("yyyyMMddHHmmssFFF") + ".deals";
-                this.outputFile = new StreamWriter("files\\"+filename);
+                String filename = Utils.getFilename("deals");
+                this.outputFile = new StreamWriter(@"files\"+filename);
                 ProcessStartInfo pInfo = new ProcessStartInfo();
-                pInfo.FileName = "bin\\dealer.exe";
+                pInfo.FileName = @"bin\dealer.exe";
                 pInfo.WindowStyle = ProcessWindowStyle.Hidden;
                 pInfo.CreateNoWindow = true;
                 pInfo.Arguments = "\"" + this.scriptname + "\"";
