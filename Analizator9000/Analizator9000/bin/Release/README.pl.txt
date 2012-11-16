@@ -1,13 +1,13 @@
 Analizator9000 - README
 
-0. SPIS ZAWARTOŒCI
+0. SPIS ZAWARTOÅšCI
 ==================
 
     1. Wprowadzenie
     2. Wymagania systemowe
     3. Instalacja
-    4. Podrêcznik u¿ycia
-    5. Kod Ÿród³owy
+    4. PodrÄ™cznik uÅ¼ycia
+    5. Kod ÅºrÃ³dÅ‚owy
     6. Autorzy
     7. Wsparcie i informacje kontaktowe
     8. Historia zmian
@@ -16,120 +16,120 @@ Analizator9000 - README
 1. WPROWADZENIE
 ===============
 
-Analizator9000 jest aplikacj¹ oferuj¹c¹ graficzny interfejs u¿ytkownika dla
-analizy statystycznej liczby lew w rozdaniach bryd¿owych wygenerowanych na
-podstawie okreœlonych warunków.
+Analizator9000 jest aplikacjÄ… oferujÄ…cÄ… graficzny interfejs uÅ¼ytkownika dla
+analizy statystycznej liczby lew w rozdaniach brydÅ¼owych wygenerowanych na
+podstawie okreÅ›lonych warunkÃ³w.
 
 Program stanowi interfejs dla programu Dealer oraz dla biblioteki libbcalcDDS,
-bêd¹cej czêœci¹ projektu BCalc. Aby dowiedzieæ siê wiêcej o tych programach,
-skieruj siê do sekcji "AUTORZY".
+bÄ™dÄ…cej czÄ™Å›ciÄ… projektu BCalc. Aby dowiedzieÄ‡ siÄ™ wiÄ™cej o tych programach,
+skieruj siÄ™ do sekcji "AUTORZY".
 
 2. WYMAGANIA SYSTEMOWE
 ======================
 
-Analizator9000 dzia³a w œrodowisku .NET 3.5 Client Profile i jako taki wymaga
-platformy kompatybilnej ze œrodowiskiem .NET 3.5.
+Analizator9000 dziaÅ‚a w Å›rodowisku .NET 3.5 Client Profile i jako taki wymaga
+platformy kompatybilnej ze Å›rodowiskiem .NET 3.5.
 
-Wymagania sprzêtowe platformy .NET 3.5:
+Wymagania sprzÄ™towe platformy .NET 3.5:
 
     * system operacyjny Windows XP/Vista/Server 2003/Server 2008/7/8 lub nowszy
      (systemy Windows 7, Windows Server 2008 R2 oraz Windows 8 i nowsze
-      dostarczaj¹ .NET 3.5 wraz z podstawow¹ instalacj¹ systemu)
-    * procesor: równowa¿ny Pentium 400MHz (minimalny); Pentium 1GHz (zalecany)
-    * pamiêæ RAM: 96MB (minimalna); 256MB (zalecana)
+      dostarczajÄ… .NET 3.5 wraz z podstawowÄ… instalacjÄ… systemu)
+    * procesor: rÃ³wnowaÅ¼ny Pentium 400MHz (minimalny); Pentium 1GHz (zalecany)
+    * pamiÄ™Ä‡ RAM: 96MB (minimalna); 256MB (zalecana)
 
 Wymagania specyficzne dla aplikacji:
 
-    * ekran: minimalna rozdzielczoœæ 1024x600px; kolory 16-bit
+    * ekran: minimalna rozdzielczoÅ›Ä‡ 1024x600px; kolory 16-bit
     * wolne miejsce na dysku: minimum 500MB (.NET 3.5) + 5MB (Analizator9000)
-    * dodatkowe miejsce na dysku: 1MB na pe³n¹ analizê ka¿dego tysi¹ca rozdañ
+    * dodatkowe miejsce na dysku: 1MB na peÅ‚nÄ… analizÄ™ kaÅ¼dego tysiÄ…ca rozdaÅ„
 
 UWAGA!
-    Aplikacja mo¿e potrzebowaæ bardzo du¿ej iloœci zasobów systemowych w
-zale¿noœci od rozmiaru wykonywanego zadania. Nieodpowiedzialny dobór parametrów
-generowania rozdañ/analizy mo¿e doprowadziæ do znacz¹co d³ugiego czasu
-wykonywania programu, zawieszenia jego dzia³ania b¹dŸ, w przypadkach skrajnych,
-do ograniczenia jakoœci korzystania z systemu u¿ytkownika. Autor zaleca
-ostro¿ny dobór parametrów uruchomienia w celu rozpoznania wydajnoœci aplikacji
-i systemu u¿ytkownika.
+    Aplikacja moÅ¼e potrzebowaÄ‡ bardzo duÅ¼ej iloÅ›ci zasobÃ³w systemowych w
+zaleÅ¼noÅ›ci od rozmiaru wykonywanego zadania. Nieodpowiedzialny dobÃ³r parametrÃ³w
+generowania rozdaÅ„/analizy moÅ¼e doprowadziÄ‡ do znaczÄ…co dÅ‚ugiego czasu
+wykonywania programu, zawieszenia jego dziaÅ‚ania bÄ…dÅº, w przypadkach skrajnych,
+do ograniczenia jakoÅ›ci korzystania z systemu uÅ¼ytkownika. Autor zaleca
+ostroÅ¼ny dobÃ³r parametrÃ³w uruchomienia w celu rozpoznania wydajnoÅ›ci aplikacji
+i systemu uÅ¼ytkownika.
 
 3. INSTALACJA
 =============
 
-Program jest gotowy do u¿ycia po rozpakowaniu go do dowolnego katalogu na
+Program jest gotowy do uÅ¼ycia po rozpakowaniu go do dowolnego katalogu na
 lokalnym dysku twardym.
 
-Aktualn¹ wersjê programu mo¿na pobraæ ze strony domowej projektu:
+AktualnÄ… wersjÄ™ programu moÅ¼na pobraÄ‡ ze strony domowej projektu:
     http://emkael.info/brydz/an9k/
 
-Program po rozpakowaniu niezbêdnie wymaga obecnoœci dwóch katalogów
+Program po rozpakowaniu niezbÄ™dnie wymaga obecnoÅ›ci dwÃ³ch katalogÃ³w
 (dostarczonych w archiwum):
 
-    * katalogu bin/ - zawieraj¹cego programy zewnêtrzne u¿ywane przez analizator
-      (plik lbcalcdds.dll nale¿¹cy do projektu BCalc, plik wykonywalny
-       dealer.exe, nale¿¹cy do projektu Dealer oraz bibliotekê cygwin1.dll,
-       wymagan¹ do uruchomienia programu Dealer)
-    * pustego katalogu files/ - do którego zapisywane s¹ wyniki dzia³ania
+    * katalogu bin/ - zawierajÄ…cego programy zewnÄ™trzne uÅ¼ywane przez analizator
+      (plik lbcalcdds.dll naleÅ¼Ä…cy do projektu BCalc, plik wykonywalny
+       dealer.exe, naleÅ¼Ä…cy do projektu Dealer oraz bibliotekÄ™ cygwin1.dll,
+       wymaganÄ… do uruchomienia programu Dealer)
+    * pustego katalogu files/ - do ktÃ³rego zapisywane sÄ… wyniki dziaÅ‚ania
       programu
 
-4. PODRÊCZNIK U¯YCIA
+4. PODRÄ˜CZNIK UÅ»YCIA
 ====================
 
-Opis u¿ycia programu wraz ze zrzutami ekranu oraz przyk³adowymi wynikami
-dostêpny jest na stronie domowej programu:
+Opis uÅ¼ycia programu wraz ze zrzutami ekranu oraz przykÅ‚adowymi wynikami
+dostÄ™pny jest na stronie domowej programu:
     http://emkael.info/brydz/an9k/manual/
 
-5. KOD RÓD£OWY
+5. KOD Å¹RÃ“DÅOWY
 ===============
 
-P: W jakim jêzyku programowania napisany jest Analizator9000?
+P: W jakim jÄ™zyku programowania napisany jest Analizator9000?
 O: C#.
 
-P: Czy mogê zobaczyæ kod Ÿród³owy programu?
-O: Oczywiœcie!
+P: Czy mogÄ™ zobaczyÄ‡ kod ÅºrÃ³dÅ‚owy programu?
+O: OczywiÅ›cie!
 
-P: Sk¹d mogê go pobraæ?
-O: Z repozytorium Subversion dostêpnego pod adresem:
+P: SkÄ…d mogÄ™ go pobraÄ‡?
+O: Z repozytorium Subversion dostÄ™pnego pod adresem:
     https://emkael.info/svn/an9k/
 
-P: Dlaczego przy próbie pobrania kodu Ÿród³owego otrzymujê komunikat b³êdu o
-   nieprawid³owym certyfikacie HTTPS?
-O: Bo jestem sk¹pym i leniwym bydlakiem, któremu nie chce siê wykupiæ
-   porz¹dnego certyfikatu SSL. Odcisk palca serwera:
+P: Dlaczego przy prÃ³bie pobrania kodu ÅºrÃ³dÅ‚owego otrzymujÄ™ komunikat bÅ‚Ä™du o
+   nieprawidÅ‚owym certyfikacie HTTPS?
+O: Bo jestem skÄ…pym i leniwym bydlakiem, ktÃ³remu nie chce siÄ™ wykupiÄ‡
+   porzÄ…dnego certyfikatu SSL. Odcisk palca serwera:
     7c:48:1d:9a:73:d0:e6:2d:36:10:4d:d0:dc:f6:da:96:fb:3a:33:c7
 
-P: Ale czy to nie znaczy, ¿e ktoœ mo¿e podszyæ siê pod serwer, na którym
-   znajduje siê kod Ÿród³owy, podmieniæ odcisk palca serwera na w³asny, a potem
-   podstawiæ mi z³oœliwy kod Ÿród³owy, który skompilujê, uruchomiê, a mój
-   komputer ukradnie mi dane moich wszystkich kart kredytowych, nakupi mnóstwo
-   œmieci na Allegro, a potem wybuchnie, kiedy bêdê potrzebowaæ pilnie
-   wydrukowaæ zeznanie podatkowe?
-O: Dok³adnie tak. Co wiêcej, ninejszy dokument dystrybuowany jest za
-   poœrednictwem nieuwietrzytelnionego po³¹czenie HTTP, wiêc nic nie stoi na
-   przeszkodzie, ¿e ju¿ siê sta³o, a to pytanie jest tu tylko dla niepoznaki.
+P: Ale czy to nie znaczy, Å¼e ktoÅ› moÅ¼e podszyÄ‡ siÄ™ pod serwer, na ktÃ³rym
+   znajduje siÄ™ kod ÅºrÃ³dÅ‚owy, podmieniÄ‡ odcisk palca serwera na wÅ‚asny, a potem
+   podstawiÄ‡ mi zÅ‚oÅ›liwy kod ÅºrÃ³dÅ‚owy, ktÃ³ry skompilujÄ™, uruchomiÄ™, a mÃ³j
+   komputer ukradnie mi dane moich wszystkich kart kredytowych, nakupi mnÃ³stwo
+   Å›mieci na Allegro, a potem wybuchnie, kiedy bÄ™dÄ™ potrzebowaÄ‡ pilnie
+   wydrukowaÄ‡ zeznanie podatkowe?
+O: DokÅ‚adnie tak. Co wiÄ™cej, ninejszy dokument dystrybuowany jest za
+   poÅ›rednictwem nieuwietrzytelnionego poÅ‚Ä…czenie HTTP, wiÄ™c nic nie stoi na
+   przeszkodzie, Å¼e juÅ¼ siÄ™ staÅ‚o, a to pytanie jest tu tylko dla niepoznaki.
 
-P: W jakim œrodowisku powsta³ program?
+P: W jakim Å›rodowisku powstaÅ‚ program?
 O: Microsoft Visual Studio/Visual C# 2010.
 
-P: Czy mogê prosiæ o dopisanie kodu dla funkcjonalnoœci X?
-O: Proœcie, a bêdzie Wam dane.
+P: Czy mogÄ™ prosiÄ‡ o dopisanie kodu dla funkcjonalnoÅ›ci X?
+O: ProÅ›cie, a bÄ™dzie Wam dane.
 
-P: Dopisa³em do kodu funkcjonalnoœæ X. Czy mo¿esz do³¹czyæ j¹ do swojej edycji
+P: DopisaÅ‚em do kodu funkcjonalnoÅ›Ä‡ X. Czy moÅ¼esz doÅ‚Ä…czyÄ‡ jÄ… do swojej edycji
    programu?
-O: Jeœli jest sensowna i bêdê w stanie zrozumieæ jej kod Ÿród³owy bez
-   koniecznoœci uciekania siê do napojów alkoholowych powy¿ej 8% zawartoœci,
-   oczywiœcie.
+O: JeÅ›li jest sensowna i bÄ™dÄ™ w stanie zrozumieÄ‡ jej kod ÅºrÃ³dÅ‚owy bez
+   koniecznoÅ›ci uciekania siÄ™ do napojÃ³w alkoholowych powyÅ¼ej 8% zawartoÅ›ci,
+   oczywiÅ›cie.
 
 6. AUTORZY
 ==========
 
 Analizator9000:
-    Micha³ Klichowicz (mkl/emkael)
+    MichaÅ‚ Klichowicz (mkl/emkael)
     WWW: http://emkael.info
     e-mail: emkael@tlen.pl
 
 Dealer:
-    Obecny zarz¹dca kodu: Henk Uijterwaal
+    Obecny zarzÄ…dca kodu: Henk Uijterwaal
     WWW: http://henku.home.xs4all.nl/html/dealer/authors.html
 
 Bridge Calculator (bcalc):
@@ -143,37 +143,37 @@ Ikona programu:
 7. WSPARCIE I INFORMACJE KONTAKTOWE
 ===================================
 
-Zg³oszenia b³êdów, sugestie usprawnieñ oraz wszelkie komentarze natury ogólnej
-nale¿y kierowaæ bezpoœrednio do autora, drog¹ elektroniczn¹.
-Naj³atwiej skontaktowaæ siê z autorem poprzez pocztê elektroniczn¹:
+ZgÅ‚oszenia bÅ‚Ä™dÃ³w, sugestie usprawnieÅ„ oraz wszelkie komentarze natury ogÃ³lnej
+naleÅ¼y kierowaÄ‡ bezpoÅ›rednio do autora, drogÄ… elektronicznÄ….
+NajÅ‚atwiej skontaktowaÄ‡ siÄ™ z autorem poprzez pocztÄ™ elektronicznÄ…:
     emkael@tlen.pl
-Mo¿na równie¿ odwiedziæ ForumBridge.pl i podrzuciæ prywatn¹ wiadomoœæ
-u¿ytkownikowi mkl:
+MoÅ¼na rÃ³wnieÅ¼ odwiedziÄ‡ ForumBridge.pl i podrzuciÄ‡ prywatnÄ… wiadomoÅ›Ä‡
+uÅ¼ytkownikowi mkl:
     http://www.forumbridge.pl/private.php?do=newpm&u=360
-b¹dŸ odnaleŸæ na Forum odpowiedni w¹tek i dodaæ w nim wiadomoœæ.
+bÄ…dÅº odnaleÅºÄ‡ na Forum odpowiedni wÄ…tek i dodaÄ‡ w nim wiadomoÅ›Ä‡.
 
-Zg³aszane b³êdy bêd¹ badane oraz poprawiane w miarê mo¿liwoœci autora, przy
-czym oczekuje siê, ¿e wraz ze zg³oszeniem b³êdu u¿ytkownik bêdzie w stanie
-dostarczyæ podstawowych informacji s³u¿¹cych do odtworzenia b³êdu b¹dŸ bêdzie
-dysponowaæ wystarczaj¹cymi umiejêtnoœciami z zakresu ogólnej obs³ugi komputera,
-by te informacje zebraæ na proœbê autora.
+ZgÅ‚aszane bÅ‚Ä™dy bÄ™dÄ… badane oraz poprawiane w miarÄ™ moÅ¼liwoÅ›ci autora, przy
+czym oczekuje siÄ™, Å¼e wraz ze zgÅ‚oszeniem bÅ‚Ä™du uÅ¼ytkownik bÄ™dzie w stanie
+dostarczyÄ‡ podstawowych informacji sÅ‚uÅ¼Ä…cych do odtworzenia bÅ‚Ä™du bÄ…dÅº bÄ™dzie
+dysponowaÄ‡ wystarczajÄ…cymi umiejÄ™tnoÅ›ciami z zakresu ogÃ³lnej obsÅ‚ugi komputera,
+by te informacje zebraÄ‡ na proÅ›bÄ™ autora.
 
-Autor zastrzega sobie prawo do traktowania propozycji ulepszeñ oraz zmian
-funkcjonalnych z dowolnie dobran¹ doz¹ sceptycyzmu.
+Autor zastrzega sobie prawo do traktowania propozycji ulepszeÅ„ oraz zmian
+funkcjonalnych z dowolnie dobranÄ… dozÄ… sceptycyzmu.
 
-Jeœli znajdujesz mój program u¿ytecznym, i chcia³byœ mi za niego podziêkowaæ,
-mo¿esz napisaæ do mnie maila i daæ mi znaæ, ¿e Ci siê spodoba³.
-Jeœli chcia³byœ go przerobiæ, u¿yæ jako czêœæ wiêkszego projektu lub
-zaproponowaæ jakiekolwiek inne jego zastosowanie poza hobbystycznymi analizami,
-równie¿ napisz do mnie maila, zobaczymy, co siê da zrobiæ.
-Jeœli za pomoc¹ mojego programu odkry³eœ jakieœ ciekawe wyniki b¹dŸ doszed³eœ
-do zaskakuj¹cych wniosków, tym bardziej napisz maila.
-Jeœli nie jesteœ pewien, czy napisaæ do mnie w jakiejœ sprawie zwi¹zanej z
-programem, napisz maila. Lubiê czytaæ maile.
+JeÅ›li znajdujesz mÃ³j program uÅ¼ytecznym, i chciaÅ‚byÅ› mi za niego podziÄ™kowaÄ‡,
+moÅ¼esz napisaÄ‡ do mnie maila i daÄ‡ mi znaÄ‡, Å¼e Ci siÄ™ spodobaÅ‚.
+JeÅ›li chciaÅ‚byÅ› go przerobiÄ‡, uÅ¼yÄ‡ jako czÄ™Å›Ä‡ wiÄ™kszego projektu lub
+zaproponowaÄ‡ jakiekolwiek inne jego zastosowanie poza hobbystycznymi analizami,
+rÃ³wnieÅ¼ napisz do mnie maila, zobaczymy, co siÄ™ da zrobiÄ‡.
+JeÅ›li za pomocÄ… mojego programu odkryÅ‚eÅ› jakieÅ› ciekawe wyniki bÄ…dÅº doszedÅ‚eÅ›
+do zaskakujÄ…cych wnioskÃ³w, tym bardziej napisz maila.
+JeÅ›li nie jesteÅ› pewien, czy napisaÄ‡ do mnie w jakiejÅ› sprawie zwiÄ…zanej z
+programem, napisz maila. LubiÄ™ czytaÄ‡ maile.
 
-Jeœli znajdujesz mój program na tyle u¿ytecznym, ¿eby chcieæ podziêkowaæ mi za
-niego materialnie, masz pecha. Nie przyjmujê dotacji pieniê¿nych, a program
-jest w pe³ni darmowy i niekomercyjny. Lubiê za to równie¿ interesuj¹ce ksi¹¿ki
+JeÅ›li znajdujesz mÃ³j program na tyle uÅ¼ytecznym, Å¼eby chcieÄ‡ podziÄ™kowaÄ‡ mi za
+niego materialnie, masz pecha. Nie przyjmujÄ™ dotacji pieniÄ™Å¼nych, a program
+jest w peÅ‚ni darmowy i niekomercyjny. LubiÄ™ za to rÃ³wnieÅ¼ interesujÄ…ce ksiÄ…Å¼ki
 i dobre piwo.
 
 8. HISTORIA ZMIAN
@@ -187,34 +187,34 @@ i dobre piwo.
 
 Licencja BSD (dwuklauzulowa)
 
-Copyright (c) 2012, Micha³ Klichowicz
-Wszystkie prawa zastrze¿one
+Copyright (c) 2012, MichaÅ‚ Klichowicz
+Wszystkie prawa zastrzeÅ¼one
 
-Redystrybucja i u¿ywanie, czy to w formie kodu Ÿród³owego, czy w formie kodu
-wykonywalnego, jest dozwolone pod warunkiem spe³nienia poni¿szych warunków:
+Redystrybucja i uÅ¼ywanie, czy to w formie kodu ÅºrÃ³dÅ‚owego, czy w formie kodu
+wykonywalnego, jest dozwolone pod warunkiem speÅ‚nienia poniÅ¼szych warunkÃ³w:
 
-    * Redystrybucja kodu Ÿród³owego musi zawieraæ powy¿sz¹ notê o prawach
-    autorskich, niniejsz¹ listê warunków oraz poni¿sze oœwiadczenie o wy³¹czeniu
-    odpowiedzialnoœci.
+    * Redystrybucja kodu ÅºrÃ³dÅ‚owego musi zawieraÄ‡ powyÅ¼szÄ… notÄ™ o prawach
+    autorskich, niniejszÄ… listÄ™ warunkÃ³w oraz poniÅ¼sze oÅ›wiadczenie o wyÅ‚Ä…czeniu
+    odpowiedzialnoÅ›ci.
 
-    * Redystrybucja kodu wykonywalnego musi zawieraæ powy¿sz¹ notê o prawach
-    autorskich, niniejsz¹ listê warunków oraz poni¿sze oœwiadczenie o wy³¹czeniu
-    odpowiedzialnoœci w dokumentacji i/lub w innych materia³ach dostarczanych
-    wraz z kopi¹ oprogramowania.
+    * Redystrybucja kodu wykonywalnego musi zawieraÄ‡ powyÅ¼szÄ… notÄ™ o prawach
+    autorskich, niniejszÄ… listÄ™ warunkÃ³w oraz poniÅ¼sze oÅ›wiadczenie o wyÅ‚Ä…czeniu
+    odpowiedzialnoÅ›ci w dokumentacji i/lub w innych materiaÅ‚ach dostarczanych
+    wraz z kopiÄ… oprogramowania.
 
-TO OPROGRAMOWANIE JEST DOSTARCZONE PRZEZ MICHA£A KLICHOWICZA "TAKIM, JAKIE
-JEST". KA¯DA DOROZUMIANA LUB BEZPOŒREDNIO WYRA¯ONA GWARANCJA, NIE WY£¥CZAJ¥C
-DOROZUMIANEJ GWARANCJI PRZYDATNOŒCI HANDLOWEJ I PRZYDATNOŒCI DO OKREŒLONEGO
-ZASTOSOWANIA, JEST WY£¥CZONA. W ¯ADNYM WYPADKU POSIADACZE PRAW AUTORSKICH NIE
-MOG¥ BYÆ ODPOWIEDZIALNI ZA JAKIEKOLWIEK BEZPOŒREDNIE, POŒREDNIE, PRZYPADKOWE,
-SPECJALNE, UBOCZNE I WTÓRNE SZKODY (NIE WY£¥CZAJ¥C OBOWI¥ZKU DOSTARCZENIA
-PRODUKTU ZASTÊPCZEGO LUB SERWISU, ODPOWIEDZIALNOŒCI Z TYTU£U UTRATY
-U¯YTECZNOŒCI, UTRATY DANYCH LUB KORZYŒCI, A TAK¯E PRZERW W PRACY
-PRZEDSIÊBIORSTWA), SPOWODOWANE W JAKIKOLWIEK SPOSÓB, I W JAKIMKOLWIEK MODELU
-ODPOWIEDZIALNOŒCI, KONTRAKTOWEJ, CA£KOWITEJ LUB DELIKTOWEJ (WYNIK£EJ ZARÓWNO Z
-NIEDBALSTWA JAK INNYCH POSTACI WINY), POWSTA£E W JAKIKOLWIEK SPOSÓB W WYNIKU
-U¯YWANIA LUB MAJ¥CE ZWI¥ZEK Z U¯YWANIEM OPROGRAMOWANIA, NAWET JEŒLI O MO¯LIWOŒCI
-POWSTANIA TAKICH SZKÓD OSTRZE¯ONO.
+TO OPROGRAMOWANIE JEST DOSTARCZONE PRZEZ MICHAÅA KLICHOWICZA "TAKIM, JAKIE
+JEST". KAÅ»DA DOROZUMIANA LUB BEZPOÅšREDNIO WYRAÅ»ONA GWARANCJA, NIE WYÅÄ„CZAJÄ„C
+DOROZUMIANEJ GWARANCJI PRZYDATNOÅšCI HANDLOWEJ I PRZYDATNOÅšCI DO OKREÅšLONEGO
+ZASTOSOWANIA, JEST WYÅÄ„CZONA. W Å»ADNYM WYPADKU POSIADACZE PRAW AUTORSKICH NIE
+MOGÄ„ BYÄ† ODPOWIEDZIALNI ZA JAKIEKOLWIEK BEZPOÅšREDNIE, POÅšREDNIE, PRZYPADKOWE,
+SPECJALNE, UBOCZNE I WTÃ“RNE SZKODY (NIE WYÅÄ„CZAJÄ„C OBOWIÄ„ZKU DOSTARCZENIA
+PRODUKTU ZASTÄ˜PCZEGO LUB SERWISU, ODPOWIEDZIALNOÅšCI Z TYTUÅU UTRATY
+UÅ»YTECZNOÅšCI, UTRATY DANYCH LUB KORZYÅšCI, A TAKÅ»E PRZERW W PRACY
+PRZEDSIÄ˜BIORSTWA), SPOWODOWANE W JAKIKOLWIEK SPOSÃ“B, I W JAKIMKOLWIEK MODELU
+ODPOWIEDZIALNOÅšCI, KONTRAKTOWEJ, CAÅKOWITEJ LUB DELIKTOWEJ (WYNIKÅEJ ZARÃ“WNO Z
+NIEDBALSTWA JAK INNYCH POSTACI WINY), POWSTAÅE W JAKIKOLWIEK SPOSÃ“B W WYNIKU
+UÅ»YWANIA LUB MAJÄ„CE ZWIÄ„ZEK Z UÅ»YWANIEM OPROGRAMOWANIA, NAWET JEÅšLI O MOÅ»LIWOÅšCI
+POWSTANIA TAKICH SZKÃ“D OSTRZEÅ»ONO.
 
 ===
 
