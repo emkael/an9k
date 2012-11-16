@@ -17,7 +17,7 @@ namespace Analizator9000
         private StreamWriter outputFile;
         private String filename;
 
-        public Accumulator(String[] deals, List<Tuple<int, int>> contracts, Form1 form)
+        public Accumulator(String[] deals, List<Contract> contracts, Form1 form)
         {
             this.deals = new Stack<String>(deals);
             this.toAnalyze = deals.LongLength;
@@ -28,7 +28,7 @@ namespace Analizator9000
                 this.sums.Add(den, new Dictionary<int,long[]>());
                 for (int hand = 0; hand < BCalcWrapper.table.Length; hand++)
                 {
-                    if (contracts.Contains(new Tuple<int, int>(den, hand)))
+                    if (contracts.Contains(new Contract(den, hand)))
                     {
                         this.sums[den].Add(hand, new long[] { 0, 0, 0 });
                     }
@@ -39,13 +39,13 @@ namespace Analizator9000
                 }
             }
             this.contracts = new Dictionary<int, List<int>>();
-            foreach (Tuple<int, int> contract in contracts)
+            foreach (Contract contract in contracts)
             {
-                if (!this.contracts.ContainsKey(contract.Item1))
+                if (!this.contracts.ContainsKey(contract.Denomination))
                 {
-                    this.contracts.Add(contract.Item1, new List<int>());
+                    this.contracts.Add(contract.Denomination, new List<int>());
                 }
-                this.contracts[contract.Item1].Add(contract.Item2);
+                this.contracts[contract.Denomination].Add(contract.Declarer);
             }
             this.filename = Utils.getFilename("result");
             this.outputFile = new StreamWriter(@"files\"+this.filename);

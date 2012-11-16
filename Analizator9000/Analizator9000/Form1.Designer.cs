@@ -96,6 +96,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.analyzeButton = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -106,7 +107,6 @@
             this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.resultTextBox = new System.Windows.Forms.TextBox();
             this.abortButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -893,6 +893,17 @@
             this.label22.Text = "W:";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(13, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(18, 16);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // analyzeButton
             // 
             this.analyzeButton.Location = new System.Drawing.Point(226, 47);
@@ -973,17 +984,6 @@
             this.abortButton.Text = "PRZERWIJ";
             this.abortButton.UseVisualStyleBackColor = true;
             this.abortButton.Click += new System.EventHandler(this.abortButton_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(13, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(18, 16);
-            this.button3.TabIndex = 31;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 

@@ -192,14 +192,14 @@ namespace Analizator9000
             try
             {
                 String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
-                List<Tuple<int, int>> cons = new List<Tuple<int,int>>();
+                List<Contract> cons = new List<Contract>();
                 foreach (int i in Enumerable.Range(1, 5))
                 {
                     foreach (int j in Enumerable.Range(1, 4))
                     {
                         if (((CheckBox)contractTable.GetControlFromPosition(i, j)).Checked)
                         {
-                            cons.Add(new Tuple<int, int>(5 - i, j - 1));
+                            cons.Add(new Contract(5 - i, j - 1));
                         }
                     }
                 }
