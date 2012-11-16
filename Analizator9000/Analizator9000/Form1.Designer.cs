@@ -136,6 +136,7 @@
             // conditionBox
             // 
             this.conditionBox.AcceptsTab = true;
+            this.conditionBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.conditionBox.Location = new System.Drawing.Point(10, 202);
             this.conditionBox.Name = "conditionBox";
             this.conditionBox.Size = new System.Drawing.Size(494, 137);
