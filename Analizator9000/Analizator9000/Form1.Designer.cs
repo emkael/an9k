@@ -128,7 +128,7 @@
             this.generateGroup.Controls.Add(this.generateFileNameTextBox);
             this.generateGroup.Location = new System.Drawing.Point(12, 12);
             this.generateGroup.Name = "generateGroup";
-            this.generateGroup.Size = new System.Drawing.Size(513, 444);
+            this.generateGroup.Size = new System.Drawing.Size(496, 444);
             this.generateGroup.TabIndex = 0;
             this.generateGroup.TabStop = false;
             this.generateGroup.Text = "Generowanie";
@@ -139,7 +139,7 @@
             this.conditionBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.conditionBox.Location = new System.Drawing.Point(10, 202);
             this.conditionBox.Name = "conditionBox";
-            this.conditionBox.Size = new System.Drawing.Size(494, 137);
+            this.conditionBox.Size = new System.Drawing.Size(476, 137);
             this.conditionBox.TabIndex = 11;
             this.conditionBox.Text = "";
             // 
@@ -147,7 +147,7 @@
             // 
             this.generateButton.Location = new System.Drawing.Point(10, 398);
             this.generateButton.Name = "generateButton";
-            this.generateButton.Size = new System.Drawing.Size(497, 40);
+            this.generateButton.Size = new System.Drawing.Size(476, 40);
             this.generateButton.TabIndex = 10;
             this.generateButton.Text = "GENERUJ";
             this.generateButton.UseVisualStyleBackColor = true;
@@ -157,7 +157,7 @@
             // 
             this.produceBox.Location = new System.Drawing.Point(280, 372);
             this.produceBox.Name = "produceBox";
-            this.produceBox.Size = new System.Drawing.Size(224, 20);
+            this.produceBox.Size = new System.Drawing.Size(206, 20);
             this.produceBox.TabIndex = 9;
             this.produceBox.Text = "1000";
             this.produceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -175,7 +175,7 @@
             // 
             this.generateBox.Location = new System.Drawing.Point(280, 345);
             this.generateBox.Name = "generateBox";
-            this.generateBox.Size = new System.Drawing.Size(224, 20);
+            this.generateBox.Size = new System.Drawing.Size(206, 20);
             this.generateBox.TabIndex = 7;
             this.generateBox.Text = "100000";
             this.generateBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -239,7 +239,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(497, 116);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(476, 116);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // predealNorthSpadesBox
@@ -247,9 +247,9 @@
             this.predealNorthSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthSpadesBox.Location = new System.Drawing.Point(42, 26);
+            this.predealNorthSpadesBox.Location = new System.Drawing.Point(41, 26);
             this.predealNorthSpadesBox.Name = "predealNorthSpadesBox";
-            this.predealNorthSpadesBox.Size = new System.Drawing.Size(108, 20);
+            this.predealNorthSpadesBox.Size = new System.Drawing.Size(103, 20);
             this.predealNorthSpadesBox.TabIndex = 0;
             // 
             // predealEastSpadesBox
@@ -257,9 +257,9 @@
             this.predealEastSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastSpadesBox.Location = new System.Drawing.Point(42, 49);
+            this.predealEastSpadesBox.Location = new System.Drawing.Point(41, 49);
             this.predealEastSpadesBox.Name = "predealEastSpadesBox";
-            this.predealEastSpadesBox.Size = new System.Drawing.Size(108, 20);
+            this.predealEastSpadesBox.Size = new System.Drawing.Size(103, 20);
             this.predealEastSpadesBox.TabIndex = 1;
             // 
             // predealSouthSpadesBox
@@ -267,9 +267,9 @@
             this.predealSouthSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthSpadesBox.Location = new System.Drawing.Point(42, 72);
+            this.predealSouthSpadesBox.Location = new System.Drawing.Point(41, 72);
             this.predealSouthSpadesBox.Name = "predealSouthSpadesBox";
-            this.predealSouthSpadesBox.Size = new System.Drawing.Size(108, 20);
+            this.predealSouthSpadesBox.Size = new System.Drawing.Size(103, 20);
             this.predealSouthSpadesBox.TabIndex = 2;
             // 
             // predealWestSpadesBox
@@ -277,9 +277,9 @@
             this.predealWestSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestSpadesBox.Location = new System.Drawing.Point(42, 95);
+            this.predealWestSpadesBox.Location = new System.Drawing.Point(41, 95);
             this.predealWestSpadesBox.Name = "predealWestSpadesBox";
-            this.predealWestSpadesBox.Size = new System.Drawing.Size(108, 20);
+            this.predealWestSpadesBox.Size = new System.Drawing.Size(103, 20);
             this.predealWestSpadesBox.TabIndex = 3;
             // 
             // predealNorthHeartsBox
@@ -287,9 +287,9 @@
             this.predealNorthHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthHeartsBox.Location = new System.Drawing.Point(156, 26);
+            this.predealNorthHeartsBox.Location = new System.Drawing.Point(150, 26);
             this.predealNorthHeartsBox.Name = "predealNorthHeartsBox";
-            this.predealNorthHeartsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealNorthHeartsBox.Size = new System.Drawing.Size(103, 20);
             this.predealNorthHeartsBox.TabIndex = 4;
             // 
             // predealEastHeartsBox
@@ -297,9 +297,9 @@
             this.predealEastHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastHeartsBox.Location = new System.Drawing.Point(156, 49);
+            this.predealEastHeartsBox.Location = new System.Drawing.Point(150, 49);
             this.predealEastHeartsBox.Name = "predealEastHeartsBox";
-            this.predealEastHeartsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealEastHeartsBox.Size = new System.Drawing.Size(103, 20);
             this.predealEastHeartsBox.TabIndex = 5;
             // 
             // predealSouthHeartsBox
@@ -307,9 +307,9 @@
             this.predealSouthHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthHeartsBox.Location = new System.Drawing.Point(156, 72);
+            this.predealSouthHeartsBox.Location = new System.Drawing.Point(150, 72);
             this.predealSouthHeartsBox.Name = "predealSouthHeartsBox";
-            this.predealSouthHeartsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealSouthHeartsBox.Size = new System.Drawing.Size(103, 20);
             this.predealSouthHeartsBox.TabIndex = 6;
             // 
             // predealWestHeartsBox
@@ -317,9 +317,9 @@
             this.predealWestHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestHeartsBox.Location = new System.Drawing.Point(156, 95);
+            this.predealWestHeartsBox.Location = new System.Drawing.Point(150, 95);
             this.predealWestHeartsBox.Name = "predealWestHeartsBox";
-            this.predealWestHeartsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealWestHeartsBox.Size = new System.Drawing.Size(103, 20);
             this.predealWestHeartsBox.TabIndex = 7;
             // 
             // predealNorthDiamondsBox
@@ -327,9 +327,9 @@
             this.predealNorthDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthDiamondsBox.Location = new System.Drawing.Point(270, 26);
+            this.predealNorthDiamondsBox.Location = new System.Drawing.Point(259, 26);
             this.predealNorthDiamondsBox.Name = "predealNorthDiamondsBox";
-            this.predealNorthDiamondsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealNorthDiamondsBox.Size = new System.Drawing.Size(103, 20);
             this.predealNorthDiamondsBox.TabIndex = 8;
             // 
             // predealEastDiamondsBox
@@ -337,9 +337,9 @@
             this.predealEastDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastDiamondsBox.Location = new System.Drawing.Point(270, 49);
+            this.predealEastDiamondsBox.Location = new System.Drawing.Point(259, 49);
             this.predealEastDiamondsBox.Name = "predealEastDiamondsBox";
-            this.predealEastDiamondsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealEastDiamondsBox.Size = new System.Drawing.Size(103, 20);
             this.predealEastDiamondsBox.TabIndex = 9;
             // 
             // predealSouthDiamondsBox
@@ -347,9 +347,9 @@
             this.predealSouthDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthDiamondsBox.Location = new System.Drawing.Point(270, 72);
+            this.predealSouthDiamondsBox.Location = new System.Drawing.Point(259, 72);
             this.predealSouthDiamondsBox.Name = "predealSouthDiamondsBox";
-            this.predealSouthDiamondsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealSouthDiamondsBox.Size = new System.Drawing.Size(103, 20);
             this.predealSouthDiamondsBox.TabIndex = 10;
             // 
             // predealWestDiamondsBox
@@ -357,9 +357,9 @@
             this.predealWestDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestDiamondsBox.Location = new System.Drawing.Point(270, 95);
+            this.predealWestDiamondsBox.Location = new System.Drawing.Point(259, 95);
             this.predealWestDiamondsBox.Name = "predealWestDiamondsBox";
-            this.predealWestDiamondsBox.Size = new System.Drawing.Size(108, 20);
+            this.predealWestDiamondsBox.Size = new System.Drawing.Size(103, 20);
             this.predealWestDiamondsBox.TabIndex = 11;
             // 
             // predealNorthClubsBox
@@ -367,9 +367,9 @@
             this.predealNorthClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthClubsBox.Location = new System.Drawing.Point(384, 26);
+            this.predealNorthClubsBox.Location = new System.Drawing.Point(368, 26);
             this.predealNorthClubsBox.Name = "predealNorthClubsBox";
-            this.predealNorthClubsBox.Size = new System.Drawing.Size(110, 20);
+            this.predealNorthClubsBox.Size = new System.Drawing.Size(105, 20);
             this.predealNorthClubsBox.TabIndex = 12;
             // 
             // predealEastClubsBox
@@ -377,9 +377,9 @@
             this.predealEastClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastClubsBox.Location = new System.Drawing.Point(384, 49);
+            this.predealEastClubsBox.Location = new System.Drawing.Point(368, 49);
             this.predealEastClubsBox.Name = "predealEastClubsBox";
-            this.predealEastClubsBox.Size = new System.Drawing.Size(110, 20);
+            this.predealEastClubsBox.Size = new System.Drawing.Size(105, 20);
             this.predealEastClubsBox.TabIndex = 13;
             // 
             // predealSouthClubsBox
@@ -387,9 +387,9 @@
             this.predealSouthClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthClubsBox.Location = new System.Drawing.Point(384, 72);
+            this.predealSouthClubsBox.Location = new System.Drawing.Point(368, 72);
             this.predealSouthClubsBox.Name = "predealSouthClubsBox";
-            this.predealSouthClubsBox.Size = new System.Drawing.Size(110, 20);
+            this.predealSouthClubsBox.Size = new System.Drawing.Size(105, 20);
             this.predealSouthClubsBox.TabIndex = 14;
             // 
             // predealWestClubsBox
@@ -397,16 +397,16 @@
             this.predealWestClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestClubsBox.Location = new System.Drawing.Point(384, 95);
+            this.predealWestClubsBox.Location = new System.Drawing.Point(368, 95);
             this.predealWestClubsBox.Name = "predealWestClubsBox";
-            this.predealWestClubsBox.Size = new System.Drawing.Size(110, 20);
+            this.predealWestClubsBox.Size = new System.Drawing.Size(105, 20);
             this.predealWestClubsBox.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 28);
+            this.label2.Location = new System.Drawing.Point(17, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(18, 13);
             this.label2.TabIndex = 16;
@@ -416,7 +416,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 51);
+            this.label3.Location = new System.Drawing.Point(18, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 13);
             this.label3.TabIndex = 17;
@@ -426,7 +426,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 74);
+            this.label4.Location = new System.Drawing.Point(18, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(17, 13);
             this.label4.TabIndex = 18;
@@ -436,7 +436,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 97);
+            this.label5.Location = new System.Drawing.Point(14, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 13);
             this.label5.TabIndex = 19;
@@ -449,9 +449,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(42, 0);
+            this.label6.Location = new System.Drawing.Point(41, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 23);
+            this.label6.Size = new System.Drawing.Size(103, 23);
             this.label6.TabIndex = 20;
             this.label6.Text = "♠";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -464,9 +464,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(156, 0);
+            this.label7.Location = new System.Drawing.Point(150, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 23);
+            this.label7.Size = new System.Drawing.Size(103, 23);
             this.label7.TabIndex = 21;
             this.label7.Text = "♥";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -479,9 +479,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(270, 0);
+            this.label8.Location = new System.Drawing.Point(259, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 23);
+            this.label8.Size = new System.Drawing.Size(103, 23);
             this.label8.TabIndex = 22;
             this.label8.Text = "♦";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -493,9 +493,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(384, 0);
+            this.label9.Location = new System.Drawing.Point(368, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 23);
+            this.label9.Size = new System.Drawing.Size(105, 23);
             this.label9.TabIndex = 23;
             this.label9.Text = "♣";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -511,7 +511,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(432, 20);
+            this.button1.Location = new System.Drawing.Point(411, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -524,7 +524,7 @@
             this.generateFileNameTextBox.Location = new System.Drawing.Point(7, 20);
             this.generateFileNameTextBox.Name = "generateFileNameTextBox";
             this.generateFileNameTextBox.ReadOnly = true;
-            this.generateFileNameTextBox.Size = new System.Drawing.Size(419, 20);
+            this.generateFileNameTextBox.Size = new System.Drawing.Size(398, 20);
             this.generateFileNameTextBox.TabIndex = 0;
             // 
             // analyzeGroup
@@ -534,9 +534,9 @@
             this.analyzeGroup.Controls.Add(this.label13);
             this.analyzeGroup.Controls.Add(this.button2);
             this.analyzeGroup.Controls.Add(this.analyzeFileNameTextBox);
-            this.analyzeGroup.Location = new System.Drawing.Point(531, 12);
+            this.analyzeGroup.Location = new System.Drawing.Point(514, 12);
             this.analyzeGroup.Name = "analyzeGroup";
-            this.analyzeGroup.Size = new System.Drawing.Size(513, 179);
+            this.analyzeGroup.Size = new System.Drawing.Size(492, 179);
             this.analyzeGroup.TabIndex = 1;
             this.analyzeGroup.TabStop = false;
             this.analyzeGroup.Text = "Analiza";
@@ -908,7 +908,7 @@
             // 
             this.analyzeButton.Location = new System.Drawing.Point(226, 47);
             this.analyzeButton.Name = "analyzeButton";
-            this.analyzeButton.Size = new System.Drawing.Size(278, 99);
+            this.analyzeButton.Size = new System.Drawing.Size(260, 99);
             this.analyzeButton.TabIndex = 11;
             this.analyzeButton.Text = "ANALIZUJ";
             this.analyzeButton.UseVisualStyleBackColor = true;
@@ -925,7 +925,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(432, 20);
+            this.button2.Location = new System.Drawing.Point(411, 20);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -938,7 +938,7 @@
             this.analyzeFileNameTextBox.Location = new System.Drawing.Point(7, 20);
             this.analyzeFileNameTextBox.Name = "analyzeFileNameTextBox";
             this.analyzeFileNameTextBox.ReadOnly = true;
-            this.analyzeFileNameTextBox.Size = new System.Drawing.Size(419, 20);
+            this.analyzeFileNameTextBox.Size = new System.Drawing.Size(398, 20);
             this.analyzeFileNameTextBox.TabIndex = 0;
             // 
             // generateFileDialog
@@ -949,7 +949,7 @@
             // 
             this.progressBar.Location = new System.Drawing.Point(531, 312);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(513, 23);
+            this.progressBar.Size = new System.Drawing.Size(475, 23);
             this.progressBar.TabIndex = 2;
             // 
             // statusListBox
@@ -957,7 +957,7 @@
             this.statusListBox.FormattingEnabled = true;
             this.statusListBox.Location = new System.Drawing.Point(531, 343);
             this.statusListBox.Name = "statusListBox";
-            this.statusListBox.Size = new System.Drawing.Size(513, 108);
+            this.statusListBox.Size = new System.Drawing.Size(475, 108);
             this.statusListBox.TabIndex = 3;
             // 
             // analyzeFileDialog
@@ -966,20 +966,20 @@
             // 
             // resultTextBox
             // 
-            this.resultTextBox.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.resultTextBox.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.resultTextBox.Location = new System.Drawing.Point(531, 197);
             this.resultTextBox.Multiline = true;
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ReadOnly = true;
-            this.resultTextBox.Size = new System.Drawing.Size(513, 109);
+            this.resultTextBox.Size = new System.Drawing.Size(475, 109);
             this.resultTextBox.TabIndex = 4;
             // 
             // abortButton
             // 
             this.abortButton.Enabled = false;
-            this.abortButton.Location = new System.Drawing.Point(757, 157);
+            this.abortButton.Location = new System.Drawing.Point(740, 156);
             this.abortButton.Name = "abortButton";
-            this.abortButton.Size = new System.Drawing.Size(277, 34);
+            this.abortButton.Size = new System.Drawing.Size(260, 34);
             this.abortButton.TabIndex = 13;
             this.abortButton.Text = "PRZERWIJ";
             this.abortButton.UseVisualStyleBackColor = true;
@@ -989,7 +989,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 463);
+            this.ClientSize = new System.Drawing.Size(1018, 463);
             this.Controls.Add(this.abortButton);
             this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.statusListBox);
