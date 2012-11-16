@@ -14,7 +14,7 @@ namespace Analizator9000
         private Stack<String> deals;
         private Form1 form;
         private Dictionary<int, List<int>> contracts;
-        private StreamWriter outputFile;
+        private TextWriter outputFile;
         private String filename;
 
         public Accumulator(String[] deals, List<Contract> contracts, Form1 form)
@@ -48,7 +48,7 @@ namespace Analizator9000
                 this.contracts[contract.Denomination].Add(contract.Declarer);
             }
             this.filename = Utils.getFilename("result");
-            this.outputFile = new StreamWriter(@"files\"+this.filename);
+            this.outputFile = TextWriter.Synchronized(File.AppendText(@"files\"+this.filename));
         }
 
         private int portionSize;
@@ -89,11 +89,14 @@ namespace Analizator9000
                         try
                         {
                             BCalcResult result = solver.run(entry);
-                            String line = "#" + result.dealNo + ", " + result.declarer + " gra w " + result.trumpSuit + ", lew: " + result.tricks;
-                            this.update(result);
-                            this.form.setResult(this.getString());
-                            this.form.addStatusLine(line);
-                            this.outputFile.WriteLine(line);
+                            if (!this.abort)
+                            {
+                                String line = "#" + result.dealNo + ", " + result.declarer + " gra w " + result.trumpSuit + ", lew: " + result.tricks;
+                                this.update(result);
+                                this.form.setResult(this.getString());
+                                this.form.addStatusLine(line);
+                                this.outputFile.WriteLine(line);
+                            }
                         }
                         catch (Exception ex)
                         {
@@ -131,11 +134,11 @@ namespace Analizator9000
                 this.threadsRunning--;
                 this.analyzed++;
                 this.form.setProgress((int)(100 * this.analyzed / this.toAnalyze));
-                if (threadsRunning == 0)
+                if (threadsRunning < this.portionSize)
                 {
                     if (this.deals.Count > 0)
                     {
-                        this.run();
+                        this.run(1);
                     }
                     else
                     {
