@@ -10,21 +10,40 @@ using System.IO;
 
 namespace Analizator9000
 {
+    /// <summary>
+    /// Main application window control.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Dealer input scripts parser instance.
+        /// </summary>
         private DealerParser parser;
 
+        /// <summary>
+        /// Constructs the main window.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
             this.parser = new DealerParser();
         }
 
+        /// <summary>
+        /// "Select file" button click, opens file selection dialog for input script.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             generateFileDialog.ShowDialog();
         }
 
+        /// <summary>
+        /// Input script file selection event. Initiates input script parsing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             try
@@ -70,10 +89,16 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// "Generate" button click. Saves the input script file and runs deals generating.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void generateButton_Click(object sender, EventArgs e)
         {
             generateGroup.Enabled = false;
             analyzeGroup.Enabled = false;
+            statusListBox.Items.Clear();
             progressBar.Value = 0;
             try
             {
@@ -118,7 +143,15 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Delegate for generating end method callback.
+        /// </summary>
+        /// <param name="filename"></param>
         private delegate void endDelegate(String filename);
+        /// <summary>
+        /// Generating end callback method. Prints out deal generating summary.
+        /// </summary>
+        /// <param name="filename">Output (generated deals) file name.</param>
         private void generateEnd(String filename)
         {
             if (this.InvokeRequired)
@@ -138,7 +171,15 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Delegate for debug line addition method.
+        /// </summary>
+        /// <param name="line"></param>
         private delegate void AddStatusDelegate(String line);
+        /// <summary>
+        /// Debug line addition method (thread-safe).
+        /// </summary>
+        /// <param name="line">String to be appended to the debug output.</param>
         public void addStatusLine(String line)
         {
             if (line != null)
@@ -155,7 +196,15 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Delegate for progress bar update method.
+        /// </summary>
+        /// <param name="progress">Percentage of progress to set (0-100)</param>
         private delegate void SetProgressDelegate(int progress);
+        /// <summary>
+        /// Progress bar update method (thread-safe).
+        /// </summary>
+        /// <param name="progress">Percentage of progress to set (0-100)</param>
         public void setProgress(int progress)
         {
             if (progressBar.InvokeRequired)
@@ -168,26 +217,41 @@ namespace Analizator9000
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
+        /// <summary>
+        /// Deals file selection event. Sets the deals file path in the text field.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void analyzeFileDialog_FileOk(object sender, CancelEventArgs e)
         {
             analyzeFileNameTextBox.Text = analyzeFileDialog.FileName;
         }
 
+        /// <summary>
+        /// "Select file" button click for deals file selection.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             analyzeFileDialog.ShowDialog();
         }
 
+        /// <summary>
+        /// Instance of analysis summary class.
+        /// </summary>
         private Accumulator ac;
+        /// <summary>
+        /// "Analyze" button click. Runs the analysis.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void analyzeButton_Click(object sender, EventArgs e)
         {
             analyzeGroup.Enabled = false;
             generateGroup.Enabled = false;
             abortButton.Enabled = true;
+            statusListBox.Items.Clear();
             this.addStatusLine("Otwieram plik: " + analyzeFileNameTextBox.Text);
             try
             {
@@ -220,7 +284,13 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Delegate for analysis end callback method.
+        /// </summary>
         private delegate void EndAnalysisDelegate();
+        /// <summary>
+        /// Analysis end callback method. Cleans up visually after the analysis.
+        /// </summary>
         public void endAnalysis()
         {
             if (this.InvokeRequired)
@@ -237,7 +307,15 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Delegate for result summary display method.
+        /// </summary>
+        /// <param name="res">Result summary string.</param>
         private delegate void SetResultDelegate(String res);
+        /// <summary>
+        /// Displays analysis results summary.
+        /// </summary>
+        /// <param name="res">Result summary string.</param>
         public void setResult(String res)
         {
             if (this.InvokeRequired)
@@ -250,6 +328,11 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// "Abort" button click event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void abortButton_Click(object sender, EventArgs e)
         {
             if (this.ac != null)
@@ -258,6 +341,11 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Mass checkboxes within contract table layout toggle method.
+        /// </summary>
+        /// <param name="xRange">Set of x-coordinates for checkboxes to toggle.</param>
+        /// <param name="yRange">Set of y-coordinates for checkboxes to toggle.</param>
         private void toggleBoxes(IEnumerable<int> xRange, IEnumerable<int> yRange)
         {
             foreach (int x in xRange)
@@ -270,51 +358,101 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Toggles all contract chackboxes.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the first column of checkboxes ("NT").
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label18_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 1), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the second column of checkboxes (spades).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label14_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(2, 1), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the third column of checkboxes (hearts).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label15_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(3, 1), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the fourth column of checkboxes (diamonds).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label16_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(4, 1), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the fifth column of checkboxes (clubs).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label17_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(5, 1), Enumerable.Range(1, 4));
         }
 
+        /// <summary>
+        /// Toggles the first row of checkboxes (North).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label19_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 1));
         }
 
+        /// <summary>
+        /// Toggles the second row of checkboxes (East).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label20_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(2, 1));
         }
 
+        /// <summary>
+        /// Toggles the third row of checkboxes (South).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label21_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(3, 1));
         }
 
+        /// <summary>
+        /// Toggles the fourth row of checkboxes (West).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label22_Click(object sender, EventArgs e)
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(4, 1));

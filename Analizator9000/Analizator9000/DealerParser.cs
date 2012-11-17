@@ -7,13 +7,32 @@ using System.Text.RegularExpressions;
 
 namespace Analizator9000
 {
+    /// <summary>
+    /// Parsers dealer script files into fileds used by the application and compiles deler script files from them.
+    /// </summary>
     class DealerParser
     {
+        /// <summary>
+        /// Contents of 'condition' section of dealer input script.
+        /// </summary>
         public String condition = "";
+        /// <summary>
+        /// Limit of deals to generate, 'generate' section of input script.
+        /// </summary>
         public long generate = -1;
+        /// <summary>
+        /// Limit of deals to produce, 'produce' section of input script.
+        /// </summary>
         public long produce = -1;
+        /// <summary>
+        /// Pre-dealt cards, indexed by player. Compiles into 'predeal' section of onput script.
+        /// </summary>
         public Dictionary<String, String[]> predeal = new Dictionary<String, String[]>();
 
+        /// <summary>
+        /// Loads the input script file and parses it. Parses out everything outside of predeal/condition/produce/generate/action sections.
+        /// </summary>
+        /// <param name="file">Filename of the script.</param>
         public void loadFile(String file)
         {
             String[] contents = File.ReadAllLines(file);
@@ -107,6 +126,11 @@ namespace Analizator9000
                 }
             }
         }
+
+        /// <summary>
+        /// Compiles dealer input script from provided data. Assumes no overhead section and single action: printoneline.
+        /// </summary>
+        /// <returns>Input script contents.</returns>
         public String saveFile()
         {
             String filename = Utils.getFilename("dealer");

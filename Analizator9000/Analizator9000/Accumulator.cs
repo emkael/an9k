@@ -6,17 +6,50 @@ using System.IO;
 
 namespace Analizator9000
 {
+    /// <summary>
+    /// Provided with a set of deals and contracts to check, conducts the actual statistics by gathering the results of BCalc analysis.
+    /// </summary>
     class Accumulator
     {
+        /// <summary>
+        /// Two-dimensional dictionary of accumulated analysis results (sample count, sample sum and sample square sum).
+        /// </summary>
         private Dictionary<int, Dictionary<int, long[]>> sums;
+        /// <summary>
+        /// Number of deals already analyzed.
+        /// </summary>
         private long analyzed = 0;
+        /// <summary>
+        /// Total number of deals to analyze.
+        /// </summary>
         private long toAnalyze = 0;
+        /// <summary>
+        /// List (well, a stack) of deals to process.
+        /// </summary>
         private Stack<String> deals;
+        /// <summary>
+        /// A back-reference to calling Form, for progress presentation purposes.
+        /// </summary>
         private Form1 form;
+        /// <summary>
+        /// List of contracts to analyze in BCalc notation (integers for denomination and declarer).
+        /// </summary>
         private Dictionary<int, List<int>> contracts;
+        /// <summary>
+        /// Results file handle (version of StreamWriter initialized as synchronized).
+        /// </summary>
         private TextWriter outputFile;
+        /// <summary>
+        /// Filename for analysis output.
+        /// </summary>
         private String filename;
 
+        /// <summary>
+        /// Accumulator constructor.
+        /// </summary>
+        /// <param name="deals">Array of deals to process, in BCalc's "NESW" format with prepended deal number for orientation.</param>
+        /// <param name="contracts">List of denomination-declarer pairs (structures).</param>
+        /// <param name="form">GUI instance.</param>
         public Accumulator(String[] deals, List<Contract> contracts, Form1 form)
         {
             this.deals = new Stack<String>(deals);
@@ -51,8 +84,19 @@ namespace Analizator9000
             this.outputFile = TextWriter.Synchronized(File.AppendText(@"files\"+this.filename));
         }
 
+        /// <summary>
+        /// Number of threads initially run (and, subsequently, a maximum number that *should* be retained throughout analysis).
+        /// </summary>
         private int portionSize = 10;
+        /// <summary>
+        /// Number of threads currently running.
+        /// </summary>
         private int threadsRunning = 0;
+        /// <summary>
+        /// Initiates the analysis of a portion of deals.
+        /// </summary>
+        /// <param name="portionSize">Portion size. If set to 0, assumes the default/initial portion size.</param>
+        /// <returns>Number of deals left to analyze.</returns>
         public int run(int portionSize = 0)
         {
             if (portionSize == 0)
@@ -69,6 +113,10 @@ namespace Analizator9000
             return this.deals.Count;
         }
 
+        /// <summary>
+        /// Worker method for a single deal.
+        /// </summary>
+        /// <param name="deal">Deal in BCalc's "NESW" format, with deal number prepended.</param>
         private void analyzeDeal(String deal)
         {
             try
@@ -114,12 +162,22 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Flag stating whether the user aborted the analysis.
+        /// </summary>
         private bool abort = false;
+        /// <summary>
+        /// Analysis abort method.
+        /// </summary>
         public void abortAnalysis()
         {
             this.abort = true;
         }
 
+        /// <summary>
+        /// Callback method for worker threads, ends the single deal analysis, updates the total result and fires next analysis if necessary.
+        /// </summary>
+        /// <param name="methodResult">Method invokation result from the worker method.</param>
         private void endAnalyze(IAsyncResult methodResult)
         {
             ((Action<String>)methodResult.AsyncState).EndInvoke(methodResult);
@@ -143,6 +201,7 @@ namespace Analizator9000
                 } 
                 if (threadsRunning < this.portionSize)
                 {
+                    // Increasing the parameter would cause exponential thread creation rate. Funny.
                     this.run(1);
                 }
             }
@@ -158,6 +217,10 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Presents the current analysis results in textual form.
+        /// </summary>
+        /// <returns>Text table containing means and std. deviations for distinct contracts.</returns>
         private String getString()
         {
             StringWriter sw = new StringWriter();
@@ -184,6 +247,10 @@ namespace Analizator9000
             return sw.ToString();
         }
 
+        /// <summary>
+        /// Feeds the overall results with chunks of data from single contract analysis.
+        /// </summary>
+        /// <param name="result">Result of BCalc analysis.</param>
         private void update(BCalcResult result)
         {
             int tricks = result.tricks;

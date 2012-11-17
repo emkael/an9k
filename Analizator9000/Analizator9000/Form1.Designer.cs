@@ -1002,7 +1002,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Analizator9000";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.generateGroup.ResumeLayout(false);
             this.generateGroup.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
