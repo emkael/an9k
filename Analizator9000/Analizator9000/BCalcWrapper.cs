@@ -57,7 +57,7 @@ namespace Analizator9000
         /// <param name="leader">Player on lead, in numeric format. See the original documentation for details.</param>
         /// <returns>Pointer to solver instance.</returns>
         /// <remarks>Original documentation: http://bcalc.w8.pl/API_C/bcalcdds_8h.html#ab636045f65412652246b769e8e95ed6f</remarks>
-        /// <todo>Enum/constants for trumps/players, definitely.</todo>
+        //TODO Enum/constants for trumps/players, definitely.
         [DllImport(@"bin\libbcalcdds.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern IntPtr bcalcDDS_new(IntPtr format, IntPtr hands, Int32 trump, Int32 leader);
 
