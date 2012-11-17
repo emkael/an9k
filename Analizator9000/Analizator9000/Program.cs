@@ -5,6 +5,9 @@ using System.Windows.Forms;
 
 namespace Analizator9000
 {
+    /// <summary>
+    /// Program entry point class.
+    /// </summary>
     static class Program
     {
         /// <summary>

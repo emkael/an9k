@@ -28,6 +28,13 @@ namespace Analizator9000
         /// Deal number, parsed out from input string.
         /// </summary>
         public long dealNo;
+        /// <summary>
+        /// Constructor for result structure.
+        /// </summary>
+        /// <param name="a">Trump denomination (N/S/H/D/C).</param>
+        /// <param name="b">Declaring player (N/E/S/W).</param>
+        /// <param name="c">Number of tricks taken by the declaring side.</param>
+        /// <param name="d">Deal number, parsed out from input string.</param>
         public BCalcResult(char a, char b, int c, long d)
         {
             trumpSuit = a;
