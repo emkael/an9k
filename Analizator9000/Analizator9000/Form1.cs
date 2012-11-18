@@ -256,6 +256,10 @@ namespace Analizator9000
             try
             {
                 String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
+                if (deals.Length == 0)
+                {
+                    throw new Exception("Plik nie zawiera żadnych rozdań");
+                }
                 List<Contract> cons = new List<Contract>();
                 foreach (int i in Enumerable.Range(1, 5))
                 {

@@ -260,7 +260,7 @@
             this.predealEastSpadesBox.Location = new System.Drawing.Point(41, 49);
             this.predealEastSpadesBox.Name = "predealEastSpadesBox";
             this.predealEastSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealEastSpadesBox.TabIndex = 1;
+            this.predealEastSpadesBox.TabIndex = 4;
             // 
             // predealSouthSpadesBox
             // 
@@ -270,7 +270,7 @@
             this.predealSouthSpadesBox.Location = new System.Drawing.Point(41, 72);
             this.predealSouthSpadesBox.Name = "predealSouthSpadesBox";
             this.predealSouthSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealSouthSpadesBox.TabIndex = 2;
+            this.predealSouthSpadesBox.TabIndex = 8;
             // 
             // predealWestSpadesBox
             // 
@@ -280,7 +280,7 @@
             this.predealWestSpadesBox.Location = new System.Drawing.Point(41, 95);
             this.predealWestSpadesBox.Name = "predealWestSpadesBox";
             this.predealWestSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestSpadesBox.TabIndex = 3;
+            this.predealWestSpadesBox.TabIndex = 12;
             // 
             // predealNorthHeartsBox
             // 
@@ -290,7 +290,7 @@
             this.predealNorthHeartsBox.Location = new System.Drawing.Point(150, 26);
             this.predealNorthHeartsBox.Name = "predealNorthHeartsBox";
             this.predealNorthHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealNorthHeartsBox.TabIndex = 4;
+            this.predealNorthHeartsBox.TabIndex = 1;
             // 
             // predealEastHeartsBox
             // 
@@ -310,7 +310,7 @@
             this.predealSouthHeartsBox.Location = new System.Drawing.Point(150, 72);
             this.predealSouthHeartsBox.Name = "predealSouthHeartsBox";
             this.predealSouthHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealSouthHeartsBox.TabIndex = 6;
+            this.predealSouthHeartsBox.TabIndex = 9;
             // 
             // predealWestHeartsBox
             // 
@@ -320,7 +320,7 @@
             this.predealWestHeartsBox.Location = new System.Drawing.Point(150, 95);
             this.predealWestHeartsBox.Name = "predealWestHeartsBox";
             this.predealWestHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestHeartsBox.TabIndex = 7;
+            this.predealWestHeartsBox.TabIndex = 13;
             // 
             // predealNorthDiamondsBox
             // 
@@ -330,7 +330,7 @@
             this.predealNorthDiamondsBox.Location = new System.Drawing.Point(259, 26);
             this.predealNorthDiamondsBox.Name = "predealNorthDiamondsBox";
             this.predealNorthDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealNorthDiamondsBox.TabIndex = 8;
+            this.predealNorthDiamondsBox.TabIndex = 2;
             // 
             // predealEastDiamondsBox
             // 
@@ -340,7 +340,7 @@
             this.predealEastDiamondsBox.Location = new System.Drawing.Point(259, 49);
             this.predealEastDiamondsBox.Name = "predealEastDiamondsBox";
             this.predealEastDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealEastDiamondsBox.TabIndex = 9;
+            this.predealEastDiamondsBox.TabIndex = 6;
             // 
             // predealSouthDiamondsBox
             // 
@@ -360,7 +360,7 @@
             this.predealWestDiamondsBox.Location = new System.Drawing.Point(259, 95);
             this.predealWestDiamondsBox.Name = "predealWestDiamondsBox";
             this.predealWestDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestDiamondsBox.TabIndex = 11;
+            this.predealWestDiamondsBox.TabIndex = 14;
             // 
             // predealNorthClubsBox
             // 
@@ -370,7 +370,7 @@
             this.predealNorthClubsBox.Location = new System.Drawing.Point(368, 26);
             this.predealNorthClubsBox.Name = "predealNorthClubsBox";
             this.predealNorthClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealNorthClubsBox.TabIndex = 12;
+            this.predealNorthClubsBox.TabIndex = 3;
             // 
             // predealEastClubsBox
             // 
@@ -380,7 +380,7 @@
             this.predealEastClubsBox.Location = new System.Drawing.Point(368, 49);
             this.predealEastClubsBox.Name = "predealEastClubsBox";
             this.predealEastClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealEastClubsBox.TabIndex = 13;
+            this.predealEastClubsBox.TabIndex = 7;
             // 
             // predealSouthClubsBox
             // 
@@ -390,7 +390,7 @@
             this.predealSouthClubsBox.Location = new System.Drawing.Point(368, 72);
             this.predealSouthClubsBox.Name = "predealSouthClubsBox";
             this.predealSouthClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealSouthClubsBox.TabIndex = 14;
+            this.predealSouthClubsBox.TabIndex = 11;
             // 
             // predealWestClubsBox
             // 

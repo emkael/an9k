@@ -53,6 +53,10 @@ namespace Analizator9000
         public Accumulator(String[] deals, List<Contract> contracts, Form1 form)
         {
             this.deals = new Stack<String>(deals);
+            if (this.deals.Count == 0)
+            {
+                throw new Exception("Podano pusty zbiór rozdań");
+            }
             this.toAnalyze = deals.LongLength;
             this.form = form;
             this.sums = new Dictionary<int, Dictionary<int, long[]>>();
