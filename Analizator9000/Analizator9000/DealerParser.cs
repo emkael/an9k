@@ -28,6 +28,10 @@ namespace Analizator9000
         /// Pre-dealt cards, indexed by player. Compiles into 'predeal' section of onput script.
         /// </summary>
         public Dictionary<String, String[]> predeal = new Dictionary<String, String[]>();
+        /// <summary>
+        /// "Actions" for Dealer to the check average value of.
+        /// </summary>
+        public List<String> actions = new List<String>();
 
         /// <summary>
         /// Loads the input script file and parses it. Parses out everything outside of predeal/condition/produce/generate/action sections.
@@ -123,6 +127,56 @@ namespace Analizator9000
                             }
                         }
                         break;
+                    case "action":
+                        Regex pattern = new Regex(@"(?<comma>,)|(?<open>\()|(?<close>\))|(?<token>[^,\(\)]*)");
+                        MatchCollection matches = pattern.Matches(section.Aggregate((a, b) => a + b));
+                        List<String> tokens = new List<String>();
+                        foreach (Match match in matches)
+                        {
+                            int groupNo = 0;
+                            foreach (Group group in match.Groups)
+                            {
+                                if (group.Success && groupNo > 0)
+                                {
+                                    tokens.Add(group.Value);
+                                }
+                                groupNo++;
+                            }
+                        }
+                        int open = 0;
+                        List<String> actions = new List<String>();
+                        String currentAction = "";
+                        foreach (String token in tokens)
+                        {
+                            switch (token)
+                            {
+                                case "(":
+                                    open++;
+                                    currentAction += token;
+                                    break;
+                                case ")":
+                                    open--;
+                                    currentAction += token;
+                                    break;
+                                case ",":
+                                    if (open == 0)
+                                    {
+                                        actions.Add(currentAction.Trim());
+                                        currentAction = "";
+                                    }
+                                    else
+                                    {
+                                        currentAction += token;
+                                    }
+                                    break;
+                                default:
+                                    currentAction += token;
+                                    break;
+                            }
+                        }
+                        actions.Add(currentAction.Trim());
+                        this.actions = actions.Where(s => s.StartsWith("average")).ToList();
+                        break;
                 }
             }
         }
@@ -167,7 +221,16 @@ namespace Analizator9000
             file.WriteLine("produce");
             file.WriteLine(this.produce);
             file.WriteLine("action");
-            file.WriteLine("printoneline");
+            file.Write("printoneline");
+            foreach (String action in this.actions)
+            {
+                if (action.Trim().Length > 0)
+                {
+                    file.WriteLine(",");
+                    file.Write("average " + action);
+                }
+            }
+            file.WriteLine();
             file.Close();
             return filename;
         }

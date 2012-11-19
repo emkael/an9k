@@ -5,6 +5,7 @@ using System.Text;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace Analizator9000
 {
@@ -128,6 +129,7 @@ namespace Analizator9000
                 pInfo.UseShellExecute = false;
                 pInfo.RedirectStandardOutput = true;
                 pInfo.RedirectStandardError = true;
+                pInfo.StandardOutputEncoding = pInfo.StandardErrorEncoding = Encoding.UTF8;
                 this.debugWriteLine(pInfo.FileName + " " + pInfo.Arguments);
                 Process dealerProc = new Process();
                 dealerProc.StartInfo = pInfo;

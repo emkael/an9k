@@ -107,6 +107,8 @@
             this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.resultTextBox = new System.Windows.Forms.TextBox();
             this.abortButton = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.actionsBox = new System.Windows.Forms.RichTextBox();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -115,6 +117,8 @@
             // 
             // generateGroup
             // 
+            this.generateGroup.Controls.Add(this.actionsBox);
+            this.generateGroup.Controls.Add(this.label23);
             this.generateGroup.Controls.Add(this.conditionBox);
             this.generateGroup.Controls.Add(this.generateButton);
             this.generateGroup.Controls.Add(this.produceBox);
@@ -139,7 +143,7 @@
             this.conditionBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.conditionBox.Location = new System.Drawing.Point(10, 202);
             this.conditionBox.Name = "conditionBox";
-            this.conditionBox.Size = new System.Drawing.Size(476, 137);
+            this.conditionBox.Size = new System.Drawing.Size(253, 137);
             this.conditionBox.TabIndex = 11;
             this.conditionBox.Text = "";
             // 
@@ -954,6 +958,7 @@
             // 
             // statusListBox
             // 
+            this.statusListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.statusListBox.FormattingEnabled = true;
             this.statusListBox.Location = new System.Drawing.Point(531, 343);
             this.statusListBox.Name = "statusListBox";
@@ -984,6 +989,25 @@
             this.abortButton.Text = "PRZERWIJ";
             this.abortButton.UseVisualStyleBackColor = true;
             this.abortButton.Click += new System.EventHandler(this.abortButton_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(269, 186);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(134, 13);
+            this.label23.TabIndex = 12;
+            this.label23.Text = "Zdarzenia do sprawdzenia:";
+            // 
+            // actionsBox
+            // 
+            this.actionsBox.AcceptsTab = true;
+            this.actionsBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.actionsBox.Location = new System.Drawing.Point(269, 202);
+            this.actionsBox.Name = "actionsBox";
+            this.actionsBox.Size = new System.Drawing.Size(217, 137);
+            this.actionsBox.TabIndex = 13;
+            this.actionsBox.Text = "";
             // 
             // Form1
             // 
@@ -1095,6 +1119,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button abortButton;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.RichTextBox actionsBox;
     }
 }
 

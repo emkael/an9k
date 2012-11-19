@@ -81,6 +81,10 @@ namespace Analizator9000
                     predealSouthDiamondsBox.Text = parser.predeal["south"][2];
                     predealSouthClubsBox.Text = parser.predeal["south"][3];
                 }
+                foreach (String action in parser.actions)
+                {
+                    actionsBox.Text += action.Substring("average".Length) + "\n";
+                }
                 generateFileNameTextBox.Text = generateFileDialog.FileName;
             }
             catch (Exception ex)
@@ -116,6 +120,7 @@ namespace Analizator9000
                         predeal.Value[i] = predeal.Value[i].ToUpper().Replace('D', 'Q').Replace('W', 'J').Replace("10", "T");
                     }
                 }
+                parser.actions = actionsBox.Text.Split('\n').ToList();
             }
             catch (Exception ex)
             {
