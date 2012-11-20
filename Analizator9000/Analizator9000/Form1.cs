@@ -104,6 +104,7 @@ namespace Analizator9000
             analyzeGroup.Enabled = false;
             statusListBox.Items.Clear();
             progressBar.Value = 0;
+            resultTextBox.Text = "";
             try
             {
                 this.parser.generate = Convert.ToInt64(generateBox.Text);
