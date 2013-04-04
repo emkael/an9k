@@ -174,6 +174,7 @@ namespace Analizator9000
         /// </summary>
         /// <param name="declarer">Declaring player, in numeric format.</param>
         /// <returns>Result structur for the contract.</returns>
+        //TODO substitute from actual number of tricks to analyze, rather than 13, maybe.
         public BCalcResult run(int declarer)
         {
             if (declarer < 0)
