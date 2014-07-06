@@ -467,5 +467,54 @@ namespace Analizator9000
         {
             this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(4, 1));
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Enables contract table fields accordingly to selected combo boxes.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tableCombo_Change(object sender, EventArgs e)
+        {
+            TableLayoutPanelCellPosition position = fullContractTable.GetPositionFromControl((Control)sender);
+            NumericUpDown frequencyBox = (NumericUpDown)fullContractTable.GetControlFromPosition(4, position.Row);
+            Contract rowContract = this.getContractFromTableRow(position.Row);
+            if (rowContract != null)
+            {
+                frequencyBox.Enabled = true;
+                if (frequencyBox.Value < 1)
+                {
+                    frequencyBox.Value = 1;
+                }
+                if (rowContract.Level == 0)
+                {
+                    ((ComboBox)fullContractTable.GetControlFromPosition(1, position.Row)).SelectedIndex = 0;
+                    ((ComboBox)fullContractTable.GetControlFromPosition(2, position.Row)).SelectedIndex = 0;
+                    ((ComboBox)fullContractTable.GetControlFromPosition(3, position.Row)).SelectedIndex = 0;
+                }
+            }
+            else
+            {
+                frequencyBox.Enabled = false;
+                frequencyBox.Value = 0;
+            }
+        }
+
+        private Contract getContractFromTableRow(int rowIndex)
+        {
+            ComboBox levelBox = (ComboBox)fullContractTable.GetControlFromPosition(0, rowIndex);
+            ComboBox denominationBox = (ComboBox)fullContractTable.GetControlFromPosition(1, rowIndex);
+            ComboBox modifiersBox = (ComboBox)fullContractTable.GetControlFromPosition(2, rowIndex);
+            ComboBox declarerBox = (ComboBox)fullContractTable.GetControlFromPosition(3, rowIndex);
+            if (levelBox.SelectedIndex < 1 || (denominationBox.SelectedIndex < 1 && levelBox.SelectedIndex != 1) || (declarerBox.SelectedIndex < 1 && levelBox.SelectedIndex != 1))
+            {
+                return null;
+            }
+            return new Contract(levelBox.SelectedIndex - 1, denominationBox.SelectedIndex, declarerBox.SelectedIndex, modifiersBox.SelectedIndex);
+        }
     }
 }
