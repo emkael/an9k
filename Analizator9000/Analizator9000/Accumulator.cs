@@ -111,7 +111,10 @@ namespace Analizator9000
             for (int i = 0; i < toRun; i++)
             {
                 Action<String> worker = this.analyzeDeal;
-                worker.BeginInvoke(this.deals.Pop(), this.endAnalyze, worker);
+                lock (this.deals)
+                {
+                    worker.BeginInvoke(this.deals.Pop(), this.endAnalyze, worker);
+                }
                 this.threadsRunning++;
             }
             return this.deals.Count;
@@ -178,6 +181,7 @@ namespace Analizator9000
             this.abort = true;
         }
 
+        private Object threadLock = new Object();
         /// <summary>
         /// Callback method for worker threads, ends the single deal analysis, updates the total result and fires next analysis if necessary.
         /// </summary>
@@ -185,41 +189,46 @@ namespace Analizator9000
         private void endAnalyze(IAsyncResult methodResult)
         {
             ((Action<String>)methodResult.AsyncState).EndInvoke(methodResult);
-            bool finished = false;
-            if (this.abort)
+            lock (this.threadLock)
             {
-                this.form.setProgress(0);
-                this.form.addStatusLine("Analiza przewana. Częściowe wyniki w pliku: " + this.filename);
-                finished = true;
-            }
-            else
-            {
-                this.threadsRunning--;
-                this.analyzed++;
-                this.form.setProgress((int)(100 * this.analyzed / this.toAnalyze));
-                if (threadsRunning == 0 && this.deals.Count == 0)
+                bool finished = false;
+                if (this.abort)
                 {
-                    this.form.setProgress(100);
-                    this.form.addStatusLine("Analiza zakończona. Wyniki w pliku: " + this.filename);
+                    this.form.setProgress(0);
+                    this.form.addStatusLine("Analiza przewana. Częściowe wyniki w pliku: " + this.filename);
                     finished = true;
-                } 
-                if (threadsRunning < this.portionSize)
-                {
-                    // Increasing the parameter would cause exponential thread creation rate. Funny.
-                    this.run(1);
                 }
-            }
-            if (finished)
-            {
-                try
+                else
                 {
-                    this.outputFile.WriteLine(this.getString());
-                    this.outputFile.Close();
+
+                    this.threadsRunning--;
+                    this.analyzed++;
+                    this.form.setProgress((int)(100 * this.analyzed / this.toAnalyze));
+                    if (threadsRunning == 0 && this.deals.Count == 0)
+                    {
+                        this.form.setProgress(100);
+                        this.form.addStatusLine("Analiza zakończona. Wyniki w pliku: " + this.filename);
+                        finished = true;
+                    }
+                    if (threadsRunning < this.portionSize)
+                    {
+                        // Increasing the parameter would cause exponential thread creation rate. Funny.
+                        this.run(1);
+                    }
                 }
-                catch (Exception) { };
-                this.form.endAnalysis();
+                if (finished)
+                {
+                    try
+                    {
+                        this.outputFile.WriteLine(this.getString());
+                        this.outputFile.Close();
+                    }
+                    catch (Exception) { };
+                    this.form.endAnalysis();
+                }
             }
         }
+                
 
         /// <summary>
         /// Presents the current analysis results in textual form.
