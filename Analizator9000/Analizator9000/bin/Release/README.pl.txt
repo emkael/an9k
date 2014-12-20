@@ -60,7 +60,7 @@ Program jest gotowy do użycia po rozpakowaniu go do dowolnego katalogu na
 lokalnym dysku twardym.
 
 Aktualną wersję programu można pobrać ze strony domowej projektu:
-    http://emkael.info/brydz/an9k/
+    http://an9k.emkael.info/
 
 Program po rozpakowaniu niezbędnie wymaga obecności dwóch katalogów
 (dostarczonych w archiwum):
@@ -77,7 +77,7 @@ Program po rozpakowaniu niezbędnie wymaga obecności dwóch katalogów
 
 Opis użycia programu wraz ze zrzutami ekranu oraz przykładowymi wynikami
 dostępny jest na stronie domowej programu:
-    http://emkael.info/brydz/an9k/manual/
+    http://an9k.emkael.info/manual/
 
 5. KOD ŹRÓDŁOWY
 ===============
@@ -107,6 +107,11 @@ P: Ale czy to nie znaczy, że ktoś może podszyć się pod serwer, na którym
 O: Dokładnie tak. Co więcej, ninejszy dokument dystrybuowany jest za
    pośrednictwem nieuwietrzytelnionego połączenie HTTP, więc nic nie stoi na
    przeszkodzie, że już się stało, a to pytanie jest tu tylko dla niepoznaki.
+
+P: Czy kod jest udokumentowany?
+O: Starałem się, jak mogłem. Dokumentacja kodu w formie HTML oraz pliku CHM
+   dostępna jest na stronie internetowej aplikacji:
+    http://ank9.emkael.info/code/
 
 P: W jakim środowisku powstał program?
 O: Microsoft Visual Studio/Visual C# 2010.
@@ -178,6 +183,9 @@ i dobre piwo.
 
 8. HISTORIA ZMIAN
 =================
+
+2013.04 - 0.9.1
+    * wymuszenie 32-bitowego formatu binariów (kompatybilność z 32-bitową DLL)
 
 2012.11 - 0.9
     * pierwotna wersja programu
