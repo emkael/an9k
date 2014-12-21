@@ -12,10 +12,19 @@ namespace Analizator9000
     /// </summary>
     struct BCalcResult
     {
+        public const int DENOMINATION_NONTRUMP = 0;
+        public const int DENOMINATION_SPADES = 1;
+        public const int DENOMINATION_HEARTS = 2;
+        public const int DENOMINATION_DIAMONDS = 3;
+        public const int DENOMINATION_CLUBS = 4;
         /// <summary>
         /// Trump denomination (N/S/H/D/C).
         /// </summary>
         public char trumpSuit;
+        public const int DECLARER_NORTH = 0;
+        public const int DECLARER_EAST = 1;
+        public const int DECLARER_SOUTH = 2;
+        public const int DECLARER_WEST = 3;
         /// <summary>
         /// Declaring player (N/E/S/W).
         /// </summary>
@@ -57,7 +66,6 @@ namespace Analizator9000
         /// <param name="leader">Player on lead, in numeric format. See the original documentation for details.</param>
         /// <returns>Pointer to solver instance.</returns>
         /// <remarks>Original documentation: http://bcalc.w8.pl/API_C/bcalcdds_8h.html#ab636045f65412652246b769e8e95ed6f</remarks>
-        //TODO Enum/constants for trumps/players, definitely.
         [DllImport(@"bin\libbcalcdds.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern IntPtr bcalcDDS_new(IntPtr format, IntPtr hands, Int32 trump, Int32 leader);
 
