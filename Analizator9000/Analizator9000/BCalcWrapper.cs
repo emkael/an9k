@@ -12,18 +12,45 @@ namespace Analizator9000
     /// </summary>
     struct BCalcResult
     {
+        /// <summary>
+        /// Denomination: non-trumps
+        /// </summary>
         public const int DENOMINATION_NONTRUMP = 0;
+        /// <summary>
+        /// Denomination: spades
+        /// </summary>
         public const int DENOMINATION_SPADES = 1;
+        /// <summary>
+        /// Denomination: hearts
+        /// </summary>
         public const int DENOMINATION_HEARTS = 2;
+        /// <summary>
+        /// Denomination: diamonds
+        /// </summary>
         public const int DENOMINATION_DIAMONDS = 3;
+        /// <summary>
+        /// Denomination: clubs
+        /// </summary>
         public const int DENOMINATION_CLUBS = 4;
         /// <summary>
         /// Trump denomination (N/S/H/D/C).
         /// </summary>
         public char trumpSuit;
+        /// <summary>
+        /// Declarer: North
+        /// </summary>
         public const int DECLARER_NORTH = 0;
+        /// <summary>
+        /// Declarer: East
+        /// </summary>
         public const int DECLARER_EAST = 1;
+        /// <summary>
+        /// Declarer: South
+        /// </summary>
         public const int DECLARER_SOUTH = 2;
+        /// <summary>
+        /// Declarer: West
+        /// </summary>
         public const int DECLARER_WEST = 3;
         /// <summary>
         /// Declaring player (N/E/S/W).
