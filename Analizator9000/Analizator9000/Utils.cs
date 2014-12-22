@@ -8,7 +8,6 @@ namespace Analizator9000
     /// <summary>
     /// Random utility class.
     /// </summary>
-    //TODO Merge with Contract, probably.
     class Utils
     {
         /// <summary>
