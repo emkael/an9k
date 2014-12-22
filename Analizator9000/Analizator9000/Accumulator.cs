@@ -26,19 +26,19 @@ namespace Analizator9000
         /// <summary>
         /// List (well, a stack) of deals to process.
         /// </summary>
-        private Stack<String> deals;
+        protected Stack<String> deals;
         /// <summary>
         /// A back-reference to calling Form, for progress presentation purposes.
         /// </summary>
-        private Form1 form;
+        protected Form1 form;
         /// <summary>
         /// List of contracts to analyze in BCalc notation (integers for denomination and declarer).
         /// </summary>
-        private Dictionary<int, List<int>> contracts;
+        protected Dictionary<int, List<int>> contracts;
         /// <summary>
         /// Results file handle (version of StreamWriter initialized as synchronized).
         /// </summary>
-        private TextWriter outputFile;
+        protected TextWriter outputFile;
         /// <summary>
         /// Filename for analysis output.
         /// </summary>
@@ -107,6 +107,10 @@ namespace Analizator9000
             {
                 portionSize = this.portionSize;
             }
+            if (portionSize > this.deals.Count)
+            {
+                portionSize = this.deals.Count;
+            }
             int toRun = Math.Min(portionSize, this.deals.Count);
             for (int i = 0; i < toRun; i++)
             {
@@ -148,10 +152,10 @@ namespace Analizator9000
                             if (!this.abort)
                             {
                                 String line = "#" + result.dealNo + ", " + result.declarer + " gra w " + result.trumpSuit + ", lew: " + result.tricks;
-                                this.update(result);
-                                this.form.setResult(this.getString());
                                 this.form.addStatusLine(line);
                                 this.outputFile.WriteLine(line);
+                                this.update(result);
+                                this.form.setResult(this.getString());
                             }
                         }
                         catch (Exception ex)
@@ -181,7 +185,7 @@ namespace Analizator9000
             this.abort = true;
         }
 
-        private Object threadLock = new Object();
+        protected Object threadLock = new Object();
         /// <summary>
         /// Callback method for worker threads, ends the single deal analysis, updates the total result and fires next analysis if necessary.
         /// </summary>
@@ -264,7 +268,7 @@ namespace Analizator9000
         /// Feeds the overall results with chunks of data from single contract analysis.
         /// </summary>
         /// <param name="result">Result of BCalc analysis.</param>
-        private void update(BCalcResult result)
+        protected virtual void update(BCalcResult result)
         {
             int tricks = result.tricks;
             int suit = BCalcWrapper.denominations.IndexOf(result.trumpSuit);
