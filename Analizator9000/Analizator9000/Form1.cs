@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
@@ -281,7 +278,11 @@ namespace Analizator9000
                 {
                     throw new Exception("Nie podano kontraktów");
                 }
-                this.ac = new Accumulator(deals, cons, this);
+                // we run either "old" Accumulator or contract analysis with ScoreAccumulator,
+                // depending on the button of event origin
+                this.ac = sender.GetHashCode().Equals(this.analyzeButton.GetHashCode())
+                    ? new Accumulator(deals, cons, this)
+                    : new ScoreAccumulator(deals, cons, this.contractsToScore, vulnerabilityBox.SelectedIndex, this);
                 this.ac.run(10);
             }
             catch (Exception ex)
@@ -291,6 +292,9 @@ namespace Analizator9000
                 abortButton.Enabled = false;
                 analyzeGroup.Enabled = true;
                 generateGroup.Enabled = true;
+                contractAnalyzeButton.Enabled = true;
+                contractCancelButton.Enabled = false;
+                fullContractTable.Enabled = true;
             }
         }
 
@@ -313,6 +317,10 @@ namespace Analizator9000
                 abortButton.Enabled = false;
                 analyzeGroup.Enabled = true;
                 generateGroup.Enabled = true;
+                contractAnalyzeButton.Enabled = true;
+                contractCancelButton.Enabled = false;
+                fullContractTable.Enabled = true;
+                statusListBox.Focus();
                 this.ac = null;
             }
         }
@@ -339,6 +347,45 @@ namespace Analizator9000
         }
 
         /// <summary>
+        /// Delegate for contract analysis output
+        /// </summary>
+        /// <param name="trickSum">Dictionary of trick sums for analyzed contracts</param>
+        /// <param name="scoreSum">Dictionary of score sums for analyzed contracts</param>
+        /// <param name="maxSum">Dictionary of matchpoint sums for analyzed contracts</param>
+        /// <param name="impSum">Dictionary of IMP sums for analyzed contracts</param>
+        /// <param name="dealCount">Number of deals already scored</param>
+        private delegate void UpdateContractTableDelegate(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount);
+        /// <summary>
+        /// Updates GUI output for contract analysis
+        /// </summary>
+        /// <param name="trickSum">Dictionary of trick sums for analyzed contracts</param>
+        /// <param name="scoreSum">Dictionary of score sums for analyzed contracts</param>
+        /// <param name="maxSum">Dictionary of matchpoint sums for analyzed contracts</param>
+        /// <param name="impSum">Dictionary of IMP sums for analyzed contracts</param>
+        /// <param name="dealCount">Number of deals already scored</param>
+        public void updateContractTable(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new UpdateContractTableDelegate(updateContractTable), new object[] { trickSum, scoreSum, maxSum, impSum, dealCount });
+            }
+            else
+            {
+                foreach (int row in Enumerable.Range(1, fullContractTable.RowCount - 1))
+                {
+                    Contract rowContract = this.getContractFromTableRow(row);
+                    if (rowContract != null && rowContract.Frequency > 0)
+                    {
+                        ((TextBox)fullContractTable.GetControlFromPosition(5, row)).Text = ((double)trickSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(6, row)).Text = ((double)scoreSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(7, row)).Text = (maxSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = (impSum[rowContract] / dealCount).ToString("0.##");
+                    }
+                }
+            }
+        }
+
+        /// <summary>
         /// "Abort" button click event.
         /// </summary>
         /// <param name="sender"></param>
@@ -356,14 +403,15 @@ namespace Analizator9000
         /// </summary>
         /// <param name="xRange">Set of x-coordinates for checkboxes to toggle.</param>
         /// <param name="yRange">Set of y-coordinates for checkboxes to toggle.</param>
-        private void toggleBoxes(IEnumerable<int> xRange, IEnumerable<int> yRange)
+        /// <param name="toggle">Indicates whether box range should be toggled (true) or just checked (false)</param>
+        private void toggleBoxes(IEnumerable<int> xRange, IEnumerable<int> yRange, bool toggle = true)
         {
             foreach (int x in xRange)
             {
                 foreach (int y in yRange)
                 {
                     CheckBox cb = ((CheckBox)contractTable.GetControlFromPosition(x, y));
-                    cb.Checked = !cb.Checked;
+                    cb.Checked = !(toggle && cb.Checked);
                 }
             }
         }
@@ -385,7 +433,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label18_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(1, 1), Enumerable.Range(1, 4));
+            this.toggleBoxes(Enumerable.Range(1, 1), Enumerable.Range(1, 4), false);
         }
 
         /// <summary>
@@ -395,7 +443,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label14_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(2, 1), Enumerable.Range(1, 4));
+            this.toggleBoxes(Enumerable.Range(2, 1), Enumerable.Range(1, 4), false);
         }
 
         /// <summary>
@@ -405,7 +453,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label15_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(3, 1), Enumerable.Range(1, 4));
+            this.toggleBoxes(Enumerable.Range(3, 1), Enumerable.Range(1, 4), false);
         }
 
         /// <summary>
@@ -415,7 +463,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label16_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(4, 1), Enumerable.Range(1, 4));
+            this.toggleBoxes(Enumerable.Range(4, 1), Enumerable.Range(1, 4), false);
         }
 
         /// <summary>
@@ -425,7 +473,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label17_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(5, 1), Enumerable.Range(1, 4));
+            this.toggleBoxes(Enumerable.Range(5, 1), Enumerable.Range(1, 4), false);
         }
 
         /// <summary>
@@ -435,7 +483,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label19_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 1));
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 1), false);
         }
 
         /// <summary>
@@ -445,7 +493,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label20_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(2, 1));
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(2, 1), false);
         }
 
         /// <summary>
@@ -455,7 +503,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label21_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(3, 1));
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(3, 1), false);
         }
 
         /// <summary>
@@ -465,12 +513,42 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void label22_Click(object sender, EventArgs e)
         {
-            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(4, 1));
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(4, 1), false);
         }
 
+        /// <summary>
+        /// List of contracts to score by ScoreAccumulator
+        /// </summary>
+        private List<Contract> contractsToScore = new List<Contract>();
+        /// <summary>
+        /// Starts contract analysis
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.contractsToScore.Clear();
+            foreach (int row in Enumerable.Range(1, fullContractTable.RowCount - 1)) {
+                Contract rowContract = this.getContractFromTableRow(row);
+                if (rowContract != null)
+                {
+                    if (rowContract.Level > 0)
+                    {
+                        this.toggleBoxes(Enumerable.Range(5 - rowContract.Denomination, 1), Enumerable.Range(rowContract.Declarer + 1, 1), false); // forcing analysis of certain denomination-declarer combinations
+                    }
+                    if (rowContract.Frequency > 0)
+                    {
+                        this.contractsToScore.Add(rowContract);
+                    }
+                }
+                foreach (int column in Enumerable.Range(5, 4)) {
+                    ((TextBox)this.fullContractTable.GetControlFromPosition(column, row)).Text = "";
+                }
+            }
+            this.contractCancelButton.Enabled = true;
+            this.contractAnalyzeButton.Enabled = false;
+            this.fullContractTable.Enabled = false;
+            this.analyzeButton_Click(sender, e);
         }
 
         /// <summary>
@@ -504,17 +582,40 @@ namespace Analizator9000
             }
         }
 
+        /// <summary>
+        /// Retrieves contract based on a row of GUI table
+        /// </summary>
+        /// <param name="rowIndex">Index of the row for the contract</param>
+        /// <returns>Contract object representing user's choice or NULL when the choice is invalid/incomplete</returns>
         private Contract getContractFromTableRow(int rowIndex)
         {
             ComboBox levelBox = (ComboBox)fullContractTable.GetControlFromPosition(0, rowIndex);
             ComboBox denominationBox = (ComboBox)fullContractTable.GetControlFromPosition(1, rowIndex);
             ComboBox modifiersBox = (ComboBox)fullContractTable.GetControlFromPosition(2, rowIndex);
             ComboBox declarerBox = (ComboBox)fullContractTable.GetControlFromPosition(3, rowIndex);
+            NumericUpDown frequencyBox = (NumericUpDown)fullContractTable.GetControlFromPosition(4, rowIndex);
             if (levelBox.SelectedIndex < 1 || (denominationBox.SelectedIndex < 1 && levelBox.SelectedIndex != 1) || (declarerBox.SelectedIndex < 1 && levelBox.SelectedIndex != 1))
             {
                 return null;
             }
-            return new Contract(levelBox.SelectedIndex - 1, denominationBox.SelectedIndex, declarerBox.SelectedIndex, modifiersBox.SelectedIndex);
+            return new Contract(levelBox.SelectedIndex - 1, denominationBox.SelectedIndex - 1, (declarerBox.SelectedIndex + 2) % 4, Math.Max(0, modifiersBox.SelectedIndex), (int)frequencyBox.Value, rowIndex);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            vulnerabilityBox.SelectedIndex = 0; // set default vulnerability for contracts analysis
+        }
+
+        /// <summary>
+        /// Cancels contract analysis
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.contractCancelButton.Enabled = false;
+            this.contractAnalyzeButton.Enabled = true;
+            this.abortButton_Click(sender, e);
         }
     }
 }
