@@ -113,7 +113,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.vulnerabilityBox = new System.Windows.Forms.ComboBox();
             this.fullContractTable = new System.Windows.Forms.TableLayoutPanel();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -177,8 +177,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.contractCancelButton = new System.Windows.Forms.Button();
+            this.contractAnalyzeButton = new System.Windows.Forms.Button();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -1114,10 +1114,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.comboBox7);
+            this.tabPage2.Controls.Add(this.vulnerabilityBox);
             this.tabPage2.Controls.Add(this.fullContractTable);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.contractCancelButton);
+            this.tabPage2.Controls.Add(this.contractAnalyzeButton);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1135,19 +1135,20 @@
             this.label26.TabIndex = 4;
             this.label26.Text = "Założenia:";
             // 
-            // comboBox7
+            // vulnerabilityBox
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.vulnerabilityBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.vulnerabilityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.vulnerabilityBox.FormattingEnabled = true;
+            this.vulnerabilityBox.Items.AddRange(new object[] {
             "Obie przed",
+            "Obie po",
             "NS po",
-            "WE po",
-            "Obie po"});
-            this.comboBox7.Location = new System.Drawing.Point(95, 175);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 21);
-            this.comboBox7.TabIndex = 3;
+            "EW po"});
+            this.vulnerabilityBox.Location = new System.Drawing.Point(95, 175);
+            this.vulnerabilityBox.Name = "vulnerabilityBox";
+            this.vulnerabilityBox.Size = new System.Drawing.Size(121, 21);
+            this.vulnerabilityBox.TabIndex = 3;
             // 
             // fullContractTable
             // 
@@ -1239,165 +1240,165 @@
             // 
             // textBox22
             // 
-            this.textBox22.Enabled = false;
             this.textBox22.Location = new System.Drawing.Point(374, 116);
             this.textBox22.Name = "textBox22";
             this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(46, 20);
             this.textBox22.TabIndex = 65;
+            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox23
             // 
-            this.textBox23.Enabled = false;
             this.textBox23.Location = new System.Drawing.Point(427, 116);
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(46, 20);
             this.textBox23.TabIndex = 66;
+            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox24
             // 
-            this.textBox24.Enabled = false;
             this.textBox24.Location = new System.Drawing.Point(321, 140);
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(46, 20);
             this.textBox24.TabIndex = 67;
+            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox25
             // 
-            this.textBox25.Enabled = false;
             this.textBox25.Location = new System.Drawing.Point(374, 140);
             this.textBox25.Name = "textBox25";
             this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(46, 20);
             this.textBox25.TabIndex = 68;
+            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox26
             // 
-            this.textBox26.Enabled = false;
             this.textBox26.Location = new System.Drawing.Point(427, 140);
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(46, 20);
             this.textBox26.TabIndex = 69;
+            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox15
             // 
-            this.textBox15.Enabled = false;
             this.textBox15.Location = new System.Drawing.Point(321, 68);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(46, 20);
             this.textBox15.TabIndex = 58;
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox16
             // 
-            this.textBox16.Enabled = false;
             this.textBox16.Location = new System.Drawing.Point(374, 68);
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(46, 20);
             this.textBox16.TabIndex = 59;
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox17
             // 
-            this.textBox17.Enabled = false;
             this.textBox17.Location = new System.Drawing.Point(427, 68);
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(46, 20);
             this.textBox17.TabIndex = 60;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox18
             // 
-            this.textBox18.Enabled = false;
             this.textBox18.Location = new System.Drawing.Point(321, 92);
             this.textBox18.Name = "textBox18";
             this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(46, 20);
             this.textBox18.TabIndex = 61;
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox19
             // 
-            this.textBox19.Enabled = false;
             this.textBox19.Location = new System.Drawing.Point(374, 92);
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(46, 20);
             this.textBox19.TabIndex = 62;
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox20
             // 
-            this.textBox20.Enabled = false;
             this.textBox20.Location = new System.Drawing.Point(427, 92);
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(46, 20);
             this.textBox20.TabIndex = 63;
+            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox21
             // 
-            this.textBox21.Enabled = false;
             this.textBox21.Location = new System.Drawing.Point(321, 116);
             this.textBox21.Name = "textBox21";
             this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(46, 20);
             this.textBox21.TabIndex = 64;
+            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox9
             // 
-            this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(321, 20);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(46, 20);
             this.textBox9.TabIndex = 52;
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox10
             // 
-            this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(374, 20);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(46, 20);
             this.textBox10.TabIndex = 53;
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox11
             // 
-            this.textBox11.Enabled = false;
             this.textBox11.Location = new System.Drawing.Point(427, 20);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(46, 20);
             this.textBox11.TabIndex = 54;
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox12
             // 
-            this.textBox12.Enabled = false;
             this.textBox12.Location = new System.Drawing.Point(321, 44);
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(46, 20);
             this.textBox12.TabIndex = 55;
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox13
             // 
-            this.textBox13.Enabled = false;
             this.textBox13.Location = new System.Drawing.Point(374, 44);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(46, 20);
             this.textBox13.TabIndex = 56;
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox14
             // 
-            this.textBox14.Enabled = false;
             this.textBox14.Location = new System.Drawing.Point(427, 44);
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(46, 20);
             this.textBox14.TabIndex = 57;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label24
             // 
@@ -1923,76 +1924,78 @@
             // 
             // textBox1
             // 
-            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(268, 20);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(46, 20);
             this.textBox1.TabIndex = 44;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
-            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(268, 44);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(46, 20);
             this.textBox2.TabIndex = 45;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
-            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(268, 68);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(46, 20);
             this.textBox3.TabIndex = 46;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox4
             // 
-            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(268, 92);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(46, 20);
             this.textBox4.TabIndex = 47;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox5
             // 
-            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(268, 116);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(46, 20);
             this.textBox5.TabIndex = 48;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox6
             // 
-            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(268, 140);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(46, 20);
             this.textBox6.TabIndex = 49;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button5
+            // contractCancelButton
             // 
-            this.button5.Location = new System.Drawing.Point(268, 198);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(210, 23);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Nie, czekaj!";
-            this.button5.UseVisualStyleBackColor = true;
+            this.contractCancelButton.Enabled = false;
+            this.contractCancelButton.Location = new System.Drawing.Point(268, 198);
+            this.contractCancelButton.Name = "contractCancelButton";
+            this.contractCancelButton.Size = new System.Drawing.Size(210, 23);
+            this.contractCancelButton.TabIndex = 1;
+            this.contractCancelButton.Text = "Nie, czekaj!";
+            this.contractCancelButton.UseVisualStyleBackColor = true;
+            this.contractCancelButton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // contractAnalyzeButton
             // 
-            this.button4.Location = new System.Drawing.Point(6, 198);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(210, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "No to wio!";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.contractAnalyzeButton.Location = new System.Drawing.Point(6, 198);
+            this.contractAnalyzeButton.Name = "contractAnalyzeButton";
+            this.contractAnalyzeButton.Size = new System.Drawing.Size(210, 23);
+            this.contractAnalyzeButton.TabIndex = 0;
+            this.contractAnalyzeButton.Text = "No to wio!";
+            this.contractAnalyzeButton.UseVisualStyleBackColor = true;
+            this.contractAnalyzeButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
@@ -2010,6 +2013,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Analizator9000";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.generateGroup.ResumeLayout(false);
             this.generateGroup.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -2121,8 +2125,8 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TableLayoutPanel fullContractTable;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button contractCancelButton;
+        private System.Windows.Forms.Button contractAnalyzeButton;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
@@ -2186,7 +2190,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox vulnerabilityBox;
     }
 }
 
