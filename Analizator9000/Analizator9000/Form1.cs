@@ -251,9 +251,11 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void analyzeButton_Click(object sender, EventArgs e)
         {
-            analyzeGroup.Enabled = false;
-            generateGroup.Enabled = false;
-            abortButton.Enabled = true;
+            this.contractCancelButton.Enabled = true;
+            this.contractAnalyzeButton.Enabled = false;
+            this.analyzeButton.Enabled = false;
+            this.abortButton.Enabled = true;
+            this.fullContractTable.Enabled = false;
             statusListBox.Items.Clear();
             this.addStatusLine("Otwieram plik: " + analyzeFileNameTextBox.Text);
             try
@@ -547,9 +549,6 @@ namespace Analizator9000
                     ((TextBox)this.fullContractTable.GetControlFromPosition(column, row)).Text = "";
                 }
             }
-            this.contractCancelButton.Enabled = true;
-            this.contractAnalyzeButton.Enabled = false;
-            this.fullContractTable.Enabled = false;
             this.analyzeButton_Click(sender, e);
         }
 
