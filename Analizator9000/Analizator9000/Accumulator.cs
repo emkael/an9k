@@ -224,7 +224,7 @@ namespace Analizator9000
                 {
                     try
                     {
-                        this.outputFile.WriteLine(this.getString());
+                        this.outputFile.WriteLine(this.getString(true));
                         this.outputFile.Close();
                     }
                     catch (Exception) { };
@@ -237,10 +237,12 @@ namespace Analizator9000
         /// <summary>
         /// Presents the current analysis results in textual form.
         /// </summary>
+        /// <param name="full">Return full analysis for log file purpose (may be used in override methods)</param>
         /// <returns>Text table containing means and std. deviations for distinct contracts.</returns>
-        private String getString()
+        protected virtual String getString(bool full = false)
         {
             StringWriter sw = new StringWriter();
+            sw.WriteLine();
             sw.WriteLine("         N              E              S              W");
             foreach (KeyValuePair<int, Dictionary<int, long[]>> row in this.sums)
             {

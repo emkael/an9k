@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 namespace Analizator9000
 {
@@ -9,8 +10,9 @@ namespace Analizator9000
     /// </summary>
     class ScoreAccumulator : Accumulator
     {
+        private readonly string[] vulnerabilities = { "obie przed", "obie po", "NS po", "EW po" };
         /// <summary>
-        /// Vulneraility setting of the analysis
+        /// Vulnerability setting of the analysis
         /// </summary>
         private int vulnerability;
         /// <summary>
@@ -77,6 +79,32 @@ namespace Analizator9000
                     this.impScoreSums[sC] = 0;
                 }
             }
+        }
+
+        /// <summary>
+        /// Returns user-readable summary of analysis
+        /// </summary>
+        /// <param name="full">Append matchpoint/IMP scores summary</param>
+        /// <returns>Formatted log string</returns>
+        protected override String getString(bool full = false)
+        {
+            String output = base.getString(full);
+            if (full)
+            {
+                StringWriter sw = new StringWriter();
+                sw.WriteLine();
+                sw.WriteLine("Założenia: {0}", this.vulnerabilities[this.vulnerability]);
+                sw.WriteLine(" KONTRAKT      LEWY    ZAPIS    MAX    IMP   ");
+                foreach (KeyValuePair<Contract, long> tricks in this.trickSums)
+                {
+                    sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {4,5:0.00} {5,7:0.00} ", this.getContractLogLine(tricks.Key), tricks.Key.Frequency,
+                        tricks.Value / this.dealsScored, this.scoreSums[tricks.Key] / this.dealsScored,
+                        this.maxScoreSums[tricks.Key] / this.dealsScored, this.impScoreSums[tricks.Key] / this.dealsScored);
+                }
+                sw.Close();
+                output += sw.ToString();
+            }
+            return output;
         }
 
         /// <summary>
