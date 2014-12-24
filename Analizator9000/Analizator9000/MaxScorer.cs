@@ -24,6 +24,7 @@
         protected override double getDivisorFromScoreCount(int scoreCount)
         {
             return 2.0 * (scoreCount - 1);
-        }
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace Analizator9000
 {
     /// <summary>

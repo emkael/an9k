@@ -97,8 +97,9 @@ namespace Analizator9000
                 sw.WriteLine(" KONTRAKT      LEWY    ZAPIS    MAX    IMP   ");
                 foreach (KeyValuePair<Contract, long> tricks in this.trickSums)
                 {
-                    sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {4,5:0.00} {5,7:0.00} ", this.getContractLogLine(tricks.Key), tricks.Key.Frequency,
-                        tricks.Value / this.dealsScored, this.scoreSums[tricks.Key] / this.dealsScored,
+                    sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {4,5:0.00} {5,7:0.00} ", 
+                        this.getContractLogLine(tricks.Key), tricks.Key.Frequency,
+                        (double)tricks.Value / this.dealsScored, (double)this.scoreSums[tricks.Key] / this.dealsScored,
                         this.maxScoreSums[tricks.Key] / this.dealsScored, this.impScoreSums[tricks.Key] / this.dealsScored);
                 }
                 sw.Close();
