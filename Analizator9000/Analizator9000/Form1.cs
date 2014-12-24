@@ -528,6 +528,8 @@ namespace Analizator9000
         private void button4_Click(object sender, EventArgs e)
         {
             this.contractsToScore.Clear();
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 4), false);
+            this.toggleBoxes(Enumerable.Range(1, 5), Enumerable.Range(1, 4));
             foreach (int row in Enumerable.Range(1, fullContractTable.RowCount - 1)) {
                 Contract rowContract = this.getContractFromTableRow(row);
                 if (rowContract != null)
