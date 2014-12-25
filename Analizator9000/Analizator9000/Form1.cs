@@ -291,6 +291,7 @@ namespace Analizator9000
             {
                 MessageBox.Show("Błąd analizy: " + ex.Message, "Błąd analizy", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.setProgress(0);
+                analyzeButton.Enabled = true;
                 abortButton.Enabled = false;
                 analyzeGroup.Enabled = true;
                 generateGroup.Enabled = true;
