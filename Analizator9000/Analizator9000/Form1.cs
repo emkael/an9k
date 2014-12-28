@@ -354,23 +354,25 @@ namespace Analizator9000
         /// </summary>
         /// <param name="trickSum">Dictionary of trick sums for analyzed contracts</param>
         /// <param name="scoreSum">Dictionary of score sums for analyzed contracts</param>
+        /// <param name="successSum">Dictionary of success rate for analyzed contracts</param>
         /// <param name="maxSum">Dictionary of matchpoint sums for analyzed contracts</param>
         /// <param name="impSum">Dictionary of IMP sums for analyzed contracts</param>
         /// <param name="dealCount">Number of deals already scored</param>
-        private delegate void UpdateContractTableDelegate(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount);
+        private delegate void UpdateContractTableDelegate(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, long> successSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount);
         /// <summary>
         /// Updates GUI output for contract analysis
         /// </summary>
         /// <param name="trickSum">Dictionary of trick sums for analyzed contracts</param>
         /// <param name="scoreSum">Dictionary of score sums for analyzed contracts</param>
+        /// <param name="successSum">Dictionary of success rate for analyzed contracts</param>
         /// <param name="maxSum">Dictionary of matchpoint sums for analyzed contracts</param>
         /// <param name="impSum">Dictionary of IMP sums for analyzed contracts</param>
         /// <param name="dealCount">Number of deals already scored</param>
-        public void updateContractTable(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount)
+        public void updateContractTable(Dictionary<Contract, long> trickSum, Dictionary<Contract, long> scoreSum, Dictionary<Contract, long> successSum, Dictionary<Contract, double> maxSum, Dictionary<Contract, double> impSum, long dealCount)
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new UpdateContractTableDelegate(updateContractTable), new object[] { trickSum, scoreSum, maxSum, impSum, dealCount });
+                this.Invoke(new UpdateContractTableDelegate(updateContractTable), new object[] { trickSum, scoreSum, successSum, maxSum, impSum, dealCount });
             }
             else
             {
@@ -381,8 +383,9 @@ namespace Analizator9000
                     {
                         ((TextBox)fullContractTable.GetControlFromPosition(5, row)).Text = ((double)trickSum[rowContract] / dealCount).ToString("0.##");
                         ((TextBox)fullContractTable.GetControlFromPosition(6, row)).Text = ((double)scoreSum[rowContract] / dealCount).ToString("0.##");
-                        ((TextBox)fullContractTable.GetControlFromPosition(7, row)).Text = (maxSum[rowContract] / dealCount).ToString("0.##");
-                        ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = (impSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(7, row)).Text = ((double)successSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = (maxSum[rowContract] / dealCount).ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(9, row)).Text = (impSum[rowContract] / dealCount).ToString("0.##");
                     }
                 }
             }

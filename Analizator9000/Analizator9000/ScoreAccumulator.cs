@@ -36,6 +36,10 @@ namespace Analizator9000
         /// </summary>
         private Dictionary<Contract, long> scoreSums;
         /// <summary>
+        /// Sum of success rate accumulator
+        /// </summary>
+        private Dictionary<Contract, long> successSums;
+        /// <summary>
         /// Matchpoint score accumulator
         /// </summary>
         private Dictionary<Contract, double> maxScoreSums;
@@ -65,6 +69,7 @@ namespace Analizator9000
             this.scores = new Dictionary<long, Dictionary<Contract, long>>();
             this.trickSums = new Dictionary<Contract,long>();
             this.scoreSums = new Dictionary<Contract,long>();
+            this.successSums = new Dictionary<Contract, long>();
             this.maxScoreSums = new Dictionary<Contract,double>();
             this.maxScorer = new MaxScorer();
             this.impScoreSums = new Dictionary<Contract,double>();
@@ -75,6 +80,7 @@ namespace Analizator9000
                 {
                     this.trickSums[sC] = 0;
                     this.scoreSums[sC] = 0;
+                    this.successSums[sC] = 0;
                     this.maxScoreSums[sC] = 0;
                     this.impScoreSums[sC] = 0;
                 }
@@ -94,13 +100,14 @@ namespace Analizator9000
                 StringWriter sw = new StringWriter();
                 sw.WriteLine();
                 sw.WriteLine("Założenia: {0}", this.vulnerabilities[this.vulnerability]);
-                sw.WriteLine(" KONTRAKT      LEWY    ZAPIS    MAX    IMP   ");
+                sw.WriteLine(" KONTRAKT      LEWY    ZAPIS   WYGRA?  MAX    IMP   ");
                 foreach (KeyValuePair<Contract, long> tricks in this.trickSums)
                 {
-                    sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {4,5:0.00} {5,7:0.00} ", 
+                    sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {6,5:0.00} {4,5:0.00} {5,7:0.00} ", 
                         this.getContractLogLine(tricks.Key), tricks.Key.Frequency,
                         (double)tricks.Value / this.dealsScored, (double)this.scoreSums[tricks.Key] / this.dealsScored,
-                        this.maxScoreSums[tricks.Key] / this.dealsScored, this.impScoreSums[tricks.Key] / this.dealsScored);
+                        this.maxScoreSums[tricks.Key] / this.dealsScored, this.impScoreSums[tricks.Key] / this.dealsScored,
+                        (double)this.successSums[tricks.Key] / this.dealsScored);
                 }
                 sw.Close();
                 output += sw.ToString();
@@ -136,6 +143,10 @@ namespace Analizator9000
                         this.scores[result.dealNo][sC] = score;
                         this.trickSums[sC] += result.tricks;
                         this.scoreSums[sC] += score;
+                        if ((sC.Declarer == Contract.DECLARER_NORTH || sC.Declarer == Contract.DECLARER_SOUTH) != (score < 0)) // NS plays XOR negative score (NS plays and positive score or EW plays and negative score)
+                        {
+                            this.successSums[sC]++;
+                        }
                     }
                 }
                 // check if the entire board can already be scored
@@ -172,7 +183,7 @@ namespace Analizator9000
             }
             this.logScores(impScores, dealNo, "IMP");
             this.logScores(maxScores, dealNo, "max");
-            this.form.updateContractTable(this.trickSums, this.scoreSums, this.maxScoreSums, this.impScoreSums, this.dealsScored);
+            this.form.updateContractTable(this.trickSums, this.scoreSums, this.successSums, this.maxScoreSums, this.impScoreSums, this.dealsScored);
         }
 
         /// <summary>
