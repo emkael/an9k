@@ -181,9 +181,9 @@ namespace Analizator9000
         }
 
         /// <summary>
-        /// Compiles dealer input script from provided data. Assumes no overhead section and single action: printoneline.
+        /// Compiles dealer input script from provided data. Assumes no overhead and action "printoneline" on top of all the declared "average" events.
         /// </summary>
-        /// <returns>Input script contents.</returns>
+        /// <returns>Input script name.</returns>
         public String saveFile()
         {
             if (!Directory.Exists("files"))
