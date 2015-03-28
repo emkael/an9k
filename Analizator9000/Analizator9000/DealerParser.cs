@@ -186,6 +186,10 @@ namespace Analizator9000
         /// <returns>Input script contents.</returns>
         public String saveFile()
         {
+            if (!Directory.Exists("files"))
+            {
+                Directory.CreateDirectory("files");
+            }
             String filename = Utils.getFilename("dealer");
             StreamWriter file = new StreamWriter(@"files\" + filename);
             String predealStr = "";
