@@ -115,7 +115,7 @@ namespace Analizator9000
                 {
                     for (int i = 0; i < predeal.Value.Length; i++)
                     {
-                        predeal.Value[i] = predeal.Value[i].ToUpper().Replace('D', 'Q').Replace('W', 'J').Replace("10", "T");
+                        predeal.Value[i] = new String(predeal.Value[i].ToUpper().Replace('D', 'Q').Replace('W', 'J').Replace("10", "T").OrderBy(c => "AKQJT98765432".IndexOf(c)).ToArray());
                     }
                 }
                 parser.actions = actionsBox.Text.Split('\n').ToList();
