@@ -203,7 +203,7 @@ namespace Analizator9000
                         }
                         else
                         {
-                            if (undertricks == 2 && !vulnerable) // second non-vul undertrick: 200
+                            if (undertricks <= 3 && !vulnerable) // second non-vul undertrick: 200
                             {
                                 score -= 200;
                             }
