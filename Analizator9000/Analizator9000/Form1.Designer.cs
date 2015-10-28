@@ -217,105 +217,62 @@
             this.generateGroup.Controls.Add(this.label1);
             this.generateGroup.Controls.Add(this.button1);
             this.generateGroup.Controls.Add(this.generateFileNameTextBox);
-            this.generateGroup.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.generateGroup, "generateGroup");
             this.generateGroup.Name = "generateGroup";
-            this.generateGroup.Size = new System.Drawing.Size(496, 444);
-            this.generateGroup.TabIndex = 0;
             this.generateGroup.TabStop = false;
-            this.generateGroup.Text = "Generowanie";
             // 
             // actionsBox
             // 
             this.actionsBox.AcceptsTab = true;
-            this.actionsBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.actionsBox.Location = new System.Drawing.Point(269, 202);
+            resources.ApplyResources(this.actionsBox, "actionsBox");
             this.actionsBox.Name = "actionsBox";
-            this.actionsBox.Size = new System.Drawing.Size(217, 137);
-            this.actionsBox.TabIndex = 13;
-            this.actionsBox.Text = "";
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(269, 186);
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(134, 13);
-            this.label23.TabIndex = 12;
-            this.label23.Text = "Zdarzenia do sprawdzenia:";
             // 
             // conditionBox
             // 
             this.conditionBox.AcceptsTab = true;
-            this.conditionBox.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.conditionBox.Location = new System.Drawing.Point(10, 202);
+            resources.ApplyResources(this.conditionBox, "conditionBox");
             this.conditionBox.Name = "conditionBox";
-            this.conditionBox.Size = new System.Drawing.Size(253, 137);
-            this.conditionBox.TabIndex = 11;
-            this.conditionBox.Text = "";
             // 
             // generateButton
             // 
-            this.generateButton.Location = new System.Drawing.Point(10, 398);
+            resources.ApplyResources(this.generateButton, "generateButton");
             this.generateButton.Name = "generateButton";
-            this.generateButton.Size = new System.Drawing.Size(476, 40);
-            this.generateButton.TabIndex = 10;
-            this.generateButton.Text = "GENERUJ";
             this.generateButton.UseVisualStyleBackColor = true;
             this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
             // 
             // produceBox
             // 
-            this.produceBox.Location = new System.Drawing.Point(280, 372);
+            resources.ApplyResources(this.produceBox, "produceBox");
             this.produceBox.Name = "produceBox";
-            this.produceBox.Size = new System.Drawing.Size(206, 20);
-            this.produceBox.TabIndex = 9;
-            this.produceBox.Text = "1000";
-            this.produceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 375);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(175, 13);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Limit rozdań spełniających warunki:";
             // 
             // generateBox
             // 
-            this.generateBox.Location = new System.Drawing.Point(280, 345);
+            resources.ApplyResources(this.generateBox, "generateBox");
             this.generateBox.Name = "generateBox";
-            this.generateBox.Size = new System.Drawing.Size(206, 20);
-            this.generateBox.TabIndex = 7;
-            this.generateBox.Text = "100000";
-            this.generateBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 348);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 13);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Limit rozdań generowanych:";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 186);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 13);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Warunki:";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.predealNorthSpadesBox, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.predealEastSpadesBox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.predealSouthSpadesBox, 1, 3);
@@ -340,331 +297,168 @@
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label8, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label9, 4, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 63);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(476, 116);
-            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // predealNorthSpadesBox
             // 
-            this.predealNorthSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthSpadesBox.Location = new System.Drawing.Point(41, 26);
+            resources.ApplyResources(this.predealNorthSpadesBox, "predealNorthSpadesBox");
             this.predealNorthSpadesBox.Name = "predealNorthSpadesBox";
-            this.predealNorthSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealNorthSpadesBox.TabIndex = 0;
             // 
             // predealEastSpadesBox
             // 
-            this.predealEastSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastSpadesBox.Location = new System.Drawing.Point(41, 49);
+            resources.ApplyResources(this.predealEastSpadesBox, "predealEastSpadesBox");
             this.predealEastSpadesBox.Name = "predealEastSpadesBox";
-            this.predealEastSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealEastSpadesBox.TabIndex = 4;
             // 
             // predealSouthSpadesBox
             // 
-            this.predealSouthSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthSpadesBox.Location = new System.Drawing.Point(41, 72);
+            resources.ApplyResources(this.predealSouthSpadesBox, "predealSouthSpadesBox");
             this.predealSouthSpadesBox.Name = "predealSouthSpadesBox";
-            this.predealSouthSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealSouthSpadesBox.TabIndex = 8;
             // 
             // predealWestSpadesBox
             // 
-            this.predealWestSpadesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestSpadesBox.Location = new System.Drawing.Point(41, 95);
+            resources.ApplyResources(this.predealWestSpadesBox, "predealWestSpadesBox");
             this.predealWestSpadesBox.Name = "predealWestSpadesBox";
-            this.predealWestSpadesBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestSpadesBox.TabIndex = 12;
             // 
             // predealNorthHeartsBox
             // 
-            this.predealNorthHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthHeartsBox.Location = new System.Drawing.Point(150, 26);
+            resources.ApplyResources(this.predealNorthHeartsBox, "predealNorthHeartsBox");
             this.predealNorthHeartsBox.Name = "predealNorthHeartsBox";
-            this.predealNorthHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealNorthHeartsBox.TabIndex = 1;
             // 
             // predealEastHeartsBox
             // 
-            this.predealEastHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastHeartsBox.Location = new System.Drawing.Point(150, 49);
+            resources.ApplyResources(this.predealEastHeartsBox, "predealEastHeartsBox");
             this.predealEastHeartsBox.Name = "predealEastHeartsBox";
-            this.predealEastHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealEastHeartsBox.TabIndex = 5;
             // 
             // predealSouthHeartsBox
             // 
-            this.predealSouthHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthHeartsBox.Location = new System.Drawing.Point(150, 72);
+            resources.ApplyResources(this.predealSouthHeartsBox, "predealSouthHeartsBox");
             this.predealSouthHeartsBox.Name = "predealSouthHeartsBox";
-            this.predealSouthHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealSouthHeartsBox.TabIndex = 9;
             // 
             // predealWestHeartsBox
             // 
-            this.predealWestHeartsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestHeartsBox.Location = new System.Drawing.Point(150, 95);
+            resources.ApplyResources(this.predealWestHeartsBox, "predealWestHeartsBox");
             this.predealWestHeartsBox.Name = "predealWestHeartsBox";
-            this.predealWestHeartsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestHeartsBox.TabIndex = 13;
             // 
             // predealNorthDiamondsBox
             // 
-            this.predealNorthDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthDiamondsBox.Location = new System.Drawing.Point(259, 26);
+            resources.ApplyResources(this.predealNorthDiamondsBox, "predealNorthDiamondsBox");
             this.predealNorthDiamondsBox.Name = "predealNorthDiamondsBox";
-            this.predealNorthDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealNorthDiamondsBox.TabIndex = 2;
             // 
             // predealEastDiamondsBox
             // 
-            this.predealEastDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastDiamondsBox.Location = new System.Drawing.Point(259, 49);
+            resources.ApplyResources(this.predealEastDiamondsBox, "predealEastDiamondsBox");
             this.predealEastDiamondsBox.Name = "predealEastDiamondsBox";
-            this.predealEastDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealEastDiamondsBox.TabIndex = 6;
             // 
             // predealSouthDiamondsBox
             // 
-            this.predealSouthDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthDiamondsBox.Location = new System.Drawing.Point(259, 72);
+            resources.ApplyResources(this.predealSouthDiamondsBox, "predealSouthDiamondsBox");
             this.predealSouthDiamondsBox.Name = "predealSouthDiamondsBox";
-            this.predealSouthDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealSouthDiamondsBox.TabIndex = 10;
             // 
             // predealWestDiamondsBox
             // 
-            this.predealWestDiamondsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestDiamondsBox.Location = new System.Drawing.Point(259, 95);
+            resources.ApplyResources(this.predealWestDiamondsBox, "predealWestDiamondsBox");
             this.predealWestDiamondsBox.Name = "predealWestDiamondsBox";
-            this.predealWestDiamondsBox.Size = new System.Drawing.Size(103, 20);
-            this.predealWestDiamondsBox.TabIndex = 14;
             // 
             // predealNorthClubsBox
             // 
-            this.predealNorthClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealNorthClubsBox.Location = new System.Drawing.Point(368, 26);
+            resources.ApplyResources(this.predealNorthClubsBox, "predealNorthClubsBox");
             this.predealNorthClubsBox.Name = "predealNorthClubsBox";
-            this.predealNorthClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealNorthClubsBox.TabIndex = 3;
             // 
             // predealEastClubsBox
             // 
-            this.predealEastClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealEastClubsBox.Location = new System.Drawing.Point(368, 49);
+            resources.ApplyResources(this.predealEastClubsBox, "predealEastClubsBox");
             this.predealEastClubsBox.Name = "predealEastClubsBox";
-            this.predealEastClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealEastClubsBox.TabIndex = 7;
             // 
             // predealSouthClubsBox
             // 
-            this.predealSouthClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealSouthClubsBox.Location = new System.Drawing.Point(368, 72);
+            resources.ApplyResources(this.predealSouthClubsBox, "predealSouthClubsBox");
             this.predealSouthClubsBox.Name = "predealSouthClubsBox";
-            this.predealSouthClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealSouthClubsBox.TabIndex = 11;
             // 
             // predealWestClubsBox
             // 
-            this.predealWestClubsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.predealWestClubsBox.Location = new System.Drawing.Point(368, 95);
+            resources.ApplyResources(this.predealWestClubsBox, "predealWestClubsBox");
             this.predealWestClubsBox.Name = "predealWestClubsBox";
-            this.predealWestClubsBox.Size = new System.Drawing.Size(105, 20);
-            this.predealWestClubsBox.TabIndex = 15;
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 28);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "N:";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 51);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "E:";
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 74);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 13);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "S:";
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 97);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "W:";
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(41, 0);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 23);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "♠";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(150, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 23);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "♥";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.label8, "label8");
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(259, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 23);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "♦";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(368, 0);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 23);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "♣";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 47);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Karty rozdane:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(411, 20);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Wybierz plik";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // generateFileNameTextBox
             // 
-            this.generateFileNameTextBox.Location = new System.Drawing.Point(7, 20);
+            resources.ApplyResources(this.generateFileNameTextBox, "generateFileNameTextBox");
             this.generateFileNameTextBox.Name = "generateFileNameTextBox";
             this.generateFileNameTextBox.ReadOnly = true;
-            this.generateFileNameTextBox.Size = new System.Drawing.Size(398, 20);
-            this.generateFileNameTextBox.TabIndex = 0;
             // 
             // analyzeGroup
             // 
             this.analyzeGroup.Controls.Add(this.button2);
             this.analyzeGroup.Controls.Add(this.analyzeFileNameTextBox);
-            this.analyzeGroup.Location = new System.Drawing.Point(514, 12);
+            resources.ApplyResources(this.analyzeGroup, "analyzeGroup");
             this.analyzeGroup.Name = "analyzeGroup";
-            this.analyzeGroup.Size = new System.Drawing.Size(492, 50);
-            this.analyzeGroup.TabIndex = 1;
             this.analyzeGroup.TabStop = false;
-            this.analyzeGroup.Text = "Analiza";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(411, 20);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Wybierz plik";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // analyzeFileNameTextBox
             // 
-            this.analyzeFileNameTextBox.Location = new System.Drawing.Point(7, 20);
+            resources.ApplyResources(this.analyzeFileNameTextBox, "analyzeFileNameTextBox");
             this.analyzeFileNameTextBox.Name = "analyzeFileNameTextBox";
             this.analyzeFileNameTextBox.ReadOnly = true;
-            this.analyzeFileNameTextBox.Size = new System.Drawing.Size(398, 20);
-            this.analyzeFileNameTextBox.TabIndex = 0;
             // 
             // generateFileDialog
             // 
@@ -672,19 +466,14 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(514, 327);
+            resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(492, 23);
-            this.progressBar.TabIndex = 2;
             // 
             // statusListBox
             // 
-            this.statusListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.statusListBox, "statusListBox");
             this.statusListBox.FormattingEnabled = true;
-            this.statusListBox.Location = new System.Drawing.Point(514, 356);
             this.statusListBox.Name = "statusListBox";
-            this.statusListBox.Size = new System.Drawing.Size(492, 95);
-            this.statusListBox.TabIndex = 3;
             // 
             // analyzeFileDialog
             // 
@@ -692,345 +481,202 @@
             // 
             // resultTextBox
             // 
-            this.resultTextBox.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.resultTextBox.Location = new System.Drawing.Point(3, 129);
-            this.resultTextBox.Multiline = true;
+            resources.ApplyResources(this.resultTextBox, "resultTextBox");
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ReadOnly = true;
-            this.resultTextBox.Size = new System.Drawing.Size(475, 92);
-            this.resultTextBox.TabIndex = 4;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(0, 3);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 13);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Kontrakt:";
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(13, 3);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(18, 16);
-            this.button3.TabIndex = 31;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label22
             // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(10, 92);
+            resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(21, 13);
-            this.label22.TabIndex = 30;
-            this.label22.Text = "W:";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label20
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(14, 48);
+            resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(17, 13);
-            this.label20.TabIndex = 28;
-            this.label20.Text = "E:";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label19
             // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(13, 26);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(18, 13);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "N:";
             this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Sans Unicode", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.label18, "label18");
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(37, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(28, 22);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "NT";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label16
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.label16, "label16");
             this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(139, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 22);
-            this.label16.TabIndex = 25;
-            this.label16.Text = "♦";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label14
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(71, 0);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 22);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "♠";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // checkBox20
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(173, 91);
+            resources.ApplyResources(this.checkBox20, "checkBox20");
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(15, 14);
-            this.checkBox20.TabIndex = 19;
             this.checkBox20.UseVisualStyleBackColor = true;
             // 
             // checkBox19
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(139, 91);
+            resources.ApplyResources(this.checkBox19, "checkBox19");
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(15, 14);
-            this.checkBox19.TabIndex = 18;
             this.checkBox19.UseVisualStyleBackColor = true;
             // 
             // checkBox18
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(105, 91);
+            resources.ApplyResources(this.checkBox18, "checkBox18");
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(15, 14);
-            this.checkBox18.TabIndex = 17;
             this.checkBox18.UseVisualStyleBackColor = true;
             // 
             // checkBox17
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(173, 69);
+            resources.ApplyResources(this.checkBox17, "checkBox17");
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(15, 14);
-            this.checkBox17.TabIndex = 16;
             this.checkBox17.UseVisualStyleBackColor = true;
             // 
             // checkBox16
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(139, 69);
+            resources.ApplyResources(this.checkBox16, "checkBox16");
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(15, 14);
-            this.checkBox16.TabIndex = 15;
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
             // checkBox15
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(105, 69);
+            resources.ApplyResources(this.checkBox15, "checkBox15");
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(15, 14);
-            this.checkBox15.TabIndex = 14;
             this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // checkBox14
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(173, 47);
+            resources.ApplyResources(this.checkBox14, "checkBox14");
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(15, 14);
-            this.checkBox14.TabIndex = 13;
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // checkBox13
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(139, 47);
+            resources.ApplyResources(this.checkBox13, "checkBox13");
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(15, 14);
-            this.checkBox13.TabIndex = 12;
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // checkBox12
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(105, 47);
+            resources.ApplyResources(this.checkBox12, "checkBox12");
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
-            this.checkBox12.TabIndex = 11;
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox11
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(173, 25);
+            resources.ApplyResources(this.checkBox11, "checkBox11");
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
-            this.checkBox11.TabIndex = 10;
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // checkBox10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(139, 25);
+            resources.ApplyResources(this.checkBox10, "checkBox10");
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 9;
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(105, 25);
+            resources.ApplyResources(this.checkBox9, "checkBox9");
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 8;
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(71, 91);
+            resources.ApplyResources(this.checkBox8, "checkBox8");
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
-            this.checkBox8.TabIndex = 7;
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(71, 69);
+            resources.ApplyResources(this.checkBox7, "checkBox7");
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
-            this.checkBox7.TabIndex = 6;
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(71, 47);
+            resources.ApplyResources(this.checkBox6, "checkBox6");
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 5;
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(71, 25);
+            resources.ApplyResources(this.checkBox5, "checkBox5");
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 4;
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(37, 91);
+            resources.ApplyResources(this.checkBox4, "checkBox4");
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 3;
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(37, 69);
+            resources.ApplyResources(this.checkBox3, "checkBox3");
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 2;
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(37, 47);
+            resources.ApplyResources(this.checkBox2, "checkBox2");
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 1;
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(37, 25);
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 0;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            resources.ApplyResources(this.label15, "label15");
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(105, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(28, 22);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "♥";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label17
             // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans Unicode", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(173, 0);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(34, 22);
-            this.label17.TabIndex = 24;
-            this.label17.Text = "♣";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label21
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(14, 70);
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(17, 13);
-            this.label21.TabIndex = 29;
-            this.label21.Text = "S:";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // contractTable
             // 
-            this.contractTable.ColumnCount = 6;
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.contractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            resources.ApplyResources(this.contractTable, "contractTable");
             this.contractTable.Controls.Add(this.label21, 0, 3);
             this.contractTable.Controls.Add(this.label17, 5, 0);
             this.contractTable.Controls.Add(this.label15, 3, 0);
@@ -1061,35 +707,19 @@
             this.contractTable.Controls.Add(this.label20, 0, 2);
             this.contractTable.Controls.Add(this.label22, 0, 4);
             this.contractTable.Controls.Add(this.button3, 0, 0);
-            this.contractTable.Location = new System.Drawing.Point(3, 18);
             this.contractTable.Name = "contractTable";
-            this.contractTable.RowCount = 5;
-            this.contractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.contractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.contractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.contractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.contractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.contractTable.Size = new System.Drawing.Size(210, 110);
-            this.contractTable.TabIndex = 12;
             // 
             // analyzeButton
             // 
-            this.analyzeButton.Location = new System.Drawing.Point(222, 6);
+            resources.ApplyResources(this.analyzeButton, "analyzeButton");
             this.analyzeButton.Name = "analyzeButton";
-            this.analyzeButton.Size = new System.Drawing.Size(260, 87);
-            this.analyzeButton.TabIndex = 11;
-            this.analyzeButton.Text = "ANALIZUJ";
             this.analyzeButton.UseVisualStyleBackColor = true;
             this.analyzeButton.Click += new System.EventHandler(this.analyzeButton_Click);
             // 
             // abortButton
             // 
-            this.abortButton.Enabled = false;
-            this.abortButton.Location = new System.Drawing.Point(222, 92);
+            resources.ApplyResources(this.abortButton, "abortButton");
             this.abortButton.Name = "abortButton";
-            this.abortButton.Size = new System.Drawing.Size(260, 34);
-            this.abortButton.TabIndex = 13;
-            this.abortButton.Text = "PRZERWIJ";
             this.abortButton.UseVisualStyleBackColor = true;
             this.abortButton.Click += new System.EventHandler(this.abortButton_Click);
             // 
@@ -1097,11 +727,9 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(514, 68);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(492, 253);
-            this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
             // 
@@ -1110,12 +738,8 @@
             this.tabPage1.Controls.Add(this.abortButton);
             this.tabPage1.Controls.Add(this.analyzeButton);
             this.tabPage1.Controls.Add(this.contractTable);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(484, 227);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Analiza liczby lew";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -1125,22 +749,14 @@
             this.tabPage2.Controls.Add(this.fullContractTable);
             this.tabPage2.Controls.Add(this.contractCancelButton);
             this.tabPage2.Controls.Add(this.contractAnalyzeButton);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(484, 227);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Analiza kontraktów";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(31, 178);
+            resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 13);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Założenia:";
             // 
             // vulnerabilityBox
             // 
@@ -1148,29 +764,16 @@
             this.vulnerabilityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.vulnerabilityBox.FormattingEnabled = true;
             this.vulnerabilityBox.Items.AddRange(new object[] {
-            "Obie przed",
-            "Obie po",
-            "NS po",
-            "EW po"});
-            this.vulnerabilityBox.Location = new System.Drawing.Point(95, 175);
+            resources.GetString("vulnerabilityBox.Items"),
+            resources.GetString("vulnerabilityBox.Items1"),
+            resources.GetString("vulnerabilityBox.Items2"),
+            resources.GetString("vulnerabilityBox.Items3")});
+            resources.ApplyResources(this.vulnerabilityBox, "vulnerabilityBox");
             this.vulnerabilityBox.Name = "vulnerabilityBox";
-            this.vulnerabilityBox.Size = new System.Drawing.Size(121, 21);
-            this.vulnerabilityBox.TabIndex = 3;
             // 
             // fullContractTable
             // 
-            this.fullContractTable.ColumnCount = 10;
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11606F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11607F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.473684F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.1579F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.73684F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.631579F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.73684F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.52632F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.157895F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.842105F));
-            this.fullContractTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            resources.ApplyResources(this.fullContractTable, "fullContractTable");
             this.fullContractTable.Controls.Add(this.textBox22, 7, 5);
             this.fullContractTable.Controls.Add(this.textBox23, 8, 5);
             this.fullContractTable.Controls.Add(this.textBox24, 6, 6);
@@ -1240,253 +843,162 @@
             this.fullContractTable.Controls.Add(this.textBox29, 9, 5);
             this.fullContractTable.Controls.Add(this.textBox30, 9, 6);
             this.fullContractTable.Controls.Add(this.label33, 7, 0);
-            this.fullContractTable.Location = new System.Drawing.Point(3, 6);
             this.fullContractTable.Name = "fullContractTable";
-            this.fullContractTable.RowCount = 7;
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.44107F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.92649F));
-            this.fullContractTable.Size = new System.Drawing.Size(475, 163);
-            this.fullContractTable.TabIndex = 2;
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(350, 116);
+            resources.ApplyResources(this.textBox22, "textBox22");
             this.textBox22.Name = "textBox22";
             this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(44, 20);
-            this.textBox22.TabIndex = 65;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(400, 116);
+            resources.ApplyResources(this.textBox23, "textBox23");
             this.textBox23.Name = "textBox23";
             this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(28, 20);
-            this.textBox23.TabIndex = 66;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(299, 140);
+            resources.ApplyResources(this.textBox24, "textBox24");
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(45, 20);
-            this.textBox24.TabIndex = 67;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(350, 140);
+            resources.ApplyResources(this.textBox25, "textBox25");
             this.textBox25.Name = "textBox25";
             this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(44, 20);
-            this.textBox25.TabIndex = 68;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(400, 140);
+            resources.ApplyResources(this.textBox26, "textBox26");
             this.textBox26.Name = "textBox26";
             this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(28, 20);
-            this.textBox26.TabIndex = 69;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(299, 68);
+            resources.ApplyResources(this.textBox15, "textBox15");
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(45, 20);
-            this.textBox15.TabIndex = 58;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(350, 68);
+            resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(44, 20);
-            this.textBox16.TabIndex = 59;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(400, 68);
+            resources.ApplyResources(this.textBox17, "textBox17");
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(28, 20);
-            this.textBox17.TabIndex = 60;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(299, 92);
+            resources.ApplyResources(this.textBox18, "textBox18");
             this.textBox18.Name = "textBox18";
             this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(45, 20);
-            this.textBox18.TabIndex = 61;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(350, 92);
+            resources.ApplyResources(this.textBox19, "textBox19");
             this.textBox19.Name = "textBox19";
             this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(44, 20);
-            this.textBox19.TabIndex = 62;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(400, 92);
+            resources.ApplyResources(this.textBox20, "textBox20");
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(28, 20);
-            this.textBox20.TabIndex = 63;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(299, 116);
+            resources.ApplyResources(this.textBox21, "textBox21");
             this.textBox21.Name = "textBox21";
             this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(45, 20);
-            this.textBox21.TabIndex = 64;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(299, 20);
+            resources.ApplyResources(this.textBox9, "textBox9");
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(45, 20);
-            this.textBox9.TabIndex = 52;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(350, 20);
+            resources.ApplyResources(this.textBox10, "textBox10");
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(44, 20);
-            this.textBox10.TabIndex = 53;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(400, 20);
+            resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(28, 20);
-            this.textBox11.TabIndex = 54;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(299, 44);
+            resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(45, 20);
-            this.textBox12.TabIndex = 55;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(350, 44);
+            resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(44, 20);
-            this.textBox13.TabIndex = 56;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(400, 44);
+            resources.ApplyResources(this.textBox14, "textBox14");
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(28, 20);
-            this.textBox14.TabIndex = 57;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(31, 13);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Wys.";
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(56, 0);
+            resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(36, 13);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "Miano";
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(154, 0);
+            resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(32, 13);
-            this.label27.TabIndex = 3;
-            this.label27.Text = "Rzgr.";
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(207, 0);
+            resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(31, 13);
-            this.label28.TabIndex = 4;
-            this.label28.Text = "Frek.";
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(258, 0);
+            resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(32, 13);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "Lewy";
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(299, 0);
+            resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(33, 13);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "Zapis";
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 20);
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3"),
+            resources.GetString("comboBox1.Items4"),
+            resources.GetString("comboBox1.Items5"),
+            resources.GetString("comboBox1.Items6"),
+            resources.GetString("comboBox1.Items7"),
+            resources.GetString("comboBox1.Items8")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(46, 21);
-            this.comboBox1.TabIndex = 9;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox2
@@ -1494,19 +1006,17 @@
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 44);
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6"),
+            resources.GetString("comboBox2.Items7"),
+            resources.GetString("comboBox2.Items8")});
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(46, 21);
-            this.comboBox2.TabIndex = 10;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox3
@@ -1514,19 +1024,17 @@
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox3.Location = new System.Drawing.Point(3, 68);
+            resources.GetString("comboBox3.Items"),
+            resources.GetString("comboBox3.Items1"),
+            resources.GetString("comboBox3.Items2"),
+            resources.GetString("comboBox3.Items3"),
+            resources.GetString("comboBox3.Items4"),
+            resources.GetString("comboBox3.Items5"),
+            resources.GetString("comboBox3.Items6"),
+            resources.GetString("comboBox3.Items7"),
+            resources.GetString("comboBox3.Items8")});
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(46, 21);
-            this.comboBox3.TabIndex = 11;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox4
@@ -1534,19 +1042,17 @@
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox4.Location = new System.Drawing.Point(3, 92);
+            resources.GetString("comboBox4.Items"),
+            resources.GetString("comboBox4.Items1"),
+            resources.GetString("comboBox4.Items2"),
+            resources.GetString("comboBox4.Items3"),
+            resources.GetString("comboBox4.Items4"),
+            resources.GetString("comboBox4.Items5"),
+            resources.GetString("comboBox4.Items6"),
+            resources.GetString("comboBox4.Items7"),
+            resources.GetString("comboBox4.Items8")});
+            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(46, 21);
-            this.comboBox4.TabIndex = 12;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox5
@@ -1554,19 +1060,17 @@
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox5.Location = new System.Drawing.Point(3, 116);
+            resources.GetString("comboBox5.Items"),
+            resources.GetString("comboBox5.Items1"),
+            resources.GetString("comboBox5.Items2"),
+            resources.GetString("comboBox5.Items3"),
+            resources.GetString("comboBox5.Items4"),
+            resources.GetString("comboBox5.Items5"),
+            resources.GetString("comboBox5.Items6"),
+            resources.GetString("comboBox5.Items7"),
+            resources.GetString("comboBox5.Items8")});
+            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(46, 21);
-            this.comboBox5.TabIndex = 13;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox6
@@ -1574,19 +1078,17 @@
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "",
-            "PASS",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox6.Location = new System.Drawing.Point(3, 140);
+            resources.GetString("comboBox6.Items"),
+            resources.GetString("comboBox6.Items1"),
+            resources.GetString("comboBox6.Items2"),
+            resources.GetString("comboBox6.Items3"),
+            resources.GetString("comboBox6.Items4"),
+            resources.GetString("comboBox6.Items5"),
+            resources.GetString("comboBox6.Items6"),
+            resources.GetString("comboBox6.Items7"),
+            resources.GetString("comboBox6.Items8")});
+            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(46, 21);
-            this.comboBox6.TabIndex = 14;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox8
@@ -1594,16 +1096,14 @@
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox8.Location = new System.Drawing.Point(56, 20);
+            resources.GetString("comboBox8.Items"),
+            resources.GetString("comboBox8.Items1"),
+            resources.GetString("comboBox8.Items2"),
+            resources.GetString("comboBox8.Items3"),
+            resources.GetString("comboBox8.Items4"),
+            resources.GetString("comboBox8.Items5")});
+            resources.ApplyResources(this.comboBox8, "comboBox8");
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(46, 21);
-            this.comboBox8.TabIndex = 16;
             this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox9
@@ -1611,16 +1111,14 @@
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox9.Location = new System.Drawing.Point(56, 44);
+            resources.GetString("comboBox9.Items"),
+            resources.GetString("comboBox9.Items1"),
+            resources.GetString("comboBox9.Items2"),
+            resources.GetString("comboBox9.Items3"),
+            resources.GetString("comboBox9.Items4"),
+            resources.GetString("comboBox9.Items5")});
+            resources.ApplyResources(this.comboBox9, "comboBox9");
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(46, 21);
-            this.comboBox9.TabIndex = 17;
             this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox10
@@ -1628,16 +1126,14 @@
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox10.Location = new System.Drawing.Point(56, 68);
+            resources.GetString("comboBox10.Items"),
+            resources.GetString("comboBox10.Items1"),
+            resources.GetString("comboBox10.Items2"),
+            resources.GetString("comboBox10.Items3"),
+            resources.GetString("comboBox10.Items4"),
+            resources.GetString("comboBox10.Items5")});
+            resources.ApplyResources(this.comboBox10, "comboBox10");
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(46, 21);
-            this.comboBox10.TabIndex = 18;
             this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox11
@@ -1645,16 +1141,14 @@
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox11.Location = new System.Drawing.Point(56, 92);
+            resources.GetString("comboBox11.Items"),
+            resources.GetString("comboBox11.Items1"),
+            resources.GetString("comboBox11.Items2"),
+            resources.GetString("comboBox11.Items3"),
+            resources.GetString("comboBox11.Items4"),
+            resources.GetString("comboBox11.Items5")});
+            resources.ApplyResources(this.comboBox11, "comboBox11");
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(46, 21);
-            this.comboBox11.TabIndex = 19;
             this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox12
@@ -1662,16 +1156,14 @@
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox12.Location = new System.Drawing.Point(56, 116);
+            resources.GetString("comboBox12.Items"),
+            resources.GetString("comboBox12.Items1"),
+            resources.GetString("comboBox12.Items2"),
+            resources.GetString("comboBox12.Items3"),
+            resources.GetString("comboBox12.Items4"),
+            resources.GetString("comboBox12.Items5")});
+            resources.ApplyResources(this.comboBox12, "comboBox12");
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(46, 21);
-            this.comboBox12.TabIndex = 20;
             this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox13
@@ -1679,16 +1171,14 @@
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
-            "",
-            "♣",
-            "♦",
-            "♥",
-            "♠",
-            "NT"});
-            this.comboBox13.Location = new System.Drawing.Point(56, 140);
+            resources.GetString("comboBox13.Items"),
+            resources.GetString("comboBox13.Items1"),
+            resources.GetString("comboBox13.Items2"),
+            resources.GetString("comboBox13.Items3"),
+            resources.GetString("comboBox13.Items4"),
+            resources.GetString("comboBox13.Items5")});
+            resources.ApplyResources(this.comboBox13, "comboBox13");
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(46, 21);
-            this.comboBox13.TabIndex = 21;
             this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox15
@@ -1696,13 +1186,11 @@
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox15.Location = new System.Drawing.Point(109, 20);
+            resources.GetString("comboBox15.Items"),
+            resources.GetString("comboBox15.Items1"),
+            resources.GetString("comboBox15.Items2")});
+            resources.ApplyResources(this.comboBox15, "comboBox15");
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(39, 21);
-            this.comboBox15.TabIndex = 23;
             this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox16
@@ -1710,13 +1198,11 @@
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox16.Location = new System.Drawing.Point(109, 44);
+            resources.GetString("comboBox16.Items"),
+            resources.GetString("comboBox16.Items1"),
+            resources.GetString("comboBox16.Items2")});
+            resources.ApplyResources(this.comboBox16, "comboBox16");
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(39, 21);
-            this.comboBox16.TabIndex = 24;
             this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox17
@@ -1724,13 +1210,11 @@
             this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox17.Location = new System.Drawing.Point(109, 68);
+            resources.GetString("comboBox17.Items"),
+            resources.GetString("comboBox17.Items1"),
+            resources.GetString("comboBox17.Items2")});
+            resources.ApplyResources(this.comboBox17, "comboBox17");
             this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(39, 21);
-            this.comboBox17.TabIndex = 25;
             this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox18
@@ -1738,13 +1222,11 @@
             this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox18.Location = new System.Drawing.Point(109, 92);
+            resources.GetString("comboBox18.Items"),
+            resources.GetString("comboBox18.Items1"),
+            resources.GetString("comboBox18.Items2")});
+            resources.ApplyResources(this.comboBox18, "comboBox18");
             this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(39, 21);
-            this.comboBox18.TabIndex = 26;
             this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox19
@@ -1752,13 +1234,11 @@
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.FormattingEnabled = true;
             this.comboBox19.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox19.Location = new System.Drawing.Point(109, 116);
+            resources.GetString("comboBox19.Items"),
+            resources.GetString("comboBox19.Items1"),
+            resources.GetString("comboBox19.Items2")});
+            resources.ApplyResources(this.comboBox19, "comboBox19");
             this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(39, 21);
-            this.comboBox19.TabIndex = 27;
             this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox20
@@ -1766,13 +1246,11 @@
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Items.AddRange(new object[] {
-            "",
-            "X",
-            "XX"});
-            this.comboBox20.Location = new System.Drawing.Point(109, 140);
+            resources.GetString("comboBox20.Items"),
+            resources.GetString("comboBox20.Items1"),
+            resources.GetString("comboBox20.Items2")});
+            resources.ApplyResources(this.comboBox20, "comboBox20");
             this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(39, 21);
-            this.comboBox20.TabIndex = 28;
             this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox22
@@ -1780,15 +1258,13 @@
             this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox22.FormattingEnabled = true;
             this.comboBox22.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox22.Location = new System.Drawing.Point(154, 20);
+            resources.GetString("comboBox22.Items"),
+            resources.GetString("comboBox22.Items1"),
+            resources.GetString("comboBox22.Items2"),
+            resources.GetString("comboBox22.Items3"),
+            resources.GetString("comboBox22.Items4")});
+            resources.ApplyResources(this.comboBox22, "comboBox22");
             this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(46, 21);
-            this.comboBox22.TabIndex = 30;
             this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox23
@@ -1796,15 +1272,13 @@
             this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox23.FormattingEnabled = true;
             this.comboBox23.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox23.Location = new System.Drawing.Point(154, 44);
+            resources.GetString("comboBox23.Items"),
+            resources.GetString("comboBox23.Items1"),
+            resources.GetString("comboBox23.Items2"),
+            resources.GetString("comboBox23.Items3"),
+            resources.GetString("comboBox23.Items4")});
+            resources.ApplyResources(this.comboBox23, "comboBox23");
             this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(46, 21);
-            this.comboBox23.TabIndex = 31;
             this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox24
@@ -1812,15 +1286,13 @@
             this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox24.FormattingEnabled = true;
             this.comboBox24.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox24.Location = new System.Drawing.Point(154, 68);
+            resources.GetString("comboBox24.Items"),
+            resources.GetString("comboBox24.Items1"),
+            resources.GetString("comboBox24.Items2"),
+            resources.GetString("comboBox24.Items3"),
+            resources.GetString("comboBox24.Items4")});
+            resources.ApplyResources(this.comboBox24, "comboBox24");
             this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(46, 21);
-            this.comboBox24.TabIndex = 32;
             this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox25
@@ -1828,15 +1300,13 @@
             this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox25.FormattingEnabled = true;
             this.comboBox25.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox25.Location = new System.Drawing.Point(154, 92);
+            resources.GetString("comboBox25.Items"),
+            resources.GetString("comboBox25.Items1"),
+            resources.GetString("comboBox25.Items2"),
+            resources.GetString("comboBox25.Items3"),
+            resources.GetString("comboBox25.Items4")});
+            resources.ApplyResources(this.comboBox25, "comboBox25");
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(46, 21);
-            this.comboBox25.TabIndex = 33;
             this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox26
@@ -1844,15 +1314,13 @@
             this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox26.Location = new System.Drawing.Point(154, 116);
+            resources.GetString("comboBox26.Items"),
+            resources.GetString("comboBox26.Items1"),
+            resources.GetString("comboBox26.Items2"),
+            resources.GetString("comboBox26.Items3"),
+            resources.GetString("comboBox26.Items4")});
+            resources.ApplyResources(this.comboBox26, "comboBox26");
             this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(46, 21);
-            this.comboBox26.TabIndex = 34;
             this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox27
@@ -1860,226 +1328,150 @@
             this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox27.FormattingEnabled = true;
             this.comboBox27.Items.AddRange(new object[] {
-            "",
-            "W",
-            "N",
-            "E",
-            "S"});
-            this.comboBox27.Location = new System.Drawing.Point(154, 140);
+            resources.GetString("comboBox27.Items"),
+            resources.GetString("comboBox27.Items1"),
+            resources.GetString("comboBox27.Items2"),
+            resources.GetString("comboBox27.Items3"),
+            resources.GetString("comboBox27.Items4")});
+            resources.ApplyResources(this.comboBox27, "comboBox27");
             this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(46, 21);
-            this.comboBox27.TabIndex = 35;
             this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Enabled = false;
-            this.numericUpDown1.Location = new System.Drawing.Point(207, 20);
+            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown1.TabIndex = 37;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Enabled = false;
-            this.numericUpDown2.Location = new System.Drawing.Point(207, 44);
+            resources.ApplyResources(this.numericUpDown2, "numericUpDown2");
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown2.TabIndex = 38;
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Enabled = false;
-            this.numericUpDown3.Location = new System.Drawing.Point(207, 68);
+            resources.ApplyResources(this.numericUpDown3, "numericUpDown3");
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown3.TabIndex = 39;
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Enabled = false;
-            this.numericUpDown4.Location = new System.Drawing.Point(207, 92);
+            resources.ApplyResources(this.numericUpDown4, "numericUpDown4");
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown4.TabIndex = 40;
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Enabled = false;
-            this.numericUpDown5.Location = new System.Drawing.Point(207, 116);
+            resources.ApplyResources(this.numericUpDown5, "numericUpDown5");
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown5.TabIndex = 41;
             // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Enabled = false;
-            this.numericUpDown6.Location = new System.Drawing.Point(207, 140);
+            resources.ApplyResources(this.numericUpDown6, "numericUpDown6");
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(45, 20);
-            this.numericUpDown6.TabIndex = 42;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(258, 20);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(33, 20);
-            this.textBox1.TabIndex = 44;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(258, 44);
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(33, 20);
-            this.textBox2.TabIndex = 45;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(258, 68);
+            resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(33, 20);
-            this.textBox3.TabIndex = 46;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(258, 92);
+            resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(33, 20);
-            this.textBox4.TabIndex = 47;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(258, 116);
+            resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(33, 20);
-            this.textBox5.TabIndex = 48;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(258, 140);
+            resources.ApplyResources(this.textBox6, "textBox6");
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(33, 20);
-            this.textBox6.TabIndex = 49;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(434, 0);
+            resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(26, 13);
-            this.label32.TabIndex = 8;
-            this.label32.Text = "IMP";
             // 
             // label31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(400, 0);
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(27, 13);
-            this.label31.TabIndex = 7;
-            this.label31.Text = "Max";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(434, 20);
+            resources.ApplyResources(this.textBox7, "textBox7");
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(36, 20);
-            this.textBox7.TabIndex = 70;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(434, 44);
+            resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(36, 20);
-            this.textBox8.TabIndex = 71;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(434, 68);
+            resources.ApplyResources(this.textBox27, "textBox27");
             this.textBox27.Name = "textBox27";
             this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(36, 20);
-            this.textBox27.TabIndex = 72;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(434, 92);
+            resources.ApplyResources(this.textBox28, "textBox28");
             this.textBox28.Name = "textBox28";
             this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(36, 20);
-            this.textBox28.TabIndex = 73;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(434, 116);
+            resources.ApplyResources(this.textBox29, "textBox29");
             this.textBox29.Name = "textBox29";
             this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(36, 20);
-            this.textBox29.TabIndex = 74;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(434, 140);
+            resources.ApplyResources(this.textBox30, "textBox30");
             this.textBox30.Name = "textBox30";
             this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(36, 20);
-            this.textBox30.TabIndex = 75;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(350, 0);
+            resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(44, 13);
-            this.label33.TabIndex = 76;
-            this.label33.Text = "Wygra?";
             // 
             // contractCancelButton
             // 
-            this.contractCancelButton.Enabled = false;
-            this.contractCancelButton.Location = new System.Drawing.Point(268, 198);
+            resources.ApplyResources(this.contractCancelButton, "contractCancelButton");
             this.contractCancelButton.Name = "contractCancelButton";
-            this.contractCancelButton.Size = new System.Drawing.Size(210, 23);
-            this.contractCancelButton.TabIndex = 1;
-            this.contractCancelButton.Text = "Nie, czekaj!";
             this.contractCancelButton.UseVisualStyleBackColor = true;
             this.contractCancelButton.Click += new System.EventHandler(this.button5_Click);
             // 
             // contractAnalyzeButton
             // 
-            this.contractAnalyzeButton.Location = new System.Drawing.Point(6, 198);
+            resources.ApplyResources(this.contractAnalyzeButton, "contractAnalyzeButton");
             this.contractAnalyzeButton.Name = "contractAnalyzeButton";
-            this.contractAnalyzeButton.Size = new System.Drawing.Size(210, 23);
-            this.contractAnalyzeButton.TabIndex = 0;
-            this.contractAnalyzeButton.Text = "No to wio!";
             this.contractAnalyzeButton.UseVisualStyleBackColor = true;
             this.contractAnalyzeButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 463);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusListBox);
             this.Controls.Add(this.progressBar);
@@ -2087,10 +1479,8 @@
             this.Controls.Add(this.generateGroup);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Analizator9000";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.generateGroup.ResumeLayout(false);
             this.generateGroup.PerformLayout();
