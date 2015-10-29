@@ -6,11 +6,16 @@ using System.IO;
 namespace Analizator9000
 {
     /// <summary>
-    /// Analysis accumulator for scoreing contracts
+    /// Analysis accumulator for scoring contracts
     /// </summary>
     class ScoreAccumulator : Accumulator
     {
-        private readonly string[] vulnerabilities = { "obie przed", "obie po", "NS po", "EW po" };
+        private readonly string[] vulnerabilities = {
+                                                        Form1.GetResourceManager().GetString("ScoreAccumulator_vulNone"),
+                                                        Form1.GetResourceManager().GetString("ScoreAccumulator_vulBoth"),
+                                                        Form1.GetResourceManager().GetString("ScoreAccumulator_vulNS"),
+                                                        Form1.GetResourceManager().GetString("ScoreAccumulator_vulEW")
+                                                    };
         /// <summary>
         /// Vulnerability setting of the analysis
         /// </summary>
@@ -99,8 +104,8 @@ namespace Analizator9000
             {
                 StringWriter sw = new StringWriter();
                 sw.WriteLine();
-                sw.WriteLine("Założenia: {0}", this.vulnerabilities[this.vulnerability]);
-                sw.WriteLine(" KONTRAKT      LEWY    ZAPIS   WYGRA?  MAX    IMP   ");
+                sw.WriteLine(Form1.GetResourceManager().GetString("ScoreAccumulator_vulnerability") + ": {0}", this.vulnerabilities[this.vulnerability]);
+                sw.WriteLine(Form1.GetResourceManager().GetString("ScoreAccumulator_txtHeader"));
                 foreach (KeyValuePair<Contract, long> tricks in this.trickSums)
                 {
                     sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {6,5:0.00} {4,5:0.00} {5,7:0.00} ", 
@@ -181,8 +186,8 @@ namespace Analizator9000
             {
                 this.maxScoreSums[result.Key] += result.Key.Frequency > 0 ? result.Value : 0;
             }
-            this.logScores(impScores, dealNo, "IMP");
-            this.logScores(maxScores, dealNo, "max");
+            this.logScores(impScores, dealNo, Form1.GetResourceManager().GetString("ScoreAccumulator_IMP"));
+            this.logScores(maxScores, dealNo, Form1.GetResourceManager().GetString("ScoreAccumulator_MP"));
             this.form.updateContractTable(this.trickSums, this.scoreSums, this.successSums, this.maxScoreSums, this.impScoreSums, this.dealsScored);
         }
 

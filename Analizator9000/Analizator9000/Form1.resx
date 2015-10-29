@@ -1135,7 +1135,7 @@
     <value>4</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 20</value>
+    <value>353, 18</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1162,7 +1162,7 @@
     <value>7, 20</value>
   </data>
   <data name="analyzeFileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 20</value>
+    <value>340, 20</value>
   </data>
   <data name="analyzeFileNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1180,10 +1180,10 @@
     <value>1</value>
   </data>
   <data name="analyzeGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 12</value>
+    <value>572, 12</value>
   </data>
   <data name="analyzeGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 50</value>
+    <value>434, 50</value>
   </data>
   <data name="analyzeGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1203,9 +1203,9 @@
   <data name="&gt;&gt;analyzeGroup.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="generateFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="generateFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
-  </metadata>
+  </data>
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>514, 327</value>
   </data>
@@ -1251,9 +1251,9 @@
   <data name="&gt;&gt;statusListBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="analyzeFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="analyzeFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>171, 17</value>
-  </metadata>
+  </data>
   <data name="resultTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Console, 9pt</value>
   </data>
@@ -4434,12 +4434,12 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="$this.Locked" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -10669,5 +10669,86 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BCalcWrapper_dealLoadError" xml:space="preserve">
+    <value>Nie można wczytać rozdania</value>
+  </data>
+  <data name="BCalcWrapper_declarerError" xml:space="preserve">
+    <value>Nieprawidłowy rozgrywający</value>
+  </data>
+  <data name="BCalcWrapper_trumpError" xml:space="preserve">
+    <value>Nieprawidłowe miano</value>
+  </data>
+  <data name="DealerParser_errorGenerateOverflow" xml:space="preserve">
+    <value>Za duża wartość 'generate'</value>
+  </data>
+  <data name="DealerParser_errorProduceOverflow" xml:space="preserve">
+    <value>Za duża wartość 'produce'</value>
+  </data>
+  <data name="DealerParser_errorTooManyGenerate" xml:space="preserve">
+    <value>Zbyt duża liczba wartości 'generate' w skrypcie</value>
+  </data>
+  <data name="DealerParser_errorTooManyProduce" xml:space="preserve">
+    <value>Zbyt duża liczba linii 'produce' w skrypcie</value>
+  </data>
+  <data name="DealerWrapper_errorFileNotFound" xml:space="preserve">
+    <value>Nie znaleziono pliku</value>
+  </data>
+  <data name="DealerWrapper_errorInvalidDealCount" xml:space="preserve">
+    <value>Nieprawidłowa liczba rozdań do wyprodukowania</value>
+  </data>
+  <data name="Form1_analyzeError" xml:space="preserve">
+    <value>Błąd analizy</value>
+  </data>
+  <data name="Form1_analyzeNoContractsError" xml:space="preserve">
+    <value>Nie podano kontraktów</value>
+  </data>
+  <data name="Form1_analyzeNoDealsError" xml:space="preserve">
+    <value>Plik nie zawiera żadnych rozdań</value>
+  </data>
+  <data name="Form1_analyzeOpenFile" xml:space="preserve">
+    <value>Otwieram plik</value>
+  </data>
+  <data name="Form1_error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Form1_fileOpenError" xml:space="preserve">
+    <value>Błąd wczytywania pliku</value>
+  </data>
+  <data name="Form1_generateFileNotFoundError" xml:space="preserve">
+    <value>Nie można utworzyć pliku. Sprawdź, czy w katalogu programu istnieje katalog 'files'</value>
+  </data>
+  <data name="Form1_generateFileSaved" xml:space="preserve">
+    <value>Zapisano do pliku</value>
+  </data>
+  <data name="Form1_generateGeneratorError" xml:space="preserve">
+    <value>Błąd generatora</value>
+  </data>
+  <data name="Form1_generateInputError" xml:space="preserve">
+    <value>Błąd wprowadzania danych</value>
+  </data>
+  <data name="ScoreAccumulator_IMP" xml:space="preserve">
+    <value>IMP</value>
+  </data>
+  <data name="ScoreAccumulator_MP" xml:space="preserve">
+    <value>max</value>
+  </data>
+  <data name="ScoreAccumulator_txtHeader" xml:space="preserve">
+    <value> KONTRAKT      LEWY    ZAPIS   WYGRA?  MAX    IMP</value>
+  </data>
+  <data name="ScoreAccumulator_vulBoth" xml:space="preserve">
+    <value>obie po</value>
+  </data>
+  <data name="ScoreAccumulator_vulEW" xml:space="preserve">
+    <value>EW po</value>
+  </data>
+  <data name="ScoreAccumulator_vulnerability" xml:space="preserve">
+    <value>Założenia</value>
+  </data>
+  <data name="ScoreAccumulator_vulNone" xml:space="preserve">
+    <value>obie przed</value>
+  </data>
+  <data name="ScoreAccumulator_vulNS" xml:space="preserve">
+    <value>NS po</value>
   </data>
 </root>

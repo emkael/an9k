@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 using System.IO;
+using System.Resources;
 
 namespace Analizator9000
 {
@@ -24,6 +25,18 @@ namespace Analizator9000
         {
             InitializeComponent();
             this.parser = new DealerParser();
+        }
+
+        /// <summary>
+        /// Public getter for localization resource manager
+        /// </summary>
+        /// <returns>Component resource manager for Form1</returns>
+        public static ResourceManager GetResourceManager() {
+            if (resManager == null)
+            {
+                resManager = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            }
+            return resManager;
         }
 
         /// <summary>
@@ -86,7 +99,9 @@ namespace Analizator9000
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błąd wczytywania pliku: " + ex.Message, "Błąd wczytywania pliku", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(
+                    GetResourceManager().GetString("Form1_fileOpenError") + ": " + ex.Message,
+                    GetResourceManager().GetString("Form1_fileOpenError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -122,7 +137,7 @@ namespace Analizator9000
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błąd wprowadzania danych: " + ex.Message, "Błąd wprowadzania danych", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateInputError") + ": " + ex.Message, GetResourceManager().GetString("Form1_generateInputError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
@@ -134,13 +149,13 @@ namespace Analizator9000
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show("Nie można utworzyć pliku. Sprawdź, czy w katalogu programu istnieje katalog 'files'", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateFileNotFoundError"), GetResourceManager().GetString("Form1_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błąd generatora: " + ex.Message, "Błąd generatora", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateGeneratorError") + ": " + ex.Message, GetResourceManager().GetString("Form1_generateGeneratorError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
@@ -166,7 +181,7 @@ namespace Analizator9000
                 progressBar.Value = 100;
                 if (filename != null)
                 {
-                    this.addStatusLine("Zapisano do pliku: " + filename);
+                    this.addStatusLine(GetResourceManager().GetString("Form1_generateFileSaved") + ": " + filename);
                 }
                 analyzeFileNameTextBox.Text = Path.GetFullPath(@"files\" + filename);
                 generateGroup.Enabled = true;
@@ -257,13 +272,13 @@ namespace Analizator9000
             this.abortButton.Enabled = true;
             this.fullContractTable.Enabled = false;
             statusListBox.Items.Clear();
-            this.addStatusLine("Otwieram plik: " + analyzeFileNameTextBox.Text);
+            this.addStatusLine(GetResourceManager().GetString("Form1_analyzeOpenFile") + ": " + analyzeFileNameTextBox.Text);
             try
             {
                 String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
                 if (deals.Length == 0)
                 {
-                    throw new Exception("Plik nie zawiera żadnych rozdań");
+                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoDealsError"));
                 }
                 List<Contract> cons = new List<Contract>();
                 foreach (int i in Enumerable.Range(1, 5))
@@ -278,7 +293,7 @@ namespace Analizator9000
                 }
                 if (cons.Count == 0)
                 {
-                    throw new Exception("Nie podano kontraktów");
+                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoContractsError"));
                 }
                 // we run either "old" Accumulator or contract analysis with ScoreAccumulator,
                 // depending on the button of event origin
@@ -289,7 +304,7 @@ namespace Analizator9000
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Błąd analizy: " + ex.Message, "Błąd analizy", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_analyzeError") + ": " + ex.Message, GetResourceManager().GetString("Form1_analyzeError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.setProgress(0);
                 analyzeButton.Enabled = true;
                 abortButton.Enabled = false;
@@ -622,5 +637,7 @@ namespace Analizator9000
             this.contractAnalyzeButton.Enabled = true;
             this.abortButton_Click(sender, e);
         }
+
+        private static ResourceManager resManager;
     }
 }

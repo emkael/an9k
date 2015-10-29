@@ -95,7 +95,7 @@ namespace Analizator9000
                     case "generate":
                         if (section.Length > 1)
                         {
-                            throw new Exception("Zbyt duża liczba wartości 'generate' w skrypcie");
+                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyGenerate"));
                         }
                         if (section.Length == 1)
                         {
@@ -105,14 +105,14 @@ namespace Analizator9000
                             }
                             catch (OverflowException)
                             {
-                                throw new Exception("Za duża wartość 'generate'");
+                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorGenerateOverflow"));
                             }
                         }
                         break;
                     case "produce":
                         if (section.Length > 1)
                         {
-                            throw new Exception("Zbyt duża liczba linii 'produce' w skrypcie");
+                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyProduce"));
                         }
                         if (section.Length == 1)
                         {
@@ -122,7 +122,7 @@ namespace Analizator9000
                             }
                             catch (OverflowException)
                             {
-                                throw new Exception("Za duża wartość 'produce'");
+                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorProduceOverflow"));
                             }
                         }
                         break;
