@@ -244,4 +244,85 @@
   <data name="contractAnalyzeButton.Text" xml:space="preserve">
     <value>Go for it!</value>
   </data>
+  <data name="BCalcWrapper_dealLoadError" xml:space="preserve">
+    <value>Unable to load deal</value>
+  </data>
+  <data name="BCalcWrapper_declarerError" xml:space="preserve">
+    <value>Incorrect declarer</value>
+  </data>
+  <data name="BCalcWrapper_trumpError" xml:space="preserve">
+    <value>Incorrect denomination</value>
+  </data>
+  <data name="DealerParser_errorGenerateOverflow" xml:space="preserve">
+    <value>'generate' value too large</value>
+  </data>
+  <data name="DealerParser_errorProduceOverflow" xml:space="preserve">
+    <value>'produce' value too large</value>
+  </data>
+  <data name="DealerParser_errorTooManyGenerate" xml:space="preserve">
+    <value>Too many 'generate' values in script</value>
+  </data>
+  <data name="DealerParser_errorTooManyProduce" xml:space="preserve">
+    <value>Too many 'produce' values in script</value>
+  </data>
+  <data name="DealerWrapper_errorFileNotFound" xml:space="preserve">
+    <value>File not found</value>
+  </data>
+  <data name="DealerWrapper_errorInvalidDealCount" xml:space="preserve">
+    <value>Incorrect number of deals to generate</value>
+  </data>
+  <data name="Form1_analyzeError" xml:space="preserve">
+    <value>Analysis error</value>
+  </data>
+  <data name="Form1_analyzeNoContractsError" xml:space="preserve">
+    <value>No contracts provided</value>
+  </data>
+  <data name="Form1_analyzeNoDealsError" xml:space="preserve">
+    <value>No deals found in file</value>
+  </data>
+  <data name="Form1_analyzeOpenFile" xml:space="preserve">
+    <value>Opening file</value>
+  </data>
+  <data name="Form1_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Form1_fileOpenError" xml:space="preserve">
+    <value>File open error</value>
+  </data>
+  <data name="Form1_generateFileNotFoundError" xml:space="preserve">
+    <value>Unable to write file. Please check if 'files' directory exists</value>
+  </data>
+  <data name="Form1_generateFileSaved" xml:space="preserve">
+    <value>File written</value>
+  </data>
+  <data name="Form1_generateGeneratorError" xml:space="preserve">
+    <value>Generator error</value>
+  </data>
+  <data name="Form1_generateInputError" xml:space="preserve">
+    <value>Input error</value>
+  </data>
+  <data name="ScoreAccumulator_IMP" xml:space="preserve">
+    <value>IMP</value>
+  </data>
+  <data name="ScoreAccumulator_MP" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="ScoreAccumulator_txtHeader" xml:space="preserve">
+    <value> CONTRACT     TRICKS   SCORE    MADE?   MP    IMP</value>
+  </data>
+  <data name="ScoreAccumulator_vulBoth" xml:space="preserve">
+    <value>both vul.</value>
+  </data>
+  <data name="ScoreAccumulator_vulEW" xml:space="preserve">
+    <value>EW vul.</value>
+  </data>
+  <data name="ScoreAccumulator_vulnerability" xml:space="preserve">
+    <value>Vulnerability</value>
+  </data>
+  <data name="ScoreAccumulator_vulNone" xml:space="preserve">
+    <value>none vul.</value>
+  </data>
+  <data name="ScoreAccumulator_vulNS" xml:space="preserve">
+    <value>NS vul.</value>
+  </data>
 </root>
