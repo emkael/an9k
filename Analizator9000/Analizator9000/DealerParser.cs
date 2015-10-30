@@ -95,7 +95,7 @@ namespace Analizator9000
                     case "generate":
                         if (section.Length > 1)
                         {
-                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyGenerate"));
+                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyGenerate", Form1.GetCulture()));
                         }
                         if (section.Length == 1)
                         {
@@ -105,14 +105,14 @@ namespace Analizator9000
                             }
                             catch (OverflowException)
                             {
-                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorGenerateOverflow"));
+                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorGenerateOverflow", Form1.GetCulture()));
                             }
                         }
                         break;
                     case "produce":
                         if (section.Length > 1)
                         {
-                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyProduce"));
+                            throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorTooManyProduce", Form1.GetCulture()));
                         }
                         if (section.Length == 1)
                         {
@@ -122,7 +122,7 @@ namespace Analizator9000
                             }
                             catch (OverflowException)
                             {
-                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorProduceOverflow"));
+                                throw new Exception(Form1.GetResourceManager().GetString("DealerParser_errorProduceOverflow", Form1.GetCulture()));
                             }
                         }
                         break;

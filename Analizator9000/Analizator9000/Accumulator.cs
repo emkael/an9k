@@ -53,7 +53,7 @@ namespace Analizator9000
             this.deals = new Stack<String>(deals);
             if (this.deals.Count == 0)
             {
-                throw new Exception("Podano pusty zbiór rozdań");
+                throw new Exception(Form1.GetResourceManager().GetString("Accumulator_errorNoDeals", Form1.GetCulture()));
             }
             this.toAnalyze = deals.LongLength;
             this.form = form;
@@ -140,7 +140,7 @@ namespace Analizator9000
                     }
                     catch (Exception ex)
                     {
-                        this.form.addStatusLine("Błąd: " + ex.Message);
+                        this.form.addStatusLine(Form1.GetResourceManager().GetString("Form1_error", Form1.GetCulture()) + ": " + ex.Message);
                     }
                     foreach (int entry in row.Value)
                     {
@@ -149,7 +149,9 @@ namespace Analizator9000
                             BCalcResult result = solver.run(entry);
                             if (!this.abort)
                             {
-                                String line = "#" + result.dealNo + ", " + result.declarer + " gra w " + result.trumpSuit + ", lew: " + result.tricks;
+                                String line = "#" + result.dealNo + ", " + result.declarer + " " +
+                                    Form1.GetResourceManager().GetString("Accumulator_playsIn", Form1.GetCulture()) + " " + result.trumpSuit + ", " +
+                                    Form1.GetResourceManager().GetString("Accumulator_tricks", Form1.GetCulture()) + ": " + result.tricks;
                                 this.form.addStatusLine(line);
                                 this.outputFile.WriteLine(line);
                                 this.update(result);
@@ -158,7 +160,7 @@ namespace Analizator9000
                         }
                         catch (Exception ex)
                         {
-                            this.form.addStatusLine("Błąd: " + ex.Message);
+                            this.form.addStatusLine(Form1.GetResourceManager().GetString("Form1_error", Form1.GetCulture()) + ": " + ex.Message);
                         }
                     }
                 }
@@ -167,7 +169,7 @@ namespace Analizator9000
             catch (Exception ex)
             {
                 this.outputFile.WriteLine(ex.Message);
-                this.form.addStatusLine("Błąd: " + ex.Message);
+                this.form.addStatusLine(Form1.GetResourceManager().GetString("Form1_error", Form1.GetCulture()) + ": " + ex.Message);
             }
         }
 
@@ -197,7 +199,8 @@ namespace Analizator9000
                 if (this.abort)
                 {
                     this.form.setProgress(0);
-                    this.form.addStatusLine("Analiza przewana. Częściowe wyniki w pliku: " + this.filename);
+                    this.form.addStatusLine(Form1.GetResourceManager().GetString("Accumulator_analysisInterrupted", Form1.GetCulture())
+                        + ": " + this.filename);
                     finished = true;
                 }
                 else
@@ -209,7 +212,8 @@ namespace Analizator9000
                     if (threadsRunning == 0 && this.deals.Count == 0)
                     {
                         this.form.setProgress(100);
-                        this.form.addStatusLine("Analiza zakończona. Wyniki w pliku: " + this.filename);
+                        this.form.addStatusLine(Form1.GetResourceManager().GetString("Accumulator_analysisFinished", Form1.GetCulture())
+                            + ": " + this.filename);
                         finished = true;
                     }
                     if (threadsRunning < this.portionSize)

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Windows.Forms;
 using System.IO;
 using System.Resources;
+using System.Threading;
+using System.Globalization;
 
 namespace Analizator9000
 {
@@ -18,11 +20,30 @@ namespace Analizator9000
         /// </summary>
         private DealerParser parser;
 
+        private static CultureInfo _culture;
+
+        /// <summary>
+        /// Returns application culture info.
+        /// </summary>
+        /// <returns>Culture info to be applied to localization mechanisms</returns>
+        public static CultureInfo GetCulture()
+        {
+            if (_culture == null)
+            {
+                _culture = new CultureInfo("en-US");
+            }
+            return _culture;
+        }
+
+
         /// <summary>
         /// Constructs the main window.
         /// </summary>
         public Form1()
         {
+            CultureInfo ci = GetCulture();
+            Thread.CurrentThread.CurrentUICulture = ci;
+            Thread.CurrentThread.CurrentCulture = ci;
             InitializeComponent();
             this.parser = new DealerParser();
         }
@@ -34,7 +55,7 @@ namespace Analizator9000
         public static ResourceManager GetResourceManager() {
             if (resManager == null)
             {
-                resManager = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+                resManager = Strings.ResourceManager;
             }
             return resManager;
         }
@@ -100,8 +121,8 @@ namespace Analizator9000
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    GetResourceManager().GetString("Form1_fileOpenError") + ": " + ex.Message,
-                    GetResourceManager().GetString("Form1_fileOpenError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    GetResourceManager().GetString("Form1_fileOpenError", GetCulture()) + ": " + ex.Message,
+                    GetResourceManager().GetString("Form1_fileOpenError", GetCulture()), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -137,7 +158,7 @@ namespace Analizator9000
             }
             catch (Exception ex)
             {
-                MessageBox.Show(GetResourceManager().GetString("Form1_generateInputError") + ": " + ex.Message, GetResourceManager().GetString("Form1_generateInputError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateInputError", GetCulture()) + ": " + ex.Message, GetResourceManager().GetString("Form1_generateInputError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
@@ -149,13 +170,13 @@ namespace Analizator9000
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show(GetResourceManager().GetString("Form1_generateFileNotFoundError"), GetResourceManager().GetString("Form1_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateFileNotFoundError", GetCulture()), GetResourceManager().GetString("Form1_error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(GetResourceManager().GetString("Form1_generateGeneratorError") + ": " + ex.Message, GetResourceManager().GetString("Form1_generateGeneratorError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_generateGeneratorError", GetCulture()) + ": " + ex.Message, GetResourceManager().GetString("Form1_generateGeneratorError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
@@ -181,7 +202,7 @@ namespace Analizator9000
                 progressBar.Value = 100;
                 if (filename != null)
                 {
-                    this.addStatusLine(GetResourceManager().GetString("Form1_generateFileSaved") + ": " + filename);
+                    this.addStatusLine(GetResourceManager().GetString("Form1_generateFileSaved", GetCulture()) + ": " + filename);
                 }
                 analyzeFileNameTextBox.Text = Path.GetFullPath(@"files\" + filename);
                 generateGroup.Enabled = true;
@@ -272,13 +293,13 @@ namespace Analizator9000
             this.abortButton.Enabled = true;
             this.fullContractTable.Enabled = false;
             statusListBox.Items.Clear();
-            this.addStatusLine(GetResourceManager().GetString("Form1_analyzeOpenFile") + ": " + analyzeFileNameTextBox.Text);
+            this.addStatusLine(GetResourceManager().GetString("Form1_analyzeOpenFile", GetCulture()) + ": " + analyzeFileNameTextBox.Text);
             try
             {
                 String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
                 if (deals.Length == 0)
                 {
-                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoDealsError"));
+                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoDealsError", GetCulture()));
                 }
                 List<Contract> cons = new List<Contract>();
                 foreach (int i in Enumerable.Range(1, 5))
@@ -293,7 +314,7 @@ namespace Analizator9000
                 }
                 if (cons.Count == 0)
                 {
-                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoContractsError"));
+                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoContractsError", GetCulture()));
                 }
                 // we run either "old" Accumulator or contract analysis with ScoreAccumulator,
                 // depending on the button of event origin
@@ -304,7 +325,7 @@ namespace Analizator9000
             }
             catch (Exception ex)
             {
-                MessageBox.Show(GetResourceManager().GetString("Form1_analyzeError") + ": " + ex.Message, GetResourceManager().GetString("Form1_analyzeError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(GetResourceManager().GetString("Form1_analyzeError", GetCulture()) + ": " + ex.Message, GetResourceManager().GetString("Form1_analyzeError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.setProgress(0);
                 analyzeButton.Enabled = true;
                 abortButton.Enabled = false;

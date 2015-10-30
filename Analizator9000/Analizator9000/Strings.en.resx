@@ -117,131 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+  <data name="BCalcWrapper_dealLoadError" xml:space="preserve">
+    <value>Unable to load deal</value>
   </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>Events to check:</value>
+  <data name="BCalcWrapper_declarerError" xml:space="preserve">
+    <value>Incorrect declarer</value>
   </data>
-  <data name="generateButton.Text" xml:space="preserve">
-    <value>GENERATE</value>
+  <data name="BCalcWrapper_trumpError" xml:space="preserve">
+    <value>Incorrect denomination</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+  <data name="DealerParser_errorGenerateOverflow" xml:space="preserve">
+    <value>'generate' value too large</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Produced deals limit:</value>
+  <data name="DealerParser_errorProduceOverflow" xml:space="preserve">
+    <value>'produce' value too large</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
+  <data name="DealerParser_errorTooManyGenerate" xml:space="preserve">
+    <value>Too many 'generate' values in script</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Generated deals limit:</value>
+  <data name="DealerParser_errorTooManyProduce" xml:space="preserve">
+    <value>Too many 'produce' values in script</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+  <data name="DealerWrapper_errorFileNotFound" xml:space="preserve">
+    <value>File not found</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Conditions:</value>
+  <data name="DealerWrapper_errorInvalidDealCount" xml:space="preserve">
+    <value>Incorrect number of deals to generate</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
+  <data name="Form1_analyzeError" xml:space="preserve">
+    <value>Analysis error</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Pre-dealt cards:</value>
+  <data name="Form1_analyzeNoContractsError" xml:space="preserve">
+    <value>No contracts provided</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Choose file</value>
+  <data name="Form1_analyzeNoDealsError" xml:space="preserve">
+    <value>No deals found in file</value>
   </data>
-  <data name="generateGroup.Text" xml:space="preserve">
-    <value>Generate</value>
+  <data name="Form1_analyzeOpenFile" xml:space="preserve">
+    <value>Opening file</value>
   </data>
-  <data name="analyzeGroup.Text" xml:space="preserve">
-    <value>Analize</value>
+  <data name="Form1_error" xml:space="preserve">
+    <value>Error</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Choose file</value>
+  <data name="Form1_fileOpenError" xml:space="preserve">
+    <value>File open error</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Contract:</value>
+  <data name="Form1_generateFileNotFoundError" xml:space="preserve">
+    <value>Unable to write file. Please check if 'files' directory exists</value>
   </data>
-  <data name="analyzeButton.Text" xml:space="preserve">
-    <value>ANALIZE</value>
+  <data name="Form1_generateFileSaved" xml:space="preserve">
+    <value>File written</value>
   </data>
-  <data name="abortButton.Text" xml:space="preserve">
-    <value>ABORT</value>
+  <data name="Form1_generateGeneratorError" xml:space="preserve">
+    <value>Generator error</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Trick count analysis</value>
+  <data name="Form1_generateInputError" xml:space="preserve">
+    <value>Input error</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Contract analysis</value>
+  <data name="ScoreAccumulator_IMP" xml:space="preserve">
+    <value>IMP</value>
   </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 13</value>
-  </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>Vulnerability:</value>
-  </data>
-  <data name="vulnerabilityBox.Items" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="vulnerabilityBox.Items1" xml:space="preserve">
-    <value>Both</value>
-  </data>
-  <data name="vulnerabilityBox.Items2" xml:space="preserve">
-    <value>NS</value>
-  </data>
-  <data name="vulnerabilityBox.Items3" xml:space="preserve">
-    <value>EW</value>
-  </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Level</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>Denom.</value>
-  </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>Decl.</value>
-  </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>Freq.</value>
-  </data>
-  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>Trick</value>
-  </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>Score</value>
-  </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 13</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
+  <data name="ScoreAccumulator_MP" xml:space="preserve">
     <value>MP</value>
   </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+  <data name="ScoreAccumulator_txtHeader" xml:space="preserve">
+    <value> CONTRACT     TRICKS   SCORE    MADE?   MP    IMP</value>
   </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>Made?</value>
+  <data name="ScoreAccumulator_vulBoth" xml:space="preserve">
+    <value>both vul.</value>
   </data>
-  <data name="contractCancelButton.Text" xml:space="preserve">
-    <value>No, wait!</value>
+  <data name="ScoreAccumulator_vulEW" xml:space="preserve">
+    <value>EW vul.</value>
   </data>
-  <data name="contractAnalyzeButton.Text" xml:space="preserve">
-    <value>Go for it!</value>
+  <data name="ScoreAccumulator_vulnerability" xml:space="preserve">
+    <value>Vulnerability</value>
+  </data>
+  <data name="ScoreAccumulator_vulNone" xml:space="preserve">
+    <value>none vul.</value>
+  </data>
+  <data name="ScoreAccumulator_vulNS" xml:space="preserve">
+    <value>NS vul.</value>
+  </data>
+  <data name="Accumulator_analysisFinished" xml:space="preserve">
+    <value>Analysis completed. Results in file</value>
+  </data>
+  <data name="Accumulator_analysisInterrupted" xml:space="preserve">
+    <value>Analysis interrupted. Partial results in file</value>
+  </data>
+  <data name="Accumulator_errorNoDeals" xml:space="preserve">
+    <value>Deal set is empty</value>
+  </data>
+  <data name="Accumulator_playsIn" xml:space="preserve">
+    <value>plays in</value>
+  </data>
+  <data name="Accumulator_tricks" xml:space="preserve">
+    <value>tricks</value>
   </data>
 </root>

@@ -144,7 +144,7 @@ namespace Analizator9000
             }
             catch (Exception)
             {
-                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_dealLoadError") + ": " + deal);
+                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_dealLoadError", Form1.GetCulture()) + ": " + deal);
             }
             this.solver = BCalcWrapper.bcalcDDS_new(Marshal.StringToHGlobalAnsi(BCalcWrapper.table), Marshal.StringToHGlobalAnsi(this.deal), 0, 0);
             this.errorCheck();
@@ -158,7 +158,7 @@ namespace Analizator9000
         {
             if (trumpSuit < 0)
             {
-                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_trumpError") + ": " + trumpSuit);
+                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_trumpError", Form1.GetCulture()) + ": " + trumpSuit);
             }
             BCalcWrapper.bcalcDDS_setTrumpAndReset(solver, trumpSuit);
             this.errorCheck();
@@ -175,7 +175,7 @@ namespace Analizator9000
         {
             if (declarer < 0)
             {
-                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_declarerError") + ": " + declarer);
+                throw new Exception(Form1.GetResourceManager().GetString("BCalcWrapper_declarerError", Form1.GetCulture()) + ": " + declarer);
             }
             int l = (declarer + 1) % 4;
             BCalcWrapper.bcalcDDS_setPlayerOnLeadAndReset(solver, l);

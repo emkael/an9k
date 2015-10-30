@@ -46,11 +46,11 @@ namespace Analizator9000
         {
             if (!File.Exists(scriptname))
             {
-                throw new Exception(Form1.GetResourceManager().GetString("DealerWrapper_errorFileNotFound") + ": " + scriptname);
+                throw new Exception(Form1.GetResourceManager().GetString("DealerWrapper_errorFileNotFound", Form1.GetCulture()) + ": " + scriptname);
             }
             if (produce < 1)
             {
-                throw new Exception(Form1.GetResourceManager().GetString("DealerWrapper_errorInvalidDealCount"));
+                throw new Exception(Form1.GetResourceManager().GetString("DealerWrapper_errorInvalidDealCount", Form1.GetCulture()));
             }
             this.scriptname = scriptname;
             this.debugForm = debugForm;
