@@ -356,6 +356,7 @@ namespace Analizator9000
                 abortButton.Enabled = false;
                 analyzeGroup.Enabled = true;
                 generateGroup.Enabled = true;
+                analyzeButton.Enabled = true;
                 contractAnalyzeButton.Enabled = true;
                 contractCancelButton.Enabled = false;
                 fullContractTable.Enabled = true;
