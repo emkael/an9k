@@ -69,48 +69,43 @@
             this.generateFileNameTextBox = new System.Windows.Forms.TextBox();
             this.analyzeGroup = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.analyzeFileNameTextBox = new System.Windows.Forms.TextBox();
-            this.generateFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.statusListBox = new System.Windows.Forms.ListBox();
-            this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.resultTextBox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.contractTable = new System.Windows.Forms.TableLayoutPanel();
-            this.analyzeButton = new System.Windows.Forms.Button();
-            this.abortButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.resultTextBox = new System.Windows.Forms.TextBox();
+            this.abortButton = new System.Windows.Forms.Button();
+            this.analyzeButton = new System.Windows.Forms.Button();
+            this.contractTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.vulnerabilityBox = new System.Windows.Forms.ComboBox();
@@ -186,6 +181,11 @@
             this.label33 = new System.Windows.Forms.Label();
             this.contractCancelButton = new System.Windows.Forms.Button();
             this.contractAnalyzeButton = new System.Windows.Forms.Button();
+            this.analyzeFileNameTextBox = new System.Windows.Forms.TextBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.statusListBox = new System.Windows.Forms.ListBox();
+            this.generateFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.langSelectSplitButton = new System.Windows.Forms.ToolStripSplitButton();
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -195,9 +195,9 @@
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
-            this.contractTable.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.contractTable.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.fullContractTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -449,7 +449,10 @@
             // analyzeGroup
             // 
             this.analyzeGroup.Controls.Add(this.button2);
+            this.analyzeGroup.Controls.Add(this.tabControl1);
             this.analyzeGroup.Controls.Add(this.analyzeFileNameTextBox);
+            this.analyzeGroup.Controls.Add(this.progressBar);
+            this.analyzeGroup.Controls.Add(this.statusListBox);
             resources.ApplyResources(this.analyzeGroup, "analyzeGroup");
             this.analyzeGroup.Name = "analyzeGroup";
             this.analyzeGroup.TabStop = false;
@@ -461,30 +464,29 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // analyzeFileNameTextBox
+            // tabControl1
             // 
-            resources.ApplyResources(this.analyzeFileNameTextBox, "analyzeFileNameTextBox");
-            this.analyzeFileNameTextBox.Name = "analyzeFileNameTextBox";
-            this.analyzeFileNameTextBox.ReadOnly = true;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
             // 
-            // generateFileDialog
+            // tabPage1
             // 
-            this.generateFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.resultTextBox);
+            this.tabPage1.Controls.Add(this.abortButton);
+            this.tabPage1.Controls.Add(this.analyzeButton);
+            this.tabPage1.Controls.Add(this.contractTable);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // progressBar
+            // label13
             // 
-            resources.ApplyResources(this.progressBar, "progressBar");
-            this.progressBar.Name = "progressBar";
-            // 
-            // statusListBox
-            // 
-            resources.ApplyResources(this.statusListBox, "statusListBox");
-            this.statusListBox.FormattingEnabled = true;
-            this.statusListBox.Name = "statusListBox";
-            // 
-            // analyzeFileDialog
-            // 
-            this.analyzeFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.analyzeFileDialog_FileOk);
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
             // 
             // resultTextBox
             // 
@@ -492,194 +494,19 @@
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ReadOnly = true;
             // 
-            // label13
+            // abortButton
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
+            resources.ApplyResources(this.abortButton, "abortButton");
+            this.abortButton.Name = "abortButton";
+            this.abortButton.UseVisualStyleBackColor = true;
+            this.abortButton.Click += new System.EventHandler(this.abortButton_Click);
             // 
-            // button3
+            // analyzeButton
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Name = "label18";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Name = "label16";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // checkBox20
-            // 
-            resources.ApplyResources(this.checkBox20, "checkBox20");
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            resources.ApplyResources(this.checkBox19, "checkBox19");
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            resources.ApplyResources(this.checkBox18, "checkBox18");
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            resources.ApplyResources(this.checkBox17, "checkBox17");
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            resources.ApplyResources(this.checkBox16, "checkBox16");
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox15
-            // 
-            resources.ApplyResources(this.checkBox15, "checkBox15");
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            resources.ApplyResources(this.checkBox14, "checkBox14");
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            resources.ApplyResources(this.checkBox13, "checkBox13");
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            resources.ApplyResources(this.checkBox12, "checkBox12");
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            resources.ApplyResources(this.checkBox11, "checkBox11");
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox10
-            // 
-            resources.ApplyResources(this.checkBox10, "checkBox10");
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            resources.ApplyResources(this.checkBox9, "checkBox9");
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            resources.ApplyResources(this.checkBox8, "checkBox8");
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            resources.ApplyResources(this.checkBox7, "checkBox7");
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            resources.ApplyResources(this.checkBox6, "checkBox6");
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Name = "label15";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
+            resources.ApplyResources(this.analyzeButton, "analyzeButton");
+            this.analyzeButton.Name = "analyzeButton";
+            this.analyzeButton.UseVisualStyleBackColor = true;
+            this.analyzeButton.Click += new System.EventHandler(this.analyzeButton_Click);
             // 
             // contractTable
             // 
@@ -716,38 +543,189 @@
             this.contractTable.Controls.Add(this.button3, 0, 0);
             this.contractTable.Name = "contractTable";
             // 
-            // analyzeButton
+            // label21
             // 
-            resources.ApplyResources(this.analyzeButton, "analyzeButton");
-            this.analyzeButton.Name = "analyzeButton";
-            this.analyzeButton.UseVisualStyleBackColor = true;
-            this.analyzeButton.Click += new System.EventHandler(this.analyzeButton_Click);
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
-            // abortButton
+            // label17
             // 
-            resources.ApplyResources(this.abortButton, "abortButton");
-            this.abortButton.Name = "abortButton";
-            this.abortButton.UseVisualStyleBackColor = true;
-            this.abortButton.Click += new System.EventHandler(this.abortButton_Click);
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // tabControl1
+            // label15
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.Name = "label15";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // tabPage1
+            // checkBox1
             // 
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.resultTextBox);
-            this.tabPage1.Controls.Add(this.abortButton);
-            this.tabPage1.Controls.Add(this.analyzeButton);
-            this.tabPage1.Controls.Add(this.contractTable);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            resources.ApplyResources(this.checkBox6, "checkBox6");
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            resources.ApplyResources(this.checkBox7, "checkBox7");
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            resources.ApplyResources(this.checkBox8, "checkBox8");
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            resources.ApplyResources(this.checkBox9, "checkBox9");
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            resources.ApplyResources(this.checkBox10, "checkBox10");
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            resources.ApplyResources(this.checkBox11, "checkBox11");
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            resources.ApplyResources(this.checkBox12, "checkBox12");
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            resources.ApplyResources(this.checkBox13, "checkBox13");
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            resources.ApplyResources(this.checkBox14, "checkBox14");
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            resources.ApplyResources(this.checkBox15, "checkBox15");
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            resources.ApplyResources(this.checkBox16, "checkBox16");
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            resources.ApplyResources(this.checkBox17, "checkBox17");
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            resources.ApplyResources(this.checkBox18, "checkBox18");
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            resources.ApplyResources(this.checkBox19, "checkBox19");
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            resources.ApplyResources(this.checkBox20, "checkBox20");
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Name = "label16";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.ForeColor = System.Drawing.Color.Blue;
+            this.label18.Name = "label18";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabPage2
             // 
@@ -1475,6 +1453,31 @@
             this.contractAnalyzeButton.UseVisualStyleBackColor = true;
             this.contractAnalyzeButton.Click += new System.EventHandler(this.button4_Click);
             // 
+            // analyzeFileNameTextBox
+            // 
+            resources.ApplyResources(this.analyzeFileNameTextBox, "analyzeFileNameTextBox");
+            this.analyzeFileNameTextBox.Name = "analyzeFileNameTextBox";
+            this.analyzeFileNameTextBox.ReadOnly = true;
+            // 
+            // progressBar
+            // 
+            resources.ApplyResources(this.progressBar, "progressBar");
+            this.progressBar.Name = "progressBar";
+            // 
+            // statusListBox
+            // 
+            resources.ApplyResources(this.statusListBox, "statusListBox");
+            this.statusListBox.FormattingEnabled = true;
+            this.statusListBox.Name = "statusListBox";
+            // 
+            // generateFileDialog
+            // 
+            this.generateFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // analyzeFileDialog
+            // 
+            this.analyzeFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.analyzeFileDialog_FileOk);
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1527,9 +1530,6 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.statusListBox);
-            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.analyzeGroup);
             this.Controls.Add(this.generateGroup);
             this.DoubleBuffered = true;
@@ -1543,11 +1543,11 @@
             this.tableLayoutPanel1.PerformLayout();
             this.analyzeGroup.ResumeLayout(false);
             this.analyzeGroup.PerformLayout();
-            this.contractTable.ResumeLayout(false);
-            this.contractTable.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.contractTable.ResumeLayout(false);
+            this.contractTable.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.fullContractTable.ResumeLayout(false);

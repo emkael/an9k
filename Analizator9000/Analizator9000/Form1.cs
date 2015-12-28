@@ -494,8 +494,15 @@ namespace Analizator9000
                         ((TextBox)fullContractTable.GetControlFromPosition(5, row)).Text = ((double)trickSum[rowContract] / dealCount).ToString("0.##");
                         ((TextBox)fullContractTable.GetControlFromPosition(6, row)).Text = ((double)scoreSum[rowContract] / dealCount).ToString("0.##");
                         ((TextBox)fullContractTable.GetControlFromPosition(7, row)).Text = ((double)successSum[rowContract] / dealCount).ToString("0.##");
-                        ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = (maxSum[rowContract] / dealCount).ToString("0.##");
-                        ((TextBox)fullContractTable.GetControlFromPosition(9, row)).Text = (impSum[rowContract] / dealCount).ToString("0.##");
+                        double max = maxSum[rowContract] / dealCount;
+                        double imp = impSum[rowContract] / dealCount;
+                        if (rowContract.Declarer == Contract.DECLARER_EAST || rowContract.Declarer == Contract.DECLARER_WEST)
+                        {
+                            max = 1.0 - max;
+                            imp = -imp;
+                        }
+                        ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = max.ToString("0.##");
+                        ((TextBox)fullContractTable.GetControlFromPosition(9, row)).Text = imp.ToString("0.##");
                     }
                 }
             }

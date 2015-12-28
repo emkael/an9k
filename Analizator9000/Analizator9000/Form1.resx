@@ -1132,7 +1132,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;generateGroup.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>411, 21</value>
@@ -1157,129 +1157,6 @@
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="analyzeFileNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 20</value>
-  </data>
-  <data name="analyzeFileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>398, 20</value>
-  </data>
-  <data name="analyzeFileNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;analyzeFileNameTextBox.Name" xml:space="preserve">
-    <value>analyzeFileNameTextBox</value>
-  </data>
-  <data name="&gt;&gt;analyzeFileNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;analyzeFileNameTextBox.Parent" xml:space="preserve">
-    <value>analyzeGroup</value>
-  </data>
-  <data name="&gt;&gt;analyzeFileNameTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="analyzeGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 28</value>
-  </data>
-  <data name="analyzeGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 50</value>
-  </data>
-  <data name="analyzeGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="analyzeGroup.Text" xml:space="preserve">
-    <value>Analiza</value>
-  </data>
-  <data name="&gt;&gt;analyzeGroup.Name" xml:space="preserve">
-    <value>analyzeGroup</value>
-  </data>
-  <data name="&gt;&gt;analyzeGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;analyzeGroup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;analyzeGroup.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="generateFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 350</value>
-  </data>
-  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 23</value>
-  </data>
-  <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
-    <value>progressBar</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="statusListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="statusListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 379</value>
-  </data>
-  <data name="statusListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 95</value>
-  </data>
-  <data name="statusListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;statusListBox.Name" xml:space="preserve">
-    <value>statusListBox</value>
-  </data>
-  <data name="&gt;&gt;statusListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="analyzeFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>171, 17</value>
-  </metadata>
-  <data name="resultTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Console, 9pt</value>
-  </data>
-  <data name="resultTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 129</value>
-  </data>
-  <data name="resultTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="resultTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 92</value>
-  </data>
-  <data name="resultTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;resultTextBox.Name" xml:space="preserve">
-    <value>resultTextBox</value>
-  </data>
-  <data name="&gt;&gt;resultTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resultTextBox.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;resultTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1308,743 +1185,116 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
+  <data name="resultTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Console, 9pt</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 3</value>
+  <data name="resultTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 129</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 16</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="label22.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+  <data name="resultTextBox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 92</value>
+  <data name="resultTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>475, 92</value>
   </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 13</value>
-  </data>
-  <data name="label22.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>W:</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="label20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 48</value>
-  </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 13</value>
-  </data>
-  <data name="label20.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>E:</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="label19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 26</value>
-  </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 13</value>
-  </data>
-  <data name="label19.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label19.Text" xml:space="preserve">
-    <value>N:</value>
-  </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
-  </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 9pt, style=Bold</value>
-  </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 0</value>
-  </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
-  </data>
-  <data name="label18.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>NT</value>
-  </data>
-  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 8.25pt</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 0</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
-  </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 8.25pt</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 0</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="checkBox20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 91</value>
-  </data>
-  <data name="checkBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox20.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;checkBox20.Name" xml:space="preserve">
-    <value>checkBox20</value>
-  </data>
-  <data name="&gt;&gt;checkBox20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox20.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox20.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="checkBox19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 91</value>
-  </data>
-  <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox19.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;checkBox19.Name" xml:space="preserve">
-    <value>checkBox19</value>
-  </data>
-  <data name="&gt;&gt;checkBox19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox19.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox19.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="checkBox18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 91</value>
-  </data>
-  <data name="checkBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox18.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;checkBox18.Name" xml:space="preserve">
-    <value>checkBox18</value>
-  </data>
-  <data name="&gt;&gt;checkBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox18.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox18.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="checkBox17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 69</value>
-  </data>
-  <data name="checkBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox17.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;checkBox17.Name" xml:space="preserve">
-    <value>checkBox17</value>
-  </data>
-  <data name="&gt;&gt;checkBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox17.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox17.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="checkBox16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 69</value>
-  </data>
-  <data name="checkBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox16.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;checkBox16.Name" xml:space="preserve">
-    <value>checkBox16</value>
-  </data>
-  <data name="&gt;&gt;checkBox16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox16.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox16.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="checkBox15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 69</value>
-  </data>
-  <data name="checkBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox15.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;checkBox15.Name" xml:space="preserve">
-    <value>checkBox15</value>
-  </data>
-  <data name="&gt;&gt;checkBox15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox15.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox15.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="checkBox14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 47</value>
-  </data>
-  <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;checkBox14.Name" xml:space="preserve">
-    <value>checkBox14</value>
-  </data>
-  <data name="&gt;&gt;checkBox14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox14.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox14.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="checkBox13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 47</value>
-  </data>
-  <data name="checkBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox13.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;checkBox13.Name" xml:space="preserve">
-    <value>checkBox13</value>
-  </data>
-  <data name="&gt;&gt;checkBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox13.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox13.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="checkBox12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 47</value>
-  </data>
-  <data name="checkBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;checkBox12.Name" xml:space="preserve">
-    <value>checkBox12</value>
-  </data>
-  <data name="&gt;&gt;checkBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox12.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox12.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="checkBox11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 25</value>
-  </data>
-  <data name="checkBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;checkBox11.Name" xml:space="preserve">
-    <value>checkBox11</value>
-  </data>
-  <data name="&gt;&gt;checkBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox11.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox11.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 25</value>
-  </data>
-  <data name="checkBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;checkBox10.Name" xml:space="preserve">
-    <value>checkBox10</value>
-  </data>
-  <data name="&gt;&gt;checkBox10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox10.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox10.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="checkBox9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 25</value>
-  </data>
-  <data name="checkBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;checkBox9.Name" xml:space="preserve">
-    <value>checkBox9</value>
-  </data>
-  <data name="&gt;&gt;checkBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox9.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox9.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="checkBox8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 91</value>
-  </data>
-  <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;checkBox8.Name" xml:space="preserve">
-    <value>checkBox8</value>
-  </data>
-  <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox8.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 69</value>
-  </data>
-  <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
-    <value>checkBox7</value>
-  </data>
-  <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="checkBox6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 47</value>
-  </data>
-  <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;checkBox6.Name" xml:space="preserve">
-    <value>checkBox6</value>
-  </data>
-  <data name="&gt;&gt;checkBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox6.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 25</value>
-  </data>
-  <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="resultTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
-    <value>checkBox5</value>
+  <data name="&gt;&gt;resultTextBox.Name" xml:space="preserve">
+    <value>resultTextBox</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;resultTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
-    <value>contractTable</value>
+  <data name="&gt;&gt;resultTextBox.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 91</value>
-  </data>
-  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
-    <value>checkBox4</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 69</value>
-  </data>
-  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
-    <value>checkBox3</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
-    <value>contractTable</value>
-  </data>
-  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 47</value>
-  </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;resultTextBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
-    <value>checkBox2</value>
+  <data name="abortButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="abortButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 92</value>
   </data>
-  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
-    <value>contractTable</value>
+  <data name="abortButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 34</value>
   </data>
-  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="abortButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="abortButton.Text" xml:space="preserve">
+    <value>PRZERWIJ</value>
   </data>
-  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 25</value>
+  <data name="&gt;&gt;abortButton.Name" xml:space="preserve">
+    <value>abortButton</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="&gt;&gt;abortButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;abortButton.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
+  <data name="&gt;&gt;abortButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="analyzeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 6</value>
   </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
-    <value>contractTable</value>
+  <data name="analyzeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 87</value>
   </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+  <data name="analyzeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="analyzeButton.Text" xml:space="preserve">
+    <value>ANALIZUJ</value>
+  </data>
+  <data name="&gt;&gt;analyzeButton.Name" xml:space="preserve">
+    <value>analyzeButton</value>
+  </data>
+  <data name="&gt;&gt;analyzeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analyzeButton.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;analyzeButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="contractTable.ColumnCount" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label21.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Sans Unicode, 8.25pt</value>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 70</value>
   </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 0</value>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 22</value>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="label21.Text" xml:space="preserve">
+    <value>S:</value>
   </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>♥</value>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
   </data>
-  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>contractTable</value>
   </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -2082,38 +1332,743 @@
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label21.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+  <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 70</value>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 13</value>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 0</value>
   </data>
-  <data name="label21.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
   </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>S:</value>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
+  <data name="label15.Text" xml:space="preserve">
+    <value>♥</value>
   </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+  <data name="label15.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>contractTable</value>
   </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 25</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="contractTable.ColumnCount" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 47</value>
+  </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 69</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 91</value>
+  </data>
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 25</value>
+  </data>
+  <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBox6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 47</value>
+  </data>
+  <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Name" xml:space="preserve">
+    <value>checkBox6</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 69</value>
+  </data>
+  <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Name" xml:space="preserve">
+    <value>checkBox7</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="checkBox8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 91</value>
+  </data>
+  <data name="checkBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Name" xml:space="preserve">
+    <value>checkBox8</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox8.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="checkBox9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 25</value>
+  </data>
+  <data name="checkBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Name" xml:space="preserve">
+    <value>checkBox9</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox9.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 25</value>
+  </data>
+  <data name="checkBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Name" xml:space="preserve">
+    <value>checkBox10</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="checkBox11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 25</value>
+  </data>
+  <data name="checkBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;checkBox11.Name" xml:space="preserve">
+    <value>checkBox11</value>
+  </data>
+  <data name="&gt;&gt;checkBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox11.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="checkBox12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 47</value>
+  </data>
+  <data name="checkBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;checkBox12.Name" xml:space="preserve">
+    <value>checkBox12</value>
+  </data>
+  <data name="&gt;&gt;checkBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox12.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox12.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="checkBox13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 47</value>
+  </data>
+  <data name="checkBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox13.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;checkBox13.Name" xml:space="preserve">
+    <value>checkBox13</value>
+  </data>
+  <data name="&gt;&gt;checkBox13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox13.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox13.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="checkBox14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 47</value>
+  </data>
+  <data name="checkBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;checkBox14.Name" xml:space="preserve">
+    <value>checkBox14</value>
+  </data>
+  <data name="&gt;&gt;checkBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox14.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox14.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="checkBox15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 69</value>
+  </data>
+  <data name="checkBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;checkBox15.Name" xml:space="preserve">
+    <value>checkBox15</value>
+  </data>
+  <data name="&gt;&gt;checkBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox15.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox15.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="checkBox16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 69</value>
+  </data>
+  <data name="checkBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Name" xml:space="preserve">
+    <value>checkBox16</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="checkBox17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 69</value>
+  </data>
+  <data name="checkBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox17.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;checkBox17.Name" xml:space="preserve">
+    <value>checkBox17</value>
+  </data>
+  <data name="&gt;&gt;checkBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox17.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox17.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="checkBox18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 91</value>
+  </data>
+  <data name="checkBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox18.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;checkBox18.Name" xml:space="preserve">
+    <value>checkBox18</value>
+  </data>
+  <data name="&gt;&gt;checkBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox18.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox18.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="checkBox19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 91</value>
+  </data>
+  <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox19.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;checkBox19.Name" xml:space="preserve">
+    <value>checkBox19</value>
+  </data>
+  <data name="&gt;&gt;checkBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox19.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox19.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="checkBox20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 91</value>
+  </data>
+  <data name="checkBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="checkBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;checkBox20.Name" xml:space="preserve">
+    <value>checkBox20</value>
+  </data>
+  <data name="&gt;&gt;checkBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox20.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;checkBox20.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 0</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>♠</value>
+  </data>
+  <data name="label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 0</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>♦</value>
+  </data>
+  <data name="label16.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt, style=Bold</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 0</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 22</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>NT</value>
+  </data>
+  <data name="label18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 26</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>N:</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 48</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>E:</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label22.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 92</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 13</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>W:</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 3</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 16</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>contractTable</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>29</value>
   </data>
   <data name="contractTable.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 18</value>
@@ -2142,57 +2097,6 @@
   <data name="contractTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label21" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="checkBox1" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBox2" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBox3" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBox4" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBox5" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox6" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox7" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox8" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="checkBox9" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="checkBox10" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="checkBox11" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="checkBox12" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="checkBox13" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="checkBox14" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="checkBox15" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="checkBox16" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="checkBox17" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="checkBox18" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="checkBox19" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="checkBox20" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16.66667,Percent,16.66667,Percent,16.66667,Percent,16.66667,Percent,16.66667,Percent,16.66667" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="analyzeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 6</value>
-  </data>
-  <data name="analyzeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 87</value>
-  </data>
-  <data name="analyzeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="analyzeButton.Text" xml:space="preserve">
-    <value>ANALIZUJ</value>
-  </data>
-  <data name="&gt;&gt;analyzeButton.Name" xml:space="preserve">
-    <value>analyzeButton</value>
-  </data>
-  <data name="&gt;&gt;analyzeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;analyzeButton.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;analyzeButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="abortButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="abortButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 92</value>
-  </data>
-  <data name="abortButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 34</value>
-  </data>
-  <data name="abortButton.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="abortButton.Text" xml:space="preserve">
-    <value>PRZERWIJ</value>
-  </data>
-  <data name="&gt;&gt;abortButton.Name" xml:space="preserve">
-    <value>abortButton</value>
-  </data>
-  <data name="&gt;&gt;abortButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;abortButton.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;abortButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -2200,7 +2104,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 234</value>
+    <value>471, 234</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2284,10 +2188,10 @@
     <value>10</value>
   </data>
   <data name="textBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 116</value>
+    <value>329, 116</value>
   </data>
   <data name="textBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox22.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -2308,10 +2212,10 @@
     <value>0</value>
   </data>
   <data name="textBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 116</value>
+    <value>376, 116</value>
   </data>
   <data name="textBox23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox23.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -2332,10 +2236,10 @@
     <value>1</value>
   </data>
   <data name="textBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 140</value>
+    <value>281, 140</value>
   </data>
   <data name="textBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox24.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -2356,10 +2260,10 @@
     <value>2</value>
   </data>
   <data name="textBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 140</value>
+    <value>329, 140</value>
   </data>
   <data name="textBox25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox25.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -2380,10 +2284,10 @@
     <value>3</value>
   </data>
   <data name="textBox26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 140</value>
+    <value>376, 140</value>
   </data>
   <data name="textBox26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox26.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -2404,10 +2308,10 @@
     <value>4</value>
   </data>
   <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 68</value>
+    <value>281, 68</value>
   </data>
   <data name="textBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox15.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -2428,10 +2332,10 @@
     <value>5</value>
   </data>
   <data name="textBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 68</value>
+    <value>329, 68</value>
   </data>
   <data name="textBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox16.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -2452,10 +2356,10 @@
     <value>6</value>
   </data>
   <data name="textBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 68</value>
+    <value>376, 68</value>
   </data>
   <data name="textBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox17.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -2476,10 +2380,10 @@
     <value>7</value>
   </data>
   <data name="textBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 92</value>
+    <value>281, 92</value>
   </data>
   <data name="textBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox18.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -2500,10 +2404,10 @@
     <value>8</value>
   </data>
   <data name="textBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 92</value>
+    <value>329, 92</value>
   </data>
   <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox19.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -2524,10 +2428,10 @@
     <value>9</value>
   </data>
   <data name="textBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 92</value>
+    <value>376, 92</value>
   </data>
   <data name="textBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox20.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -2548,10 +2452,10 @@
     <value>10</value>
   </data>
   <data name="textBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 116</value>
+    <value>281, 116</value>
   </data>
   <data name="textBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox21.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -2572,10 +2476,10 @@
     <value>11</value>
   </data>
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 20</value>
+    <value>281, 20</value>
   </data>
   <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -2596,10 +2500,10 @@
     <value>12</value>
   </data>
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 20</value>
+    <value>329, 20</value>
   </data>
   <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -2620,10 +2524,10 @@
     <value>13</value>
   </data>
   <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 20</value>
+    <value>376, 20</value>
   </data>
   <data name="textBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -2644,10 +2548,10 @@
     <value>14</value>
   </data>
   <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 44</value>
+    <value>281, 44</value>
   </data>
   <data name="textBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="textBox12.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -2668,10 +2572,10 @@
     <value>15</value>
   </data>
   <data name="textBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 44</value>
+    <value>329, 44</value>
   </data>
   <data name="textBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="textBox13.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -2692,10 +2596,10 @@
     <value>16</value>
   </data>
   <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 44</value>
+    <value>376, 44</value>
   </data>
   <data name="textBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -2746,7 +2650,7 @@
     <value>True</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 0</value>
+    <value>53, 0</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 13</value>
@@ -2773,7 +2677,7 @@
     <value>True</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 0</value>
+    <value>145, 0</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -2800,7 +2704,7 @@
     <value>True</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 0</value>
+    <value>195, 0</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -2827,7 +2731,7 @@
     <value>True</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 0</value>
+    <value>243, 0</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -2854,7 +2758,7 @@
     <value>True</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 0</value>
+    <value>281, 0</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
@@ -2908,7 +2812,7 @@
     <value>3, 20</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2956,7 +2860,7 @@
     <value>3, 44</value>
   </data>
   <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -3004,7 +2908,7 @@
     <value>3, 68</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3052,7 +2956,7 @@
     <value>3, 92</value>
   </data>
   <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3100,7 +3004,7 @@
     <value>3, 116</value>
   </data>
   <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox5.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3148,7 +3052,7 @@
     <value>3, 140</value>
   </data>
   <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3184,10 +3088,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 20</value>
+    <value>53, 20</value>
   </data>
   <data name="comboBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox8.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3223,10 +3127,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 44</value>
+    <value>53, 44</value>
   </data>
   <data name="comboBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox9.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -3262,10 +3166,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 68</value>
+    <value>53, 68</value>
   </data>
   <data name="comboBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3301,10 +3205,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 92</value>
+    <value>53, 92</value>
   </data>
   <data name="comboBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox11.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -3340,10 +3244,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 116</value>
+    <value>53, 116</value>
   </data>
   <data name="comboBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox12.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -3379,10 +3283,10 @@
     <value>NT</value>
   </data>
   <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 140</value>
+    <value>53, 140</value>
   </data>
   <data name="comboBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox13.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -3409,10 +3313,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 20</value>
+    <value>103, 20</value>
   </data>
   <data name="comboBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox15.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -3439,10 +3343,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 44</value>
+    <value>103, 44</value>
   </data>
   <data name="comboBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox16.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -3469,10 +3373,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 68</value>
+    <value>103, 68</value>
   </data>
   <data name="comboBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox17.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -3499,10 +3403,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 92</value>
+    <value>103, 92</value>
   </data>
   <data name="comboBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox18.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -3529,10 +3433,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 116</value>
+    <value>103, 116</value>
   </data>
   <data name="comboBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox19.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -3559,10 +3463,10 @@
     <value>XX</value>
   </data>
   <data name="comboBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 140</value>
+    <value>103, 140</value>
   </data>
   <data name="comboBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>36, 21</value>
   </data>
   <data name="comboBox20.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -3595,10 +3499,10 @@
     <value>S</value>
   </data>
   <data name="comboBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 20</value>
+    <value>145, 20</value>
   </data>
   <data name="comboBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox22.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3631,10 +3535,10 @@
     <value>S</value>
   </data>
   <data name="comboBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 44</value>
+    <value>145, 44</value>
   </data>
   <data name="comboBox23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox23.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -3667,10 +3571,10 @@
     <value>S</value>
   </data>
   <data name="comboBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 68</value>
+    <value>145, 68</value>
   </data>
   <data name="comboBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox24.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -3703,10 +3607,10 @@
     <value>S</value>
   </data>
   <data name="comboBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 92</value>
+    <value>145, 92</value>
   </data>
   <data name="comboBox25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox25.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -3739,10 +3643,10 @@
     <value>S</value>
   </data>
   <data name="comboBox26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 116</value>
+    <value>145, 116</value>
   </data>
   <data name="comboBox26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox26.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -3775,10 +3679,10 @@
     <value>S</value>
   </data>
   <data name="comboBox27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 140</value>
+    <value>145, 140</value>
   </data>
   <data name="comboBox27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>44, 21</value>
   </data>
   <data name="comboBox27.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -3799,10 +3703,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 20</value>
+    <value>195, 20</value>
   </data>
   <data name="numericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -3823,10 +3727,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 44</value>
+    <value>195, 44</value>
   </data>
   <data name="numericUpDown2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown2.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -3847,10 +3751,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 68</value>
+    <value>195, 68</value>
   </data>
   <data name="numericUpDown3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown3.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -3871,10 +3775,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 92</value>
+    <value>195, 92</value>
   </data>
   <data name="numericUpDown4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown4.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -3895,10 +3799,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 116</value>
+    <value>195, 116</value>
   </data>
   <data name="numericUpDown5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown5.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -3919,10 +3823,10 @@
     <value>False</value>
   </data>
   <data name="numericUpDown6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 140</value>
+    <value>195, 140</value>
   </data>
   <data name="numericUpDown6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+    <value>42, 20</value>
   </data>
   <data name="numericUpDown6.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -3940,10 +3844,10 @@
     <value>53</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 20</value>
+    <value>243, 20</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -3964,10 +3868,10 @@
     <value>54</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 44</value>
+    <value>243, 44</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -3988,10 +3892,10 @@
     <value>55</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 68</value>
+    <value>243, 68</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -4012,10 +3916,10 @@
     <value>56</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 92</value>
+    <value>243, 92</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -4036,10 +3940,10 @@
     <value>57</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 116</value>
+    <value>243, 116</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -4060,10 +3964,10 @@
     <value>58</value>
   </data>
   <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 140</value>
+    <value>243, 140</value>
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+    <value>32, 20</value>
   </data>
   <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -4087,7 +3991,7 @@
     <value>True</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 0</value>
+    <value>419, 0</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
@@ -4114,7 +4018,7 @@
     <value>True</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 0</value>
+    <value>376, 0</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -4138,10 +4042,10 @@
     <value>61</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 20</value>
+    <value>419, 20</value>
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -4162,10 +4066,10 @@
     <value>62</value>
   </data>
   <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 44</value>
+    <value>419, 44</value>
   </data>
   <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -4186,10 +4090,10 @@
     <value>63</value>
   </data>
   <data name="textBox27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 68</value>
+    <value>419, 68</value>
   </data>
   <data name="textBox27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox27.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -4210,10 +4114,10 @@
     <value>64</value>
   </data>
   <data name="textBox28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 92</value>
+    <value>419, 92</value>
   </data>
   <data name="textBox28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox28.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -4234,10 +4138,10 @@
     <value>65</value>
   </data>
   <data name="textBox29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 116</value>
+    <value>419, 116</value>
   </data>
   <data name="textBox29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox29.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -4258,10 +4162,10 @@
     <value>66</value>
   </data>
   <data name="textBox30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 140</value>
+    <value>419, 140</value>
   </data>
   <data name="textBox30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>43, 20</value>
   </data>
   <data name="textBox30.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -4285,10 +4189,10 @@
     <value>True</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 0</value>
+    <value>329, 0</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
+    <value>38, 17</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -4315,7 +4219,7 @@
     <value>7</value>
   </data>
   <data name="fullContractTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>475, 163</value>
+    <value>465, 163</value>
   </data>
   <data name="fullContractTable.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4333,13 +4237,13 @@
     <value>2</value>
   </data>
   <data name="fullContractTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox22" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox23" Row="5" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox24" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox25" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox26" Row="6" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox15" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox17" Row="3" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox18" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox19" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox20" Row="4" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox21" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="1" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox11" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox12" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox13" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox15" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox16" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox17" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox18" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox19" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox20" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox22" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox23" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox24" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox25" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox26" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox27" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown1" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown2" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown4" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown5" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown6" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="1" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox27" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox28" Row="4" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox29" Row="5" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox30" Row="6" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11606,Percent,11.11607,Percent,9.473684,Percent,11.1579,Percent,10.73684,Percent,8.631579,Percent,10.73684,Percent,10.52632,Percent,7.157895,Percent,8.842105,Absolute,20" /&gt;&lt;Rows Styles="Percent,10.44107,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox22" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox23" Row="5" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox24" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox25" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox26" Row="6" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox15" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox17" Row="3" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox18" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox19" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox20" Row="4" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox21" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="1" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox11" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox12" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox13" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox15" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox16" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox17" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox18" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox19" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox20" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox22" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox23" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox24" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox25" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox26" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox27" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown1" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown2" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown4" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown5" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown6" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="1" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox27" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox28" Row="4" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox29" Row="5" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox30" Row="6" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11606,Percent,11.11607,Percent,9.473684,Percent,11.1579,Percent,10.73684,Percent,8.631579,Percent,10.73684,Percent,10.52632,Percent,9.67742,Percent,10.10753,Absolute,20" /&gt;&lt;Rows Styles="Percent,10.44107,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="contractCancelButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="contractCancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 198</value>
+    <value>252, 198</value>
   </data>
   <data name="contractCancelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 23</value>
@@ -4393,7 +4297,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 234</value>
+    <value>471, 234</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4414,10 +4318,10 @@
     <value>1</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 84</value>
+    <value>7, 50</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 260</value>
+    <value>479, 260</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -4429,11 +4333,107 @@
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>analyzeGroup</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="analyzeFileNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="analyzeFileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 20</value>
+  </data>
+  <data name="analyzeFileNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;analyzeFileNameTextBox.Name" xml:space="preserve">
+    <value>analyzeFileNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;analyzeFileNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analyzeFileNameTextBox.Parent" xml:space="preserve">
+    <value>analyzeGroup</value>
+  </data>
+  <data name="&gt;&gt;analyzeFileNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 312</value>
+  </data>
+  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 23</value>
+  </data>
+  <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
+    <value>progressBar</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
+    <value>analyzeGroup</value>
+  </data>
+  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="statusListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="statusListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 341</value>
+  </data>
+  <data name="statusListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 95</value>
+  </data>
+  <data name="statusListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;statusListBox.Name" xml:space="preserve">
+    <value>statusListBox</value>
+  </data>
+  <data name="&gt;&gt;statusListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusListBox.Parent" xml:space="preserve">
+    <value>analyzeGroup</value>
+  </data>
+  <data name="&gt;&gt;statusListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="analyzeGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 28</value>
+  </data>
+  <data name="analyzeGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 446</value>
+  </data>
+  <data name="analyzeGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="analyzeGroup.Text" xml:space="preserve">
+    <value>Analiza</value>
+  </data>
+  <data name="&gt;&gt;analyzeGroup.Name" xml:space="preserve">
+    <value>analyzeGroup</value>
+  </data>
+  <data name="&gt;&gt;analyzeGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analyzeGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;analyzeGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="generateFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="analyzeFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>317, 17</value>
   </metadata>
@@ -4479,20 +4479,20 @@
   <data name="toolStripWebsiteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVDhPdVJdTJJhGPW+bqp1U9OLWmZabZVpWOtHKS3B
-        zFLLbAgaimEwU5ugkhoakw+ET1BpkJ8/aS4bmkF1kdPh+plOm8pqJaxw6tTWmmY505Of4lypZ3sv3p3n
-        Oe95zvN6LENneu5JUhaxlrJYS0zmMUX5k7F8bYNVQtSI0wtNnu6ytUFSVoa22mJWtjaB7H4Erd0Azed8
-        3GyLBFdNQJinM/My1Ax3+b+gX6abpc9UKP6YDctEG7qmHUh5lAPFh0xwm0LALNTgqlBuPi+QrnZC286u
-        NoL3+jD0ztuwTtjwbrIPA7/G8XDIjISyApwsG8BR+R2Ec7LE7rYV0DPHq+rAfx6FfHsc7n8hYHIVgOw1
-        gV/TgCTdN8QonNhjiMDpGJHV3bYCOrAU0oGoikRwOk8i9S0TacZbEDywIFH3HgnKIQSQNdhZdQbHI5LH
-        3G0roNMWGWcRlyfDKSoIwU+jcFlDILVsCDzVMGLln7DLxIFXeRAC2GsI0KsSVnyDoHwUMeJ4MPXxOPI4
-        DowqElfkDkTm9iFEwMLe2ydwKIy7egQJQYlFRDuu62fAJT4jPCMZB6hI7Kk5h93aHIRmdSFIkIpj0Zfh
-        H8ZdHSL9Seg9J5XYcYN4gWx9PTLVJlyTqLDjXiACUwRg8wmkySq/ysjmYQnR4Eovoii+RMd2Syy4UNZL
-        K2vbfvd+HMLU9DxGv8+g+dV7CGVGsJJlKK9vw/+cqNAwEnYtL3pRoEDf3GJ3jOGGVDu47SB70i+MN1tU
-        2TpnMnehtLbzT+PLPujrbJPb/S/a9zL5/RJlXYfxsQ2MCzdbFgVk+qapOQAbfM46fYO5vobGt93zC/fv
-        PwHH6Ay6P/1Ae+84NvuxiUtpJb5SstnZ3jMC7+OJU4sCOaWNLbYex8KcFR3RQkV/ruZJ/yZv1uxG71As
-        n33BCcPLXGnVq467Fa3wCohdcpBeXB0tUdeN1La8QUePC89sg8jVNCHovGgknCdTrcdt3RexlAGNmLRi
-        dignl2KwxS6fEI7LKzCW2rKftZj0+pyHx19pnfSmB+/elgAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVDhPdVJdTJJhGPW+bqp1U8uLXKWWbZVpYOtHKS3B
+        zFLLdIgaiqEw+3GCSmpmTj8UPkGkQX6g+TN1aArVRU5H62c6dRrLWbCCqbOca9qPMz35Gc6Vdbb34t15
+        nvOe5zyvxypU+sc7SMosVlJmS5neNFVa3TZVoGy0SAijOKtIv8Nd9m+QlIWhNJhN5Z2tIPuboLRpoXhX
+        gMzuSPAqCAjzVaakGxUMd/mfoF+mm6VdcpSM5sD8uRt93+xIa8pF6dub4LWGgFWkwBVhsemcQLreCW07
+        x6BD0ovDUDuyYflsxevZYbz5/gkPXSYkVhXiRNUbBBXfRjj3ltjdtgZ65nh5PfiPo1Bgi8P9DwT0zkKQ
+        g3rwjY1IUU0jptQBH20ETsWILO62NdCBpZF2RGmSwX1+AumvWMjQXYfggRnJqiEklrsQQBrhVXsaxyJS
+        p9xta6DTFukWEJcvw0mKieBHUbikIJBe5UKSfByxxWPYpefCs5qJAM4/BOhVCTXTEFRPIkYcD5Y6Hkda
+        4sCoJXG52I7IvGGECNjYl30ch8J460eQEJRYRPTgqnoePOIdwm+k4gAVCR/jWexR5iL0Vh+YgnQcjb4E
+        /zDe+hDpT0LvOaXMhmvEE+SoG3CzQo8EiRw77wUiME0ADp9Ahqzmo4xsH5cQjc6suxTFl6g4bollF+UN
+        0hpj94/BURfmvi1hcmYe7c+GIJTpwE6VobqhG39zoiLtRFhCfvSKQKG6vcNmn8I1qfL9toNnZ73DuAt3
+        azoX9aY+ENTzn81Ph6E2WGe3+1+w7WPxRyTl9b26FisY5zM7VgRk6ta5RQAbvM84fIN5vtrmV/1Ly/eZ
+        r4B9ch79Y1/QM/gJm/dyiIsZZb5Sst3RMzABr6DkuRWB3MrmDuuAfXlOTW+0sHQkT9E2ssmLvbBxdyhW
+        j19w4vgqV1n7rPeOphOeAbG/HWSVGKIlFXUTdR0v0TvgRJf1PfIUrWCeE02EJ8nk/+O2+kX8zoBGTEYJ
+        J5SbRzE4Yqd3CNfpGRhLbdnPXkn6/5yHxy9L1/SIF7S1xwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="toolStripWebsiteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -4507,22 +4507,22 @@
   <data name="toolStripExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANiSURBVDhPbZF9TJNXFMavRoEa2loLtFSlBIW+wtu+VBrN
-        WkzsF6XVRA1qBjMGJrEJbkC0RSnyYYwKSsTPoCFmMzFu+odZxpb9tS1Zss3pXJfNDTJUbKBosV+Ut28b
-        ano8LUQX9UmenNxzz++eJ7nEU1cnemA0DjzU60cu0nQXIxQuJ+/R44oK4eTmzR1+o3HsC5ru25+fn4Pt
-        ReSB2dz/X1sb6+3vB09ra+SUUnnyY7GYP4/Ny79hg+CxxdIedLki8YEBCDc3R28xzNA6QuTkz40bPROd
-        nTDR1QWB3l7wtrSEe1Wq0yJChCnYzTDLWZut64XDMcv29QHX3Q1JpxPcWu0z3dKl+8hVmj7haWiI+Y4c
-        gWcuF0SOH4fJpqbQQYXiGCaR/a3XO162tc2EsR/v6IDkoUPgtlq5Xbm5w5mEVJMCoVDUQ1Fnpvbu5UKt
-        rTDtcED06FF4VF8fuG+1/jJlt3vjCMfa2wFaWuAPiyVaJRLdwXDVaEEqJVlFyIqekpIz4zt2sEG7PRnE
-        QQ43xZqbYaaxEdjaWojV1CTden10i0TyFSJmdFYa/p9ynHJ5z6jV6pvZuhUCOh2EysogLJMBK5HA92vW
-        BC1i8Zc4Z0JnpIm31avTFdyl6d9CYjFML1kCPkIghI5kZ8M1ihpdKZXuWhh9V0mXK3+qru7EU5ns+XOE
-        /OjgQvXxePBQoQid1OnOfqBS5S0gb+RrapLO7tlzhVu7NhHEzS8QYvl8iGL8FDyG58msLJioqJi9ZDZf
-        KJXLpQsoISG7vdBfWzvoLSxMenEwgOYQ/qu8nP1206an/1IUN56ZCT9j3431iUYzd85gOK9VKGTpB8K7
-        d38+LZdDKnYKTiD8RKWaa6Dpr5ni4vqzWu2VKaWSu5+RAd/g/U9YR8rL525UVQ0p8/KKCGswBPyLF6dj
-        xxEeZ5jEAbX6h4xly2ypBZqystWfmUyXxxgm9iPCt3DuXk4OjFZXv9xOUZ+QYYPhdKi0lEtIpeBZvz6Z
-        hnm8bci+/mcDw6wcMhoH/1Gr43cRHi4pSTjV6nurBIKPyKeVlbnf2WzXJ0ymSKdG8yvCNcjw5tE30hUV
-        Fdw2m2+OWSxzTpXqd5FA8CG2V6Qvuysri3ZinNzs7J2vm++Rrbh4XQ1FHZbw+fV4FBNCyCsHI3HxqxPj
-        SgAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANlSURBVDhPbZF9TJNXFMavRoEa2loLtFRHEYJ9oW/7Wmk0
+        thik7dtKNXEGJAM/Is7QRKUabZkU+ViMDpTIdFt0IUZNzKb+YczQ7I8lW7Jkm/NjXRybZijSCWihX5S3
+        pVLTs9NC1KhP8uTknnt+9zzJJZ66OtE9o7Gnv6LiwRc03cYIhQvJe/S4tFQ4vHZti89oHPiWprsacnOz
+        sD2H3GPZ7n+bmriR7m7wNDaGP1Opju0Ui/kz2Ix8K1cKHlsszQGXKxzr6YGQ3R65wjC9xYTIyZ+rVnme
+        trbC07Y28Hd2wojdHupUq4+LCBEmYTfDLOSs1rZxh2OS6+qCaHs7JJxOcOt0z/Tz539Mvqbpo576+inv
+        oUPwzOWC8JEjMGyzBQ8oFJ9iEtlfFRWOF01NEyHsx1paIHHwILjN5ujm7Oy+dELWkTyhUNRBUSdGt2+P
+        BvfvhzGHAyKHD8PAtm3+O5WVv442NIzEEJ5qbgbYtw/+MJkiZpHoGoZbhxYkU5IlhCzqWLbsxKNNm7hx
+        my0RwMEobpqy22Fi1y7gamuBq6pKuMvLI+slkuuIsOiMFPyGspxyecc/lZXeiQ0bwK/XQ1CphJBMBpxE
+        Aj8UFgYsYvFlnDOh01LE2+rU6/Nu0fTvQbEYxubNAy8hEESHMzPhHEU9XCyVbp4dfVcJlyt3tK7u6JBM
+        9vw5Qj50YLZ6eTzoVyiCx/T6k6vV6pxZ5LW8u3dLJ7duPTu5dGk8gJvHEeL4fIhg/CQ8gOfhjAwYKi2d
+        /JJlT5fI5dJZlJCgzZbvq609819+fmIEB/3oKML3ly/nbq5ZM9RPUdEn6enwC/bdWAe12unPDYZTOoVC
+        lnogVFNzYUwuh2TsJBxHeFCpnK6n6e+YoqIdJ3W6s6MlJdE7aWlwA+9/xvpApZq+ZDb3qnJyCghXXu73
+        zZ2bih1D+AlNx/doND+mLVhgTS7QKpUfnDeZvnrIMFM/IXwF525nZcHfLPvyQ4raS/oMhuNB3BCXSmFw
+        xYpECubxNiL76p8NDLO412g8c1+jid1C+HphYdyp0dxeIhBsIY1lZdnfW60XPSZTuFWr/Q3hKmR4M+hr
+        6QsK8q6y7DcDFsu0U62+KxIIPsL2otRle1lZQTXGyc7MrH7VfI+sRUXFVRT1iYTP34FHMSGE/A8Te3Fu
+        +Uu/HAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="toolStripExitButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
