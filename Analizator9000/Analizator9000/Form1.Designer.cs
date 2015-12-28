@@ -68,6 +68,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.generateFileNameTextBox = new System.Windows.Forms.TextBox();
             this.analyzeGroup = new System.Windows.Forms.GroupBox();
+            this.exportBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -186,12 +187,13 @@
             this.statusListBox = new System.Windows.Forms.ListBox();
             this.generateFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.analyzeFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.langSelectSplitButton = new System.Windows.Forms.ToolStripSplitButton();
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripWebsiteButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripExitButton = new System.Windows.Forms.ToolStripButton();
+            this.exportFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -206,7 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            this.toolStrip1.SuspendLayout();
+            this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // generateGroup
@@ -448,6 +450,7 @@
             // 
             // analyzeGroup
             // 
+            this.analyzeGroup.Controls.Add(this.exportBtn);
             this.analyzeGroup.Controls.Add(this.button2);
             this.analyzeGroup.Controls.Add(this.tabControl1);
             this.analyzeGroup.Controls.Add(this.analyzeFileNameTextBox);
@@ -456,6 +459,13 @@
             resources.ApplyResources(this.analyzeGroup, "analyzeGroup");
             this.analyzeGroup.Name = "analyzeGroup";
             this.analyzeGroup.TabStop = false;
+            // 
+            // exportBtn
+            // 
+            resources.ApplyResources(this.exportBtn, "exportBtn");
+            this.exportBtn.Name = "exportBtn";
+            this.exportBtn.UseVisualStyleBackColor = true;
+            this.exportBtn.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button2
             // 
@@ -1472,20 +1482,22 @@
             // 
             // generateFileDialog
             // 
+            resources.ApplyResources(this.generateFileDialog, "generateFileDialog");
             this.generateFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // analyzeFileDialog
             // 
+            resources.ApplyResources(this.analyzeFileDialog, "analyzeFileDialog");
             this.analyzeFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.analyzeFileDialog_FileOk);
             // 
-            // toolStrip1
+            // toolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.langSelectSplitButton,
             this.toolStripWebsiteButton,
             this.toolStripExitButton});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
+            resources.ApplyResources(this.toolStrip, "toolStrip");
+            this.toolStrip.Name = "toolStrip";
             // 
             // langSelectSplitButton
             // 
@@ -1525,11 +1537,17 @@
             this.toolStripExitButton.Name = "toolStripExitButton";
             this.toolStripExitButton.Click += new System.EventHandler(this.toolStripExitButton_Click);
             // 
+            // exportFileDialog
+            // 
+            this.exportFileDialog.DefaultExt = "pbn";
+            resources.ApplyResources(this.exportFileDialog, "exportFileDialog");
+            this.exportFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.exportFileDialog_FileOk);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.analyzeGroup);
             this.Controls.Add(this.generateGroup);
             this.DoubleBuffered = true;
@@ -1558,8 +1576,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1724,12 +1742,14 @@
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.ToolStripSplitButton langSelectSplitButton;
         private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripWebsiteButton;
         private System.Windows.Forms.ToolStripButton toolStripExitButton;
+        private System.Windows.Forms.Button exportBtn;
+        private System.Windows.Forms.SaveFileDialog exportFileDialog;
     }
 }
 

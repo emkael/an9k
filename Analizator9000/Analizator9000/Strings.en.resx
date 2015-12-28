@@ -213,4 +213,7 @@
   <data name="Accumulator_tricks" xml:space="preserve">
     <value>tricks</value>
   </data>
+  <data name="Form1_exportSuccess" xml:space="preserve">
+    <value>PBN export successful. Saved file</value>
+  </data>
 </root>

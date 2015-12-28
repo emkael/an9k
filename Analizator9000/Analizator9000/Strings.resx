@@ -213,4 +213,7 @@
   <data name="Accumulator_tricks" xml:space="preserve">
     <value>lew</value>
   </data>
+  <data name="Form1_exportSuccess" xml:space="preserve">
+    <value>Eksport do PBN zakończony. Plik wynikowy</value>
+  </data>
 </root>

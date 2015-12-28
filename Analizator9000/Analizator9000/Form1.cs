@@ -121,6 +121,8 @@ namespace Analizator9000
             this.parser = new DealerParser();
         }
 
+        private static ResourceManager resManager;
+
         /// <summary>
         /// Public getter for localization resource manager
         /// </summary>
@@ -278,6 +280,7 @@ namespace Analizator9000
                     this.addStatusLine(GetResourceManager().GetString("Form1_generateFileSaved", GetCulture()) + ": " + filename);
                 }
                 analyzeFileNameTextBox.Text = Path.GetFullPath(@"files\" + filename);
+                exportBtn.Enabled = true;
                 generateGroup.Enabled = true;
                 analyzeGroup.Enabled = true;
             }
@@ -337,6 +340,7 @@ namespace Analizator9000
         private void analyzeFileDialog_FileOk(object sender, CancelEventArgs e)
         {
             analyzeFileNameTextBox.Text = analyzeFileDialog.FileName;
+            exportBtn.Enabled = true;
         }
 
         /// <summary>
@@ -771,7 +775,41 @@ namespace Analizator9000
             Application.Exit();
         }
 
-        private static ResourceManager resManager;
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            exportFileDialog.ShowDialog();
+        }
+
+        private void exportFileDialog_FileOk(object sender, CancelEventArgs e)
+        {
+            try
+            {
+                List<String> output = new List<String>();
+                String[] deals = File.ReadAllLines(analyzeFileNameTextBox.Text);
+                if (deals.Length == 0)
+                {
+                    throw new Exception(GetResourceManager().GetString("Form1_analyzeNoDealsError", GetCulture()));
+                }
+                String[] vulnerabilities = { "None", "All", "NS", "EW" };
+                output.Add("% PBN 1.0");
+                output.Add("[Generator \"Analizator9000\"]");
+                foreach (string deal in deals)
+                {
+                    String[] dealParts = deal.Split(':');
+                    output.Add("[Board \"" + dealParts[0] + "\"]");
+                    output.Add("[Dealer \"N\"]");
+                    output.Add("[Vulnerable \"" + vulnerabilities[vulnerabilityBox.SelectedIndex] + "\"]");
+                    output.Add("[Deal \"N:" + dealParts[1].Trim() + "\"]");
+                    output.Add("");
+                }
+                File.WriteAllLines(exportFileDialog.FileName, output.ToArray());
+                MessageBox.Show(GetResourceManager().GetString("Form1_exportSuccess", GetCulture()) + ": " + exportFileDialog.FileName);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(GetResourceManager().GetString("Form1_error", GetCulture()) + ": " + ex.Message, GetResourceManager().GetString("Form1_analyzeError"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
     }
 }
