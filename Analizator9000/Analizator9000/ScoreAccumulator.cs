@@ -142,7 +142,7 @@ namespace Analizator9000
                     if (sC.Level > 0 && BCalcWrapper.table[sC.Declarer] == result.declarer && BCalcWrapper.denominations[sC.Denomination] == result.trumpSuit)
                     {
                         int score = sC.getScore(result, this.vulnerability);
-                        string logLine = "#" + result.dealNo.ToString() + ", " + this.getContractLogLine(sC) + ": " + result.tricks.ToString() + " lew, " + score.ToString();
+                        string logLine = "#" + result.dealNo.ToString() + ", " + this.getContractLogLine(sC) + ": " + result.tricks.ToString() + " " + Form1.GetResourceManager().GetString("Accumulator_tricks", Form1.GetCulture()) + ", " + score.ToString();
                         this.form.addStatusLine(logLine);
                         this.outputFile.WriteLine(logLine);
                         this.scores[result.dealNo][sC] = score;
