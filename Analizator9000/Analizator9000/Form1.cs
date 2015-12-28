@@ -743,13 +743,28 @@ namespace Analizator9000
             string newLang = e.ClickedItem.Tag.ToString();
             SetConfigCulture(newLang);
         }
-        
-        private static ResourceManager resManager;
 
+        /// <summary>
+        /// Displays project website in default browser
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void toolStripWebsiteButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://an9k.emkael.info/");
         }
+
+        /// <summary>
+        /// Exits from the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private static ResourceManager resManager;
 
     }
 }

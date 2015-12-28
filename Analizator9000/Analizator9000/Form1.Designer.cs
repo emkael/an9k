@@ -191,6 +191,7 @@
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripWebsiteButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripExitButton = new System.Windows.Forms.ToolStripButton();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -1478,7 +1479,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.langSelectSplitButton,
-            this.toolStripWebsiteButton});
+            this.toolStripWebsiteButton,
+            this.toolStripExitButton});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
@@ -1512,6 +1514,13 @@
             resources.ApplyResources(this.toolStripWebsiteButton, "toolStripWebsiteButton");
             this.toolStripWebsiteButton.Name = "toolStripWebsiteButton";
             this.toolStripWebsiteButton.Click += new System.EventHandler(this.toolStripWebsiteButton_Click);
+            // 
+            // toolStripExitButton
+            // 
+            this.toolStripExitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.toolStripExitButton, "toolStripExitButton");
+            this.toolStripExitButton.Name = "toolStripExitButton";
+            this.toolStripExitButton.Click += new System.EventHandler(this.toolStripExitButton_Click);
             // 
             // Form1
             // 
@@ -1720,6 +1729,7 @@
         private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripWebsiteButton;
+        private System.Windows.Forms.ToolStripButton toolStripExitButton;
     }
 }
 
