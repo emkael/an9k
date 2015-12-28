@@ -279,10 +279,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="generateGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>12, 28</value>
   </data>
   <data name="generateGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 444</value>
+    <value>496, 446</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="generateGroup.TabIndex" type="System.Int32, mscorlib">
@@ -301,7 +301,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;generateGroup.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="actionsBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Console, 8.25pt</value>
@@ -1606,10 +1606,10 @@
     <value>1</value>
   </data>
   <data name="analyzeGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 12</value>
+    <value>514, 28</value>
   </data>
   <data name="analyzeGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 50</value>
+    <value>492, 50</value>
   </data>
   <data name="analyzeGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1627,10 +1627,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;analyzeGroup.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 18</value>
+    <value>411, 21</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1657,7 +1657,7 @@
     <value>7, 20</value>
   </data>
   <data name="analyzeFileNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 20</value>
+    <value>398, 20</value>
   </data>
   <data name="analyzeFileNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1678,7 +1678,7 @@
     <value>17, 17</value>
   </metadata>
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 327</value>
+    <value>514, 350</value>
   </data>
   <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>492, 23</value>
@@ -1696,13 +1696,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="statusListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="statusListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 356</value>
+    <value>514, 379</value>
   </data>
   <data name="statusListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>492, 95</value>
@@ -1720,7 +1720,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;statusListBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="analyzeFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
@@ -2664,6 +2664,51 @@
   <data name="&gt;&gt;abortButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 84</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 260</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -2671,7 +2716,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 227</value>
+    <value>484, 234</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2690,6 +2735,96 @@
   </data>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;vulnerabilityBox.Name" xml:space="preserve">
+    <value>vulnerabilityBox</value>
+  </data>
+  <data name="&gt;&gt;vulnerabilityBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vulnerabilityBox.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;vulnerabilityBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fullContractTable.Name" xml:space="preserve">
+    <value>fullContractTable</value>
+  </data>
+  <data name="&gt;&gt;fullContractTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fullContractTable.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;fullContractTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fullContractTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox22" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox23" Row="5" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox24" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox25" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox26" Row="6" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox15" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox17" Row="3" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox18" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox19" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox20" Row="4" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox21" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="1" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox11" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox12" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox13" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox15" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox16" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox17" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox18" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox19" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox20" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox22" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox23" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox24" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox25" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox26" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox27" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown1" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown2" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown4" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown5" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown6" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="1" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox27" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox28" Row="4" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox29" Row="5" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox30" Row="6" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11606,Percent,11.11607,Percent,9.473684,Percent,11.1579,Percent,10.73684,Percent,8.631579,Percent,10.73684,Percent,10.52632,Percent,7.157895,Percent,8.842105,Absolute,20" /&gt;&lt;Rows Styles="Percent,10.44107,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Name" xml:space="preserve">
+    <value>contractCancelButton</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Name" xml:space="preserve">
+    <value>contractAnalyzeButton</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 234</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Analiza kontraktów</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3608,105 +3743,6 @@
   </data>
   <data name="fullContractTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox22" Row="5" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox23" Row="5" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox24" Row="6" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox25" Row="6" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox26" Row="6" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox15" Row="3" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox16" Row="3" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox17" Row="3" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox18" Row="4" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox19" Row="4" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox20" Row="4" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox21" Row="5" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox9" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox10" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox11" Row="1" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox12" Row="2" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="textBox13" Row="2" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="textBox14" Row="2" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox4" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox5" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox6" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBox8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox9" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox11" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox12" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox13" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox15" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox16" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox17" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox18" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox19" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox20" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox22" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox23" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox24" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox25" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox26" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="comboBox27" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown1" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown2" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown3" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown4" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown5" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown6" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox2" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox3" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox4" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox5" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="textBox6" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="textBox7" Row="1" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox8" Row="2" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox27" Row="3" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox28" Row="4" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox29" Row="5" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="textBox30" Row="6" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11606,Percent,11.11607,Percent,9.473684,Percent,11.1579,Percent,10.73684,Percent,8.631579,Percent,10.73684,Percent,10.52632,Percent,7.157895,Percent,8.842105,Absolute,20" /&gt;&lt;Rows Styles="Percent,10.44107,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649,Percent,14.92649" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="contractCancelButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="contractCancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 198</value>
-  </data>
-  <data name="contractCancelButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 23</value>
-  </data>
-  <data name="contractCancelButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="contractCancelButton.Text" xml:space="preserve">
-    <value>Nie, czekaj!</value>
-  </data>
-  <data name="&gt;&gt;contractCancelButton.Name" xml:space="preserve">
-    <value>contractCancelButton</value>
-  </data>
-  <data name="&gt;&gt;contractCancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contractCancelButton.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;contractCancelButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="contractAnalyzeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 198</value>
-  </data>
-  <data name="contractAnalyzeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 23</value>
-  </data>
-  <data name="contractAnalyzeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="contractAnalyzeButton.Text" xml:space="preserve">
-    <value>No to wio!</value>
-  </data>
-  <data name="&gt;&gt;contractAnalyzeButton.Name" xml:space="preserve">
-    <value>contractAnalyzeButton</value>
-  </data>
-  <data name="&gt;&gt;contractAnalyzeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contractAnalyzeButton.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;contractAnalyzeButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 227</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Analiza kontraktów</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>514, 68</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 253</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="textBox22.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 116</value>
@@ -5733,17 +5769,131 @@
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
     <value>68</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <data name="contractCancelButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="contractCancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 198</value>
+  </data>
+  <data name="contractCancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 23</value>
+  </data>
+  <data name="contractCancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="contractCancelButton.Text" xml:space="preserve">
+    <value>Nie, czekaj!</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Name" xml:space="preserve">
+    <value>contractCancelButton</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;contractCancelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="contractAnalyzeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 198</value>
+  </data>
+  <data name="contractAnalyzeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 23</value>
+  </data>
+  <data name="contractAnalyzeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="contractAnalyzeButton.Text" xml:space="preserve">
+    <value>No to wio!</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Name" xml:space="preserve">
+    <value>contractAnalyzeButton</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;contractAnalyzeButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>317, 17</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="langSelectSplitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="langSelectSplitButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="langSelectSplitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 22</value>
+  </data>
+  <data name="langSelectSplitButton.Text" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="langSelectSplitButton.ToolTipText" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 25</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="polskiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="polskiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polski</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 463</value>
+    <value>1018, 486</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -11962,6 +12112,24 @@
   </data>
   <data name="&gt;&gt;analyzeFileDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;langSelectSplitButton.Name" xml:space="preserve">
+    <value>langSelectSplitButton</value>
+  </data>
+  <data name="&gt;&gt;langSelectSplitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;polskiToolStripMenuItem.Name" xml:space="preserve">
+    <value>polskiToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;polskiToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

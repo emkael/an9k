@@ -186,6 +186,10 @@
             this.label33 = new System.Windows.Forms.Label();
             this.contractCancelButton = new System.Windows.Forms.Button();
             this.contractAnalyzeButton = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.langSelectSplitButton = new System.Windows.Forms.ToolStripSplitButton();
+            this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -200,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // generateGroup
@@ -1468,10 +1473,42 @@
             this.contractAnalyzeButton.UseVisualStyleBackColor = true;
             this.contractAnalyzeButton.Click += new System.EventHandler(this.button4_Click);
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.langSelectSplitButton});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.Name = "toolStrip1";
+            // 
+            // langSelectSplitButton
+            // 
+            this.langSelectSplitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.langSelectSplitButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.polskiToolStripMenuItem,
+            this.englishToolStripMenuItem});
+            resources.ApplyResources(this.langSelectSplitButton, "langSelectSplitButton");
+            this.langSelectSplitButton.Name = "langSelectSplitButton";
+            this.langSelectSplitButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.langSelectSplitButton_DropDownItemClicked);
+            // 
+            // polskiToolStripMenuItem
+            // 
+            this.polskiToolStripMenuItem.Image = global::Analizator9000.Properties.Resources.pl;
+            this.polskiToolStripMenuItem.Name = "polskiToolStripMenuItem";
+            resources.ApplyResources(this.polskiToolStripMenuItem, "polskiToolStripMenuItem");
+            this.polskiToolStripMenuItem.Tag = "pl";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Image = global::Analizator9000.Properties.Resources.en;
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Tag = "en";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusListBox);
             this.Controls.Add(this.progressBar);
@@ -1503,7 +1540,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1666,6 +1706,10 @@
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripSplitButton langSelectSplitButton;
+        private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
     }
 }
 

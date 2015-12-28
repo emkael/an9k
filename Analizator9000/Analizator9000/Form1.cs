@@ -7,6 +7,8 @@ using System.IO;
 using System.Resources;
 using System.Threading;
 using System.Globalization;
+using System.Collections.Specialized;
+using System.Configuration;
 
 namespace Analizator9000
 {
@@ -30,11 +32,82 @@ namespace Analizator9000
         {
             if (_culture == null)
             {
-                _culture = new CultureInfo("en-US");
+                _culture = GetConfigCulture();
             }
             return _culture;
         }
 
+        /// <summary>
+        /// Read language setting from configuration file
+        /// </summary>
+        /// <returns>CultureInfo object for specified language</returns>
+        public static CultureInfo GetConfigCulture()
+        {
+            string config = System.Configuration.ConfigurationManager.AppSettings["language"];
+            string fallbackLanguage = "pl-PL";
+            if (config == null)
+            {
+                config = fallbackLanguage;
+            }
+            try
+            {
+                return new CultureInfo(config);
+            }
+            catch (ArgumentException)
+            {
+                return new CultureInfo(fallbackLanguage);
+            }
+        }
+
+        /// <summary>
+        /// Set UI culture
+        /// </summary>
+        /// <param name="culture">CultureInfo object for specified language</param>
+        public void SetCulture(CultureInfo culture)
+        {
+            Thread.CurrentThread.CurrentUICulture = culture;
+        }
+
+        /// <summary>
+        /// Display icons for language selection menu correctly and fall back to Polish if configuration file has unsupported locale
+        /// </summary>
+        /// <param name="culture"></param>
+        public void SetCultureMenu(CultureInfo culture)
+        {
+            bool languageSupported = false;
+            foreach (ToolStripDropDownItem item in langSelectSplitButton.DropDownItems) 
+            {
+                if (culture.TwoLetterISOLanguageName == item.Tag.ToString())
+                {
+                    langSelectSplitButton.Image = item.Image;
+                    languageSupported = true;
+                }
+            }
+            if (!languageSupported)
+            {
+                SetCultureMenu(new CultureInfo("pl"));
+            }
+        }
+
+        /// <summary>
+        /// Write user preference info on language to configuration file
+        /// </summary>
+        /// <param name="newLang">Language code</param>
+        public void SetConfigCulture(string newLang)
+        {
+            Configuration config = System.Configuration.ConfigurationManager.OpenExeConfiguration("Analizator9000.exe");
+            try
+            {
+                config.AppSettings.Settings["language"].Value = newLang;
+            }
+            catch (NullReferenceException)
+            {
+                config.AppSettings.Settings.Add("language", newLang);
+            }
+            config.AppSettings.SectionInformation.ForceSave = true;
+            config.Save();
+            Application.Restart();
+        }
 
         /// <summary>
         /// Constructs the main window.
@@ -42,9 +115,9 @@ namespace Analizator9000
         public Form1()
         {
             CultureInfo ci = GetCulture();
-            Thread.CurrentThread.CurrentUICulture = ci;
-            Thread.CurrentThread.CurrentCulture = ci;
+            SetCulture(ci);
             InitializeComponent();
+            SetCultureMenu(ci);
             this.parser = new DealerParser();
         }
 
@@ -660,6 +733,18 @@ namespace Analizator9000
             this.abortButton_Click(sender, e);
         }
 
+        /// <summary>
+        /// Selects language from toolbar/menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void langSelectSplitButton_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            string newLang = e.ClickedItem.Tag.ToString();
+            SetConfigCulture(newLang);
+        }
+        
         private static ResourceManager resManager;
+
     }
 }
