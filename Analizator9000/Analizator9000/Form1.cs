@@ -746,5 +746,10 @@ namespace Analizator9000
         
         private static ResourceManager resManager;
 
+        private void toolStripWebsiteButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://an9k.emkael.info/");
+        }
+
     }
 }

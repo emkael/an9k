@@ -190,6 +190,7 @@
             this.langSelectSplitButton = new System.Windows.Forms.ToolStripSplitButton();
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripWebsiteButton = new System.Windows.Forms.ToolStripButton();
             this.generateGroup.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.analyzeGroup.SuspendLayout();
@@ -1476,7 +1477,8 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.langSelectSplitButton});
+            this.langSelectSplitButton,
+            this.toolStripWebsiteButton});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
@@ -1503,6 +1505,13 @@
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Tag = "en";
+            // 
+            // toolStripWebsiteButton
+            // 
+            this.toolStripWebsiteButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.toolStripWebsiteButton, "toolStripWebsiteButton");
+            this.toolStripWebsiteButton.Name = "toolStripWebsiteButton";
+            this.toolStripWebsiteButton.Click += new System.EventHandler(this.toolStripWebsiteButton_Click);
             // 
             // Form1
             // 
@@ -1710,6 +1719,7 @@
         private System.Windows.Forms.ToolStripSplitButton langSelectSplitButton;
         private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripWebsiteButton;
     }
 }
 
