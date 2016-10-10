@@ -1140,7 +1140,7 @@
   <data name="exportBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
-        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsRAAALEQF/ZF+RAAACPklE
+        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsQAAALEAGtI711AAACPklE
         QVQ4T6WS70uTURTH9y/03jdBL3prU2O4FqvBU66hLB2GFtKvJ9Isfy3TJEXLVHT5A7QVLp20Wk3CiUb+
         AH8gJmIsJSs1l7TEoabYRDD4ds99dI9Le1MHzvPi3OfzufeeexQA/iv5p7MjAEp32xpaXat45lhGc5Mf
         j6zzqKv9BkuVF/dLZ1BU+Bn5eR+Qkz2OG9c9DN0SENjbA9TWbFDxr7G+sQl9Yi/OJL7iyUISuF6ucEF5
@@ -3109,24 +3109,6 @@
   <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="comboBox8.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox8.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox8.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox8.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox8.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox8.Items5" xml:space="preserve">
-    <value>NT</value>
-  </data>
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 20</value>
   </data>
@@ -3147,24 +3129,6 @@
   </data>
   <data name="&gt;&gt;comboBox8.ZOrder" xml:space="preserve">
     <value>30</value>
-  </data>
-  <data name="comboBox9.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox9.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox9.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox9.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox9.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox9.Items5" xml:space="preserve">
-    <value>NT</value>
   </data>
   <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 44</value>
@@ -3187,24 +3151,6 @@
   <data name="&gt;&gt;comboBox9.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
-  <data name="comboBox10.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox10.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox10.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox10.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox10.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox10.Items5" xml:space="preserve">
-    <value>NT</value>
-  </data>
   <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 68</value>
   </data>
@@ -3225,24 +3171,6 @@
   </data>
   <data name="&gt;&gt;comboBox10.ZOrder" xml:space="preserve">
     <value>32</value>
-  </data>
-  <data name="comboBox11.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox11.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox11.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox11.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox11.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox11.Items5" xml:space="preserve">
-    <value>NT</value>
   </data>
   <data name="comboBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 92</value>
@@ -3265,24 +3193,6 @@
   <data name="&gt;&gt;comboBox11.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
-  <data name="comboBox12.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox12.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox12.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox12.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox12.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox12.Items5" xml:space="preserve">
-    <value>NT</value>
-  </data>
   <data name="comboBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 116</value>
   </data>
@@ -3303,24 +3213,6 @@
   </data>
   <data name="&gt;&gt;comboBox12.ZOrder" xml:space="preserve">
     <value>34</value>
-  </data>
-  <data name="comboBox13.Items" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboBox13.Items1" xml:space="preserve">
-    <value>♣</value>
-  </data>
-  <data name="comboBox13.Items2" xml:space="preserve">
-    <value>♦</value>
-  </data>
-  <data name="comboBox13.Items3" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="comboBox13.Items4" xml:space="preserve">
-    <value>♠</value>
-  </data>
-  <data name="comboBox13.Items5" xml:space="preserve">
-    <value>NT</value>
   </data>
   <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 140</value>
@@ -4525,20 +4417,20 @@
   <data name="toolStripWebsiteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMKSURBVDhPdVJvLNRxHPa+3lTrTY0XWpHS1j+6q5VQFCcp
-        lLRz6DiOu0mZO1xIMvc73f3c+dPu8nPKn2FHulMv3NhZaQzDLZOzOsP8mTX6Y+LJ7zqzwrN9X3z3fD7P
-        9/k8n6/DOpSaVkeS0gsVlN5QqNFNF5Q0TmcragwiQitMydU42su2BkkZGIpKvU7a0gCypxYKcznkn7OR
-        bAwGp4gAP0upi04tYtjL/wX9Mt0sfiND/nA69LNGdP+wIL42AwWfHoDT4APfXDnu8PN013jizU5o2+mV
-        akS/Pw3VWBoMsyZ8XBjA0M8ZvBrXIao4B17FQzib9wgB7IdCe9sG6JkjZS/BbQ1BtjkCz78Q0FhzQPZp
-        wNXWIFY5h7CCMRwuD8KlMIHB3rYBOrB40oKQ0hiwO72Q0OWLJPV98F7oEaPsR5R0HB6kFgcqLuN8UNy0
-        vW0DdNoC9TIisiS4SDHh/ToEt+QEEorHES2bQHjeCA5q2HAqYcKDtYUAvSp+6Rx4JVMIE0bCVxWJM/UR
-        YFSQuJ1nQXDmAHx4gTiadgEn/TmbRxARlFBAtOOeagkc4jMCUuNwnArGYe1VuCgy4PewG0xeAs6F3sIp
-        f87mEOlPQu85ttCMROIt0lXVeFCkwV2RDM5PPeEZzwOLSyBJUvZVQjZNiIgaa8oTiuKKlCy7xJoLabW4
-        TGv81Tc8jsUfq5iaX0JTWz/4EjUC4yQoqTbif06QWz7pfzcr1CaQo2pqNlumkShWjO47cXXBxZ+9/KSs
-        ZUWj64a0ovN33bsBqCjTwv5TN8xHfbmDIunLDnW9CYzryc02AYmqYXEFwA7XK2Nu3hy38rquntW1+/x3
-        wDK1hJ6Rb2jvm8HuIyziZlKhm5hsGmvvnYQzM2bRJpDxrK7Z1GtZm7O0I5RfMJgpbxzc5Ry4vPOQH9aP
-        u3fUxDr3rKKt43FpC5w8wv86SMmvDBUVVU1WNX9AR68Vb0yjyJQ3gHlNMBkQLZFtx+11D/qbAY2wpHyW
-        HzuTYrCEVlcfttXJM5zacyzQlvT2nIPDH0UP9IHyCeO2AAAAAElFTkSuQmCC
+        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
 </value>
   </data>
   <data name="toolStripWebsiteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -4553,21 +4445,21 @@
   <data name="toolStripExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
         AAAAAElFTkSuQmCC
 </value>
   </data>

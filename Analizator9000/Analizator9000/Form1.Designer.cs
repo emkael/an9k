@@ -1,4 +1,7 @@
-﻿namespace Analizator9000
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Analizator9000
 {
     partial class Form1
     {
@@ -20,6 +23,214 @@
             base.Dispose(disposing);
         }
 
+        string[] cards8 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+        string[] cards9 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+        string[] cards10 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+        string[] cards11 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+        string[] cards12 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+        string[] cards13 = new string[6] { " ", "♣", "♦", "♥", "♠", "NT" };
+
+        private void comboBox8_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+        private void comboBox8_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+
+            this.comboBox8.DataSource = cards8;
+
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox8.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
+
+        private void comboBox9_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+        private void comboBox9_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+
+            this.comboBox9.DataSource = cards9;
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox9.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
+
+        private void comboBox10_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+        private void comboBox10_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+            this.comboBox10.DataSource = cards10;
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox10.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
+
+        private void comboBox11_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+        private void comboBox11_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+            this.comboBox10.DataSource = cards11;
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox11.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
+
+        private void comboBox12_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+        private void comboBox12_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+            this.comboBox10.DataSource = cards12;
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox12.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
+
+        private void comboBox13_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+            e.ItemWidth = 44;
+            e.ItemHeight = 15;
+        }
+
+
+        private void comboBox13_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Draw the background of the ListBox control for each item.
+            e.DrawBackground();
+            this.comboBox13.DataSource = cards13;
+            // Define the default color of the brush as black.
+            Brush myBrush = Brushes.Black;
+
+            // Determine the color of the brush to draw each item based on the index of the item to draw.
+            switch (e.Index)
+            {
+                case 2:
+                    myBrush = Brushes.Red;
+                    break;
+                case 3:
+                    myBrush = Brushes.Red;
+                    break;
+            }
+
+            // Draw the current item text based on the current Font 
+            // and the custom brush settings.
+            if (e.Index >= 0) e.Graphics.DrawString(comboBox13.Items[e.Index].ToString(),
+                  e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+            // If the ListBox has focus, draw a focus rectangle around the selected item.
+            e.DrawFocusRectangle();
+        }
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -1088,92 +1299,68 @@
             // 
             // comboBox8
             // 
+            this.comboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            resources.GetString("comboBox8.Items"),
-            resources.GetString("comboBox8.Items1"),
-            resources.GetString("comboBox8.Items2"),
-            resources.GetString("comboBox8.Items3"),
-            resources.GetString("comboBox8.Items4"),
-            resources.GetString("comboBox8.Items5")});
             resources.ApplyResources(this.comboBox8, "comboBox8");
             this.comboBox8.Name = "comboBox8";
+            this.comboBox8.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox8_DrawItem);
+            this.comboBox8.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox8_MeasureItem);
             this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox9
             // 
+            this.comboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            resources.GetString("comboBox9.Items"),
-            resources.GetString("comboBox9.Items1"),
-            resources.GetString("comboBox9.Items2"),
-            resources.GetString("comboBox9.Items3"),
-            resources.GetString("comboBox9.Items4"),
-            resources.GetString("comboBox9.Items5")});
             resources.ApplyResources(this.comboBox9, "comboBox9");
             this.comboBox9.Name = "comboBox9";
+            this.comboBox9.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox9_DrawItem);
+            this.comboBox9.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox9_MeasureItem);
             this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox10
             // 
+            this.comboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            resources.GetString("comboBox10.Items"),
-            resources.GetString("comboBox10.Items1"),
-            resources.GetString("comboBox10.Items2"),
-            resources.GetString("comboBox10.Items3"),
-            resources.GetString("comboBox10.Items4"),
-            resources.GetString("comboBox10.Items5")});
             resources.ApplyResources(this.comboBox10, "comboBox10");
             this.comboBox10.Name = "comboBox10";
+            this.comboBox10.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox10_DrawItem);
+            this.comboBox10.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox10_MeasureItem);
             this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox11
             // 
+            this.comboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
-            resources.GetString("comboBox11.Items"),
-            resources.GetString("comboBox11.Items1"),
-            resources.GetString("comboBox11.Items2"),
-            resources.GetString("comboBox11.Items3"),
-            resources.GetString("comboBox11.Items4"),
-            resources.GetString("comboBox11.Items5")});
             resources.ApplyResources(this.comboBox11, "comboBox11");
             this.comboBox11.Name = "comboBox11";
+            this.comboBox11.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox11_DrawItem);
+            this.comboBox11.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox11_MeasureItem);
             this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox12
             // 
+            this.comboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
-            resources.GetString("comboBox12.Items"),
-            resources.GetString("comboBox12.Items1"),
-            resources.GetString("comboBox12.Items2"),
-            resources.GetString("comboBox12.Items3"),
-            resources.GetString("comboBox12.Items4"),
-            resources.GetString("comboBox12.Items5")});
             resources.ApplyResources(this.comboBox12, "comboBox12");
             this.comboBox12.Name = "comboBox12";
+            this.comboBox12.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox12_DrawItem);
+            this.comboBox12.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox12_MeasureItem);
             this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox13
             // 
+            this.comboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
-            resources.GetString("comboBox13.Items"),
-            resources.GetString("comboBox13.Items1"),
-            resources.GetString("comboBox13.Items2"),
-            resources.GetString("comboBox13.Items3"),
-            resources.GetString("comboBox13.Items4"),
-            resources.GetString("comboBox13.Items5")});
             resources.ApplyResources(this.comboBox13, "comboBox13");
             this.comboBox13.Name = "comboBox13";
+            this.comboBox13.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox13_DrawItem);
+            this.comboBox13.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox13_MeasureItem);
             this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox15
@@ -1752,4 +1939,3 @@
         private System.Windows.Forms.SaveFileDialog exportFileDialog;
     }
 }
-
