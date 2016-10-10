@@ -1191,7 +1191,7 @@ namespace Analizator9000
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
@@ -1210,7 +1210,7 @@ namespace Analizator9000
             // 
             // comboBox2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
@@ -1229,7 +1229,7 @@ namespace Analizator9000
             // 
             // comboBox3
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
@@ -1248,7 +1248,7 @@ namespace Analizator9000
             // 
             // comboBox4
             // 
-            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.FormattingEnabled = true;
@@ -1267,7 +1267,7 @@ namespace Analizator9000
             // 
             // comboBox5
             // 
-            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.FormattingEnabled = true;
@@ -1286,7 +1286,7 @@ namespace Analizator9000
             // 
             // comboBox6
             // 
-            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.FormattingEnabled = true;
@@ -1305,7 +1305,7 @@ namespace Analizator9000
             // 
             // comboBox8
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox8.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox8, "comboBox8");
@@ -1317,7 +1317,7 @@ namespace Analizator9000
             // 
             // comboBox9
             // 
-            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox9.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox9, "comboBox9");
@@ -1329,7 +1329,7 @@ namespace Analizator9000
             // 
             // comboBox10
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox10.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox10, "comboBox10");
@@ -1341,7 +1341,7 @@ namespace Analizator9000
             // 
             // comboBox11
             // 
-            this.comboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox11, "comboBox11");
@@ -1353,7 +1353,7 @@ namespace Analizator9000
             // 
             // comboBox12
             // 
-            this.comboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox12.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox12, "comboBox12");
@@ -1365,7 +1365,7 @@ namespace Analizator9000
             // 
             // comboBox13
             // 
-            this.comboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox13.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox13, "comboBox13");
@@ -1377,7 +1377,7 @@ namespace Analizator9000
             // 
             // comboBox15
             // 
-            this.comboBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox15.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox15, "comboBox15");
             this.comboBox15.FormattingEnabled = true;
@@ -1390,7 +1390,7 @@ namespace Analizator9000
             // 
             // comboBox16
             // 
-            this.comboBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox16.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox16, "comboBox16");
             this.comboBox16.FormattingEnabled = true;
@@ -1403,7 +1403,7 @@ namespace Analizator9000
             // 
             // comboBox17
             // 
-            this.comboBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox17.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox17, "comboBox17");
             this.comboBox17.FormattingEnabled = true;
@@ -1416,7 +1416,7 @@ namespace Analizator9000
             // 
             // comboBox18
             // 
-            this.comboBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox18.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox18, "comboBox18");
             this.comboBox18.FormattingEnabled = true;
@@ -1429,7 +1429,7 @@ namespace Analizator9000
             // 
             // comboBox19
             // 
-            this.comboBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox19.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox19, "comboBox19");
             this.comboBox19.FormattingEnabled = true;
@@ -1442,7 +1442,7 @@ namespace Analizator9000
             // 
             // comboBox20
             // 
-            this.comboBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox20.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox20, "comboBox20");
             this.comboBox20.FormattingEnabled = true;
@@ -1455,7 +1455,7 @@ namespace Analizator9000
             // 
             // comboBox22
             // 
-            this.comboBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox22.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox22, "comboBox22");
             this.comboBox22.FormattingEnabled = true;
@@ -1470,7 +1470,7 @@ namespace Analizator9000
             // 
             // comboBox23
             // 
-            this.comboBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox23.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox23, "comboBox23");
             this.comboBox23.FormattingEnabled = true;
@@ -1485,7 +1485,7 @@ namespace Analizator9000
             // 
             // comboBox24
             // 
-            this.comboBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox24.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox24, "comboBox24");
             this.comboBox24.FormattingEnabled = true;
@@ -1500,7 +1500,7 @@ namespace Analizator9000
             // 
             // comboBox25
             // 
-            this.comboBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox25.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox25, "comboBox25");
             this.comboBox25.FormattingEnabled = true;
@@ -1515,7 +1515,7 @@ namespace Analizator9000
             // 
             // comboBox26
             // 
-            this.comboBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox26.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox26, "comboBox26");
             this.comboBox26.FormattingEnabled = true;
@@ -1530,7 +1530,7 @@ namespace Analizator9000
             // 
             // comboBox27
             // 
-            this.comboBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox27.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox27, "comboBox27");
             this.comboBox27.FormattingEnabled = true;
