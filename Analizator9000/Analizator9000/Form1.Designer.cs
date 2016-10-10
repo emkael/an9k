@@ -1191,7 +1191,9 @@ namespace Analizator9000
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
@@ -1203,13 +1205,14 @@ namespace Analizator9000
             resources.GetString("comboBox1.Items6"),
             resources.GetString("comboBox1.Items7"),
             resources.GetString("comboBox1.Items8")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox2
             // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             resources.GetString("comboBox2.Items"),
@@ -1221,13 +1224,14 @@ namespace Analizator9000
             resources.GetString("comboBox2.Items6"),
             resources.GetString("comboBox2.Items7"),
             resources.GetString("comboBox2.Items8")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox3
             // 
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             resources.GetString("comboBox3.Items"),
@@ -1239,13 +1243,14 @@ namespace Analizator9000
             resources.GetString("comboBox3.Items6"),
             resources.GetString("comboBox3.Items7"),
             resources.GetString("comboBox3.Items8")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox4
             // 
+            this.comboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             resources.GetString("comboBox4.Items"),
@@ -1257,13 +1262,14 @@ namespace Analizator9000
             resources.GetString("comboBox4.Items6"),
             resources.GetString("comboBox4.Items7"),
             resources.GetString("comboBox4.Items8")});
-            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox5
             // 
+            this.comboBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             resources.GetString("comboBox5.Items"),
@@ -1275,13 +1281,14 @@ namespace Analizator9000
             resources.GetString("comboBox5.Items6"),
             resources.GetString("comboBox5.Items7"),
             resources.GetString("comboBox5.Items8")});
-            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox6
             // 
+            this.comboBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             resources.GetString("comboBox6.Items"),
@@ -1293,16 +1300,16 @@ namespace Analizator9000
             resources.GetString("comboBox6.Items6"),
             resources.GetString("comboBox6.Items7"),
             resources.GetString("comboBox6.Items8")});
-            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox8
             // 
+            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox8, "comboBox8");
+            this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox8_DrawItem);
             this.comboBox8.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox8_MeasureItem);
@@ -1310,10 +1317,11 @@ namespace Analizator9000
             // 
             // comboBox9
             // 
+            this.comboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox9, "comboBox9");
+            this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox9_DrawItem);
             this.comboBox9.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox9_MeasureItem);
@@ -1321,10 +1329,11 @@ namespace Analizator9000
             // 
             // comboBox10
             // 
+            this.comboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox10, "comboBox10");
+            this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox10_DrawItem);
             this.comboBox10.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox10_MeasureItem);
@@ -1332,10 +1341,11 @@ namespace Analizator9000
             // 
             // comboBox11
             // 
+            this.comboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox11, "comboBox11");
+            this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox11_DrawItem);
             this.comboBox11.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox11_MeasureItem);
@@ -1343,10 +1353,11 @@ namespace Analizator9000
             // 
             // comboBox12
             // 
+            this.comboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox12, "comboBox12");
+            this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox12_DrawItem);
             this.comboBox12.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox12_MeasureItem);
@@ -1354,10 +1365,11 @@ namespace Analizator9000
             // 
             // comboBox13
             // 
+            this.comboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
             resources.ApplyResources(this.comboBox13, "comboBox13");
+            this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.comboBox13_DrawItem);
             this.comboBox13.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.comboBox13_MeasureItem);
@@ -1365,79 +1377,87 @@ namespace Analizator9000
             // 
             // comboBox15
             // 
+            this.comboBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox15, "comboBox15");
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Items.AddRange(new object[] {
             resources.GetString("comboBox15.Items"),
             resources.GetString("comboBox15.Items1"),
             resources.GetString("comboBox15.Items2")});
-            resources.ApplyResources(this.comboBox15, "comboBox15");
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox16
             // 
+            this.comboBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox16, "comboBox16");
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
             resources.GetString("comboBox16.Items"),
             resources.GetString("comboBox16.Items1"),
             resources.GetString("comboBox16.Items2")});
-            resources.ApplyResources(this.comboBox16, "comboBox16");
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox17
             // 
+            this.comboBox17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox17, "comboBox17");
             this.comboBox17.FormattingEnabled = true;
             this.comboBox17.Items.AddRange(new object[] {
             resources.GetString("comboBox17.Items"),
             resources.GetString("comboBox17.Items1"),
             resources.GetString("comboBox17.Items2")});
-            resources.ApplyResources(this.comboBox17, "comboBox17");
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox18
             // 
+            this.comboBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox18, "comboBox18");
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Items.AddRange(new object[] {
             resources.GetString("comboBox18.Items"),
             resources.GetString("comboBox18.Items1"),
             resources.GetString("comboBox18.Items2")});
-            resources.ApplyResources(this.comboBox18, "comboBox18");
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox19
             // 
+            this.comboBox19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox19, "comboBox19");
             this.comboBox19.FormattingEnabled = true;
             this.comboBox19.Items.AddRange(new object[] {
             resources.GetString("comboBox19.Items"),
             resources.GetString("comboBox19.Items1"),
             resources.GetString("comboBox19.Items2")});
-            resources.ApplyResources(this.comboBox19, "comboBox19");
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox20
             // 
+            this.comboBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox20, "comboBox20");
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Items.AddRange(new object[] {
             resources.GetString("comboBox20.Items"),
             resources.GetString("comboBox20.Items1"),
             resources.GetString("comboBox20.Items2")});
-            resources.ApplyResources(this.comboBox20, "comboBox20");
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox22
             // 
+            this.comboBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox22, "comboBox22");
             this.comboBox22.FormattingEnabled = true;
             this.comboBox22.Items.AddRange(new object[] {
             resources.GetString("comboBox22.Items"),
@@ -1445,13 +1465,14 @@ namespace Analizator9000
             resources.GetString("comboBox22.Items2"),
             resources.GetString("comboBox22.Items3"),
             resources.GetString("comboBox22.Items4")});
-            resources.ApplyResources(this.comboBox22, "comboBox22");
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox23
             // 
+            this.comboBox23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox23, "comboBox23");
             this.comboBox23.FormattingEnabled = true;
             this.comboBox23.Items.AddRange(new object[] {
             resources.GetString("comboBox23.Items"),
@@ -1459,13 +1480,14 @@ namespace Analizator9000
             resources.GetString("comboBox23.Items2"),
             resources.GetString("comboBox23.Items3"),
             resources.GetString("comboBox23.Items4")});
-            resources.ApplyResources(this.comboBox23, "comboBox23");
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox24
             // 
+            this.comboBox24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox24, "comboBox24");
             this.comboBox24.FormattingEnabled = true;
             this.comboBox24.Items.AddRange(new object[] {
             resources.GetString("comboBox24.Items"),
@@ -1473,13 +1495,14 @@ namespace Analizator9000
             resources.GetString("comboBox24.Items2"),
             resources.GetString("comboBox24.Items3"),
             resources.GetString("comboBox24.Items4")});
-            resources.ApplyResources(this.comboBox24, "comboBox24");
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox25
             // 
+            this.comboBox25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox25, "comboBox25");
             this.comboBox25.FormattingEnabled = true;
             this.comboBox25.Items.AddRange(new object[] {
             resources.GetString("comboBox25.Items"),
@@ -1487,13 +1510,14 @@ namespace Analizator9000
             resources.GetString("comboBox25.Items2"),
             resources.GetString("comboBox25.Items3"),
             resources.GetString("comboBox25.Items4")});
-            resources.ApplyResources(this.comboBox25, "comboBox25");
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox26
             // 
+            this.comboBox26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox26, "comboBox26");
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Items.AddRange(new object[] {
             resources.GetString("comboBox26.Items"),
@@ -1501,13 +1525,14 @@ namespace Analizator9000
             resources.GetString("comboBox26.Items2"),
             resources.GetString("comboBox26.Items3"),
             resources.GetString("comboBox26.Items4")});
-            resources.ApplyResources(this.comboBox26, "comboBox26");
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
             // comboBox27
             // 
+            this.comboBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox27, "comboBox27");
             this.comboBox27.FormattingEnabled = true;
             this.comboBox27.Items.AddRange(new object[] {
             resources.GetString("comboBox27.Items"),
@@ -1515,7 +1540,6 @@ namespace Analizator9000
             resources.GetString("comboBox27.Items2"),
             resources.GetString("comboBox27.Items3"),
             resources.GetString("comboBox27.Items4")});
-            resources.ApplyResources(this.comboBox27, "comboBox27");
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.SelectedIndexChanged += new System.EventHandler(this.tableCombo_Change);
             // 
