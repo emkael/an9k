@@ -108,10 +108,17 @@ namespace Analizator9000
                 sw.WriteLine(Form1.GetResourceManager().GetString("ScoreAccumulator_txtHeader", Form1.GetCulture()));
                 foreach (KeyValuePair<Contract, long> tricks in this.trickSums)
                 {
+                    double maxAv = this.maxScoreSums[tricks.Key] / this.dealsScored;
+                    double impAv = this.impScoreSums[tricks.Key] / this.dealsScored;
+                    if (tricks.Key.Declarer == Contract.DECLARER_EAST || tricks.Key.Declarer == Contract.DECLARER_WEST)
+                    {
+                        maxAv = 1.0 - maxAv;
+                        impAv = -impAv;
+                    }
                     sw.WriteLine(" {0,6} (x{1,3}) {2,5:0.00} {3,9:0.00} {6,5:0.00} {4,5:0.00} {5,7:0.00} ", 
                         this.getContractLogLine(tricks.Key), tricks.Key.Frequency,
                         (double)tricks.Value / this.dealsScored, (double)this.scoreSums[tricks.Key] / this.dealsScored,
-                        this.maxScoreSums[tricks.Key] / this.dealsScored, this.impScoreSums[tricks.Key] / this.dealsScored,
+                        maxAv, impAv,
                         (double)this.successSums[tricks.Key] / this.dealsScored);
                 }
                 sw.Close();
