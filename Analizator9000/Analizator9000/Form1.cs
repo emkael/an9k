@@ -77,7 +77,7 @@ namespace Analizator9000
             bool languageSupported = false;
             foreach (ToolStripDropDownItem item in langSelectSplitButton.DropDownItems) 
             {
-                if (culture.TwoLetterISOLanguageName == item.Tag.ToString())
+                if (culture.TwoLetterISOLanguageName == item.Tag.ToString().Substring(0,2))
                 {
                     langSelectSplitButton.Image = item.Image;
                     languageSupported = true;

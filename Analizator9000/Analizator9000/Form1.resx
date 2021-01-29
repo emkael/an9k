@@ -149,6 +149,10 @@
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
     <value>269, 186</value>
   </data>
@@ -200,6 +204,9 @@
   <data name="&gt;&gt;conditionBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="generateButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="generateButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 398</value>
   </data>
@@ -236,7 +243,6 @@
   <data name="produceBox.Text" xml:space="preserve">
     <value>1000</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="produceBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
@@ -254,6 +260,9 @@
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 375</value>
@@ -309,6 +318,9 @@
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 348</value>
   </data>
@@ -335,6 +347,9 @@
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 186</value>
@@ -753,6 +768,9 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 28</value>
   </data>
@@ -782,6 +800,9 @@
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 51</value>
@@ -813,6 +834,9 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 74</value>
   </data>
@@ -842,6 +866,9 @@
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 97</value>
@@ -875,6 +902,9 @@
   </data>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>41, 0</value>
@@ -912,6 +942,9 @@
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>150, 0</value>
   </data>
@@ -948,6 +981,9 @@
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>259, 0</value>
   </data>
@@ -983,6 +1019,9 @@
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>368, 0</value>
@@ -1041,6 +1080,9 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 47</value>
   </data>
@@ -1064,6 +1106,9 @@
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>411, 20</value>
@@ -1153,6 +1198,9 @@
         SxcH+HjShNGQ0DvTU1G3qWF0Z9qVkuDDUemy4N8Tit/kKu4LI/ykxwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="exportBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exportBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>459, 17</value>
   </data>
@@ -1173,6 +1221,9 @@
   </data>
   <data name="&gt;&gt;exportBtn.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 17</value>
@@ -1200,6 +1251,9 @@
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 3</value>
@@ -1255,6 +1309,9 @@
   <data name="abortButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="abortButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="abortButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 92</value>
   </data>
@@ -1278,6 +1335,9 @@
   </data>
   <data name="&gt;&gt;abortButton.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="analyzeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="analyzeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 6</value>
@@ -1312,6 +1372,9 @@
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 70</value>
   </data>
@@ -1344,6 +1407,9 @@
   </data>
   <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 0</value>
@@ -1381,6 +1447,9 @@
   <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 0</value>
   </data>
@@ -1411,6 +1480,9 @@
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 25</value>
   </data>
@@ -1434,6 +1506,9 @@
   </data>
   <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 47</value>
@@ -1459,6 +1534,9 @@
   <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 69</value>
   </data>
@@ -1482,6 +1560,9 @@
   </data>
   <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 91</value>
@@ -1507,6 +1588,9 @@
   <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 25</value>
   </data>
@@ -1530,6 +1614,9 @@
   </data>
   <data name="checkBox6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 47</value>
@@ -1555,6 +1642,9 @@
   <data name="checkBox7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 69</value>
   </data>
@@ -1578,6 +1668,9 @@
   </data>
   <data name="checkBox8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 91</value>
@@ -1603,6 +1696,9 @@
   <data name="checkBox9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 25</value>
   </data>
@@ -1626,6 +1722,9 @@
   </data>
   <data name="checkBox10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 25</value>
@@ -1651,6 +1750,9 @@
   <data name="checkBox11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 25</value>
   </data>
@@ -1674,6 +1776,9 @@
   </data>
   <data name="checkBox12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 47</value>
@@ -1699,6 +1804,9 @@
   <data name="checkBox13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 47</value>
   </data>
@@ -1722,6 +1830,9 @@
   </data>
   <data name="checkBox14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 47</value>
@@ -1747,6 +1858,9 @@
   <data name="checkBox15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 69</value>
   </data>
@@ -1770,6 +1884,9 @@
   </data>
   <data name="checkBox16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 69</value>
@@ -1795,6 +1912,9 @@
   <data name="checkBox17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 69</value>
   </data>
@@ -1818,6 +1938,9 @@
   </data>
   <data name="checkBox18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox18.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 91</value>
@@ -1843,6 +1966,9 @@
   <data name="checkBox19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkBox19.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 91</value>
   </data>
@@ -1866,6 +1992,9 @@
   </data>
   <data name="checkBox20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="checkBox20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkBox20.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 91</value>
@@ -1896,6 +2025,9 @@
   </data>
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 0</value>
@@ -1933,6 +2065,9 @@
   <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 8.25pt</value>
   </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 0</value>
   </data>
@@ -1969,6 +2104,9 @@
   <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Sans Unicode, 9pt, style=Bold</value>
   </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 0</value>
   </data>
@@ -2002,6 +2140,9 @@
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 26</value>
   </data>
@@ -2031,6 +2172,9 @@
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 48</value>
@@ -2062,6 +2206,9 @@
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 92</value>
   </data>
@@ -2088,6 +2235,9 @@
   </data>
   <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 3</value>
@@ -2166,6 +2316,9 @@
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 178</value>
@@ -2662,6 +2815,9 @@
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
@@ -2688,6 +2844,9 @@
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 0</value>
@@ -2716,6 +2875,9 @@
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 0</value>
   </data>
@@ -2742,6 +2904,9 @@
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 0</value>
@@ -2770,6 +2935,9 @@
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
     <value>243, 0</value>
   </data>
@@ -2796,6 +2964,9 @@
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
     <value>281, 0</value>
@@ -3994,6 +4165,9 @@
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
     <value>419, 0</value>
   </data>
@@ -4020,6 +4194,9 @@
   </data>
   <data name="label31.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 0</value>
@@ -4192,6 +4369,9 @@
   <data name="label33.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 0</value>
   </data>
@@ -4246,6 +4426,9 @@
   <data name="contractCancelButton.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="contractCancelButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="contractCancelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 198</value>
   </data>
@@ -4269,6 +4452,9 @@
   </data>
   <data name="&gt;&gt;contractCancelButton.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="contractAnalyzeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="contractAnalyzeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 198</value>
@@ -4362,6 +4548,9 @@
   </data>
   <data name="&gt;&gt;analyzeFileNameTextBox.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="progressBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 312</value>
@@ -4459,6 +4648,12 @@
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="简化字ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="简化字ToolStripMenuItem.Text" xml:space="preserve">
+    <value>简化字</value>
+  </data>
   <data name="langSelectSplitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -4489,20 +4684,20 @@
   <data name="toolStripWebsiteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMJSURBVDhPdVJvLNRxHPa+3lTrTY2aViG1VaJTK6EoTlIo
-        aefQcRx3kz9zhwsdGb/j7ufOn3aXnyOytCPu1AvGzkpjGG4ZzuoM82et0R8TT36cWdGzfV9893w+z/f5
-        PJ+v1SYU6hZrktIJ5JROn6/WzuSVvJ7JlNfqhYRGkJCttraU7QyS0jPklTptQVM9yJ6XkBvLIRvNRHyb
-        P9iFBHgZCm14YiHDUv436JfpZlGzFLnDqdDNtaH7hwnRL9OQ9ykJ7HoPeGbLcJ8n0d7kirY7oW2nVqoQ
-        /v4clOMp0M8Z8HFhAEM/Z/FiQouw4iy4FQ/hguQxfFjJAkvbFuiZQ6XV4LQEINMYgmefCajNWSD71OBo
-        ahGpmEdQ3jjsy/1wNYivt7RtgQ4smjQhoDQCrE43xHR5Ik71CNznOkQo+hFWMAFnUoMjFddwyS9qxtK2
-        BTptvmoZIRliXKFc4f4mAHdlBGKKJxAunUSwZARH1SzYlLjCmbmDAL0qXuk8uCXTCBKEwlMZivOvQsCo
-        IHFPYoJ/+gA8uL5wTLmMs97s7SMICUrAJ9rxULkENjEKn8QonKb8Ya+5gePyNHgld8OVG4OLgXfh5M3e
-        HiL9Seg9R+YbEUu8RaqyBkmFajwQSmH71AUu0VwwOQTixGVfxGTDpJCoNSfkUBRHqGBaJNZcFNSIyjRt
-        v/qGJ7D4YxXTX5fQ0NoPnlgF3ygxSmra8C/Hzy6f8n6QEbgukKVsaDSaZhArko8dOHNj4bA3azmnrGlF
-        re2GpKzzd927ASifGxYOOt02OnpyBoUF1R2qVwYwbsU3rguIlfWLKwB22V0fd3BnO5TXdfWsrt2/fgdM
-        00voGfmG9r5Z7D3BJO7E5TuIyIbx9t4p2DIiFtcF0orqGg29prU5SzsCeXmD6bLXg3sO+S7vPuaFzXPS
-        PWxykyuqaO14UtoEG+fgDQcJuZWBwsKqqarGD+joNaPZMIZ0WT1cb/KnfMLF0v9x+0/6bWRAIygul+nF
-        SqcYTIHZzoNltnEJpvad8l1P+v+cldUfJ9f0ZhnDh8wAAAAASUVORK5CYII=
+        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
 </value>
   </data>
   <data name="toolStripWebsiteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -4517,22 +4712,22 @@
   <data name="toolStripExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANhSURBVDhPbZF9TFNnFMbfGfmooa21QEtVLgFLr3DppdJo
-        1kKQfko1cQQ1gxEjztBEtmpmi1LkYzEqKJF9aHAhiy5ZVPzDLGPGP5ZsyZJtiroaJWpkig2fhX5RbksD
-        pmenhahxPsmTk/e85/eeJ/cSd22t6L5e3zNUUfHkW4ZpY4XC1eQ9el5SIhzburXFq9cPX2WYroasrHRs
-        f0DuG43dz5qauPHubnA3NoZOFxWd2i8W85ewJXk3bxY8N5ub/U5nKNrTA0GbLdzPsn0bCaHIgy1b3KOt
-        rTDa1ga+zk4Yt9mCnUrlGREhwjjsYtnVnMXSNmO3z3FdXRBpb4eYwwEujWZSm5T0KfmOYU666+vnPceO
-        waTTCaETJ2DMag18oVB8iUlkjyoq7OGmptkg9qMtLRA7cgRcJlNkd0bGQAoh20i2UCjqoOmzE3v3RgKH
-        D8O03Q7h48dhuK7Od7ey8q+JhobxKMLzzc0Ahw7BP+XlYZNIdAPDbUML4inJOkLWdOTnn/23qoobtVpj
-        fhyM4KZ5mw1mDxwArqYGvNXVMRfC2yWSnxAxolMT8FtKd1BUx+PKSs/sjh3g02ohUFgIQZkMOIkEfs3L
-        85vF4ms4Z0AnJ4h31anVZt9mmDsBsRimV64EDyEQQIfS0uB7mn66VirdvTz6f8WczqyJ2tqTL2WyqSmE
-        vGj/cvXweDCkUAROabXnPlQqM5eRN/IcPCidq6u7OENRi37cPIMQx+dDGOPH4WE8j6WmwkhJydx5o/Gb
-        AoqSLqOEBKzWHG9NTe+znJzYOA760BGEHxYXczfLyl4O0XRkJCUF/sS+C+sLtXrhK53ua41CIUs8ENyz
-        5/I0RUE8dhxeRPhFXt5CPcP8zMrl+85pNBcnCgoid5OT4Re8/wPrE7l84UeTqa8oMzOXcOXlPu+KFYnY
-        UYRHNmxYbFSpfktetcoSX6AuLFx/yWC48IBl539HuB/nBtPTYais7NVHNP0ZGdDpzgRww6JUCo83bYol
-        YB5vJ7Kv/7OOZdf26fW9gypV9DbC1/BbOVSqwXUCwSfk89LSjFsWyw9ugyHUqlb/jXA1Mrwl9I20ubnZ
-        143GK8Nm84JDqbwnEgg+xvaaxGV7aWnuLoyTkZa263XzPbLI5RurafqohM/fh0cxIYT8By39cMzllla6
-        AAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVDhPbZJ9SFN7GMd/N0pduK01dS+WRwzbUY9ba6No
+        M8y95m5QYUmaRN7CQXZX1GY58yWi0pLs3goLie6FS29/RPRCfwQFQWWvi67cblnqSq3Z3pxnc+hlz302
+        peLevvDl4ff8ns95vodziLuyUvBMr+/oKSl5dYJhmhR8/hzyHb1TqfiDK1Y0ePX63gsM01YjkaRh+wfy
+        zGhsf1NXxw61t4O7tjZ0uLDw0E9CIXcKm5J3yRLeO7O53u90hqIdHRC02cKXFIquPEIo8mLpUveHxkb4
+        0NQEvtZWGLLZgq1y+REBIfw47FIo5rAWS9Nnu32MbWuDSHMzxBwOcGk0H7WzZm0hZxjmoLu6etyzdy98
+        dDohdOAADFqtgV0y2X5MIv2zpMQerqsbDWI/2tAAsd27wWUyRdanp19PJmQlyeLzBS00fXR406ZIYOdO
+        GLHbIbxvH/RWVfmelJY+GK6pGYoiPF5fD7BjBzwvLg6bBIIrGG4lmhdPSeYRMrdl4cKjb9euZV9brTE/
+        DkZw07jNBqNbtwJbUQHvy8piLoR/FImuImJEpyTgb5TmoKiWv0pLPaOrVoFPq4VAQQEEpVJgRSK4vWCB
+        3ywUXsQ5AzopQfxXrVptVjfDPAoIhTAycyZ4CIEAOpSaCmdp+u9MsXj99Oj/FXM6JcOVlQcHpNJPnxDy
+        ov3T1cPhQI9MFjik1R5bJpdnTCNf5dm2TTxWVXXaTVGTftz8GSGWy4Uwxo/DvXgeTEmBfpVq7KTR+Gs+
+        RYmnUUICVmu2t6Ki80V2dmwIB33oCMIvFy1iby5fPtBD05H+5GS4j30X1j61euK4TveLRiaTJh4QLC//
+        bYSiIB47Dk8i3CeRTFQzzDVFbu7mYxrN6eH8/MiTpCS4gff3sL7KzJz4w2TqKszIyCFscbHPO2NGInYU
+        4X58jVql8k7S7NmW+AJ1QcH8cwbDKfwjx+8ifAnnHqelQY9K9c8amt5Orut0RwK4YVIshqeLF8cSMIez
+        Gtkv31mnUGR26fWd3UpltBvhc7jEoVQ+nsfjbSQ/FxWl37JYfncbDKFGtfohwmXIcKbQr9Lm5GRdNhrP
+        95rNEw65/KmAx9uA7bmJy+aiopx1GCc9NXXdl+Z3ZMnNzSuj6T0iLnczHoWEEPIvhB5wSEn1eacAAAAA
+        SUVORK5CYII=
 </value>
   </data>
   <data name="toolStripExitButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -10817,6 +11012,12 @@
     <value>englishToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;简化字ToolStripMenuItem.Name" xml:space="preserve">
+    <value>简化字ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;简化字ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripWebsiteButton.Name" xml:space="preserve">

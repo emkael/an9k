@@ -402,6 +402,7 @@ namespace Analizator9000
             this.langSelectSplitButton = new System.Windows.Forms.ToolStripSplitButton();
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.简化字ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripWebsiteButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripExitButton = new System.Windows.Forms.ToolStripButton();
             this.exportFileDialog = new System.Windows.Forms.SaveFileDialog();
@@ -1715,7 +1716,8 @@ namespace Analizator9000
             this.langSelectSplitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.langSelectSplitButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.polskiToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.englishToolStripMenuItem,
+            this.简化字ToolStripMenuItem});
             resources.ApplyResources(this.langSelectSplitButton, "langSelectSplitButton");
             this.langSelectSplitButton.Name = "langSelectSplitButton";
             this.langSelectSplitButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.langSelectSplitButton_DropDownItemClicked);
@@ -1733,6 +1735,13 @@ namespace Analizator9000
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Tag = "en";
+            // 
+            // 简化字ToolStripMenuItem
+            // 
+            this.简化字ToolStripMenuItem.Image = global::Analizator9000.Properties.Resources.zh;
+            this.简化字ToolStripMenuItem.Name = "简化字ToolStripMenuItem";
+            resources.ApplyResources(this.简化字ToolStripMenuItem, "简化字ToolStripMenuItem");
+            this.简化字ToolStripMenuItem.Tag = "zh-CN";
             // 
             // toolStripWebsiteButton
             // 
@@ -1961,5 +1970,6 @@ namespace Analizator9000
         private System.Windows.Forms.ToolStripButton toolStripExitButton;
         private System.Windows.Forms.Button exportBtn;
         private System.Windows.Forms.SaveFileDialog exportFileDialog;
+        private ToolStripMenuItem 简化字ToolStripMenuItem;
     }
 }
