@@ -142,7 +142,7 @@ namespace Analizator9000
         {
             // Draw the background of the ListBox control for each item.
             e.DrawBackground();
-            this.comboBox10.DataSource = cards11;
+            this.comboBox11.DataSource = cards11;
             // Define the default color of the brush as black.
             Brush myBrush = Brushes.Black;
 
@@ -175,7 +175,7 @@ namespace Analizator9000
         {
             // Draw the background of the ListBox control for each item.
             e.DrawBackground();
-            this.comboBox10.DataSource = cards12;
+            this.comboBox12.DataSource = cards12;
             // Define the default color of the brush as black.
             Brush myBrush = Brushes.Black;
 
