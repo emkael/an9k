@@ -762,7 +762,7 @@ namespace Analizator9000
         /// <param name="e"></param>
         private void toolStripWebsiteButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://an9k.emkael.info/");
+            System.Diagnostics.Process.Start("https://an9k.emkael.info/");
         }
 
         /// <summary>
