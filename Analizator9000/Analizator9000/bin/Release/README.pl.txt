@@ -60,7 +60,7 @@ Program jest gotowy do użycia po rozpakowaniu go do dowolnego katalogu na
 lokalnym dysku twardym.
 
 Aktualną wersję programu można pobrać ze strony domowej projektu:
-    http://an9k.emkael.info/
+    https://github.com/emkael/an9k/releases/
 
 Program po rozpakowaniu niezbędnie wymaga obecności dwóch katalogów
 (dostarczonych w archiwum):
@@ -90,23 +90,7 @@ O: Oczywiście!
 
 P: Skąd mogę go pobrać?
 O: Z repozytorium Subversion dostępnego pod adresem:
-    https://emkael.info/svn/an9k/
-
-P: Dlaczego przy próbie pobrania kodu źródłowego otrzymuję komunikat błędu o
-   nieprawidłowym certyfikacie HTTPS?
-O: Bo jestem skąpym i leniwym bydlakiem, któremu nie chce się wykupić
-   porządnego certyfikatu SSL. Odcisk palca serwera:
-    7c:48:1d:9a:73:d0:e6:2d:36:10:4d:d0:dc:f6:da:96:fb:3a:33:c7
-
-P: Ale czy to nie znaczy, że ktoś może podszyć się pod serwer, na którym
-   znajduje się kod źródłowy, podmienić odcisk palca serwera na własny, a potem
-   podstawić mi złośliwy kod źródłowy, który skompiluję, uruchomię, a mój
-   komputer ukradnie mi dane moich wszystkich kart kredytowych, nakupi mnóstwo
-   śmieci na Allegro, a potem wybuchnie, kiedy będę potrzebować pilnie
-   wydrukować zeznanie podatkowe?
-O: Dokładnie tak. Co więcej, ninejszy dokument dystrybuowany jest za
-   pośrednictwem nieuwietrzytelnionego połączenie HTTP, więc nic nie stoi na
-   przeszkodzie, że już się stało, a to pytanie jest tu tylko dla niepoznaki.
+    https://github.com/emkael/an9k/
 
 P: Czy kod jest udokumentowany?
 O: Starałem się, jak mogłem. Dokumentacja kodu w formie HTML oraz pliku CHM
@@ -184,6 +168,19 @@ i dobre piwo.
 8. HISTORIA ZMIAN
 =================
 
+2021.02 - 0.12
+    * chińskie tłumaczenie, autorstwa Li Ruisheng
+    * kosmetyka wyświetlania wyników/max/IMP względem rozgrywającego
+    
+2015.12 - 0.11
+    * odświeżony interfejs
+    * tłumaczenie interfejsu
+    * pasek menu
+    * zapis rozdań do PBN
+    
+2014.12 - 0.10
+    * zakładka analizy kontraktów
+
 2013.04 - 0.9.1
     * wymuszenie 32-bitowego formatu binariów (kompatybilność z 32-bitową DLL)
 
@@ -195,7 +192,7 @@ i dobre piwo.
 
 Licencja BSD (dwuklauzulowa)
 
-Copyright (c) 2012, Michał Klichowicz
+Copyright (c) 2012-2021, Michał Klichowicz
 Wszystkie prawa zastrzeżone
 
 Redystrybucja i używanie, czy to w formie kodu źródłowego, czy w formie kodu

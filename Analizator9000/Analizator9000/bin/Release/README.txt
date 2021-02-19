@@ -40,7 +40,7 @@ it requires a platfrom compatible with the .NET 3.5 framework.
 
 Application-specific reqirements:
 
-    * disaply: minumum resolution of 1024x600px; 16-bit colour
+    * display: minumum resolution of 1024x600px; 16-bit colour
     * free disk space: a minimum of 500MB (.NET 3.5) + 5MB (Analizator9000)
     * additional free space: 1MB for full analysis per every thousand deals
 
@@ -60,7 +60,7 @@ The application is ready to use after unpacking it into a user's disk directory
 of choice.
 
 The current version of the application is available from the project's homepage:
-    http://emkael.info/brydz/an9k/
+    https://github.com/emkael/an9k/releases
 
 After extraction, the software requires the existence of two directorys within
 its working directory (provided within the archive):
@@ -88,24 +88,8 @@ Q: Can I see the source code?
 A: Surely!
 
 Q: Where can I acquire it?
-A: From the Subversion repository available at:
-    https://emkael.info/svn/an9k/
-
-Q: Why do I keep getting the HTTPS certificate error while trying to retreive
-   the code?
-A: Because I'm a cheap and lazy bastard and don't want to buy a proper SSL
-   certificate. Here's the server's fingerprint:
-    7c:48:1d:9a:73:d0:e6:2d:36:10:4d:d0:dc:f6:da:96:fb:3a:33:c7
-
-Q: But doesn't that mean that someone is able to spoof the source code server,
-   alter the fingerprint you've just provided with his own, and then substitute
-   the source code with his malicious one, which I'll later compile, run and my
-   computer will steal all my credit card's data, buys a lot of garbage on eBay
-   and explode in the exact moment I'll need it the most to print out my tax
-   form?
-A: It does. What's more, this document is distributed through an unauthenticated
-   HTTP connection, so there's nothing stopping it from having already happened
-   and this question is just a decoy.
+A: From the Git repository available at:
+    https://github.com/emkael/an9k
 
 Q: What's the environment you've used to create this software?
 A: Microsoft Visual Studio/Visual C# 2010.
@@ -176,6 +160,22 @@ and non-commercial. I do like a decent book and a good beer, though.
 8. CHANGES HISTORY
 ==================
 
+2021.02 - 0.12
+    * Chinese translation, courtesy of Li Ruisheng
+    * cosmetic fixes to scores/MP/IMP in relation to the declarer
+    
+2015.12 - 0.11
+    * revised GUI
+    * i18n/l10n
+    * menu toolbar
+    * saving boards to PBN
+    
+2014.12 - 0.10
+    * contract analysis tab
+    
+2013.04 - 0.9.1
+    * forcing 32-bit binaries
+    
 2012.11 - 0.9
     * initial version
 
@@ -184,7 +184,7 @@ and non-commercial. I do like a decent book and a good beer, though.
 
 The 2-clause BSD License
 
-Copyright (c) 2012, Micha³ Klichowicz
+Copyright (c) 2012-2021, Micha³ Klichowicz
 All right reserved
 
 Redistribution and use in source and binary forms, with or without modification,
