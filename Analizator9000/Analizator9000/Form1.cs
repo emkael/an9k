@@ -496,15 +496,26 @@ namespace Analizator9000
                     if (rowContract != null && rowContract.Frequency > 0)
                     {
                         ((TextBox)fullContractTable.GetControlFromPosition(5, row)).Text = ((double)trickSum[rowContract] / dealCount).ToString("0.##");
-                        ((TextBox)fullContractTable.GetControlFromPosition(6, row)).Text = ((double)scoreSum[rowContract] / dealCount).ToString("0.##");
                         ((TextBox)fullContractTable.GetControlFromPosition(7, row)).Text = ((double)successSum[rowContract] / dealCount).ToString("0.##");
                         double max = maxSum[rowContract] / dealCount;
                         double imp = impSum[rowContract] / dealCount;
+                        double score = (double)scoreSum[rowContract] / dealCount;
                         if (rowContract.Declarer == Contract.DECLARER_EAST || rowContract.Declarer == Contract.DECLARER_WEST)
                         {
                             max = 1.0 - max;
                             imp = -imp;
+                            score = -score;
+                            ((TextBox)fullContractTable.GetControlFromPosition(6, row)).TextAlign = HorizontalAlignment.Right;
+                            ((TextBox)fullContractTable.GetControlFromPosition(8, row)).TextAlign = HorizontalAlignment.Right;
+                            ((TextBox)fullContractTable.GetControlFromPosition(9, row)).TextAlign = HorizontalAlignment.Right;
                         }
+                        else
+                        {
+                            ((TextBox)fullContractTable.GetControlFromPosition(6, row)).TextAlign = HorizontalAlignment.Left;
+                            ((TextBox)fullContractTable.GetControlFromPosition(8, row)).TextAlign = HorizontalAlignment.Left;
+                            ((TextBox)fullContractTable.GetControlFromPosition(9, row)).TextAlign = HorizontalAlignment.Left;
+                        }
+                        ((TextBox)fullContractTable.GetControlFromPosition(6, row)).Text = score.ToString("0.#");
                         ((TextBox)fullContractTable.GetControlFromPosition(8, row)).Text = max.ToString("0.##");
                         ((TextBox)fullContractTable.GetControlFromPosition(9, row)).Text = imp.ToString("0.##");
                     }
