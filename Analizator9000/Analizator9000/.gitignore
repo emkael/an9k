@@ -1,0 +1,11 @@
+bin/Debug/
+bin/Release/*.exe
+bin/Release/*.xml
+bin/Release/*.config
+bin/Release/*.pdb
+bin/Release/*.manifest
+bin/Release/en/
+bin/Release/pl/
+bin/Release/zh-CN/
+bin/Release/files/
+obj/
