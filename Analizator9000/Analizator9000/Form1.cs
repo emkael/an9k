@@ -694,7 +694,7 @@ namespace Analizator9000
                         this.contractsToScore.Add(rowContract);
                     }
                 }
-                foreach (int column in Enumerable.Range(5, 4)) {
+                foreach (int column in Enumerable.Range(5, 5)) {
                     ((TextBox)this.fullContractTable.GetControlFromPosition(column, row)).Text = "";
                 }
             }
