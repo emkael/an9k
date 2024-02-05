@@ -92,7 +92,7 @@ A: From the Git repository available at:
     https://github.com/emkael/an9k
 
 Q: What's the environment you've used to create this software?
-A: Microsoft Visual Studio/Visual C# 2010.
+A: Microsoft Visual Studio/Visual C# 2010 and 2022.
 
 Q: Can I ask you to write feature X into your software?
 A: And I tell you, ask, and it will be given to you.
@@ -160,6 +160,9 @@ and non-commercial. I do like a decent book and a good beer, though.
 8. CHANGES HISTORY
 ==================
 
+2024.02 - 0.13
+    * bugfix version: do not analyze contracts that are zeroed in frequency tables
+
 2021.02 - 0.12
     * Chinese translation, courtesy of Li Ruisheng
     * cosmetic fixes to scores/MP/IMP in relation to the declarer
@@ -184,7 +187,7 @@ and non-commercial. I do like a decent book and a good beer, though.
 
 The 2-clause BSD License
 
-Copyright (c) 2012-2021, Micha³ Klichowicz
+Copyright (c) 2012-2024, Micha³ Klichowicz
 All right reserved
 
 Redistribution and use in source and binary forms, with or without modification,

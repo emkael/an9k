@@ -93,12 +93,12 @@ O: Z repozytorium Subversion dostępnego pod adresem:
     https://github.com/emkael/an9k/
 
 P: Czy kod jest udokumentowany?
-O: Starałem się, jak mogłem. Dokumentacja kodu w formie HTML oraz pliku CHM
+O: Starałem się, jak mogłem. Dokumentacja kodu w formie HTML oraz plikach MSHC/MSHA
    dostępna jest na stronie internetowej aplikacji:
     http://ank9.emkael.info/code/
 
 P: W jakim środowisku powstał program?
-O: Microsoft Visual Studio/Visual C# 2010.
+O: Microsoft Visual Studio/Visual C# 2010 i 2022.
 
 P: Czy mogę prosić o dopisanie kodu dla funkcjonalności X?
 O: Proście, a będzie Wam dane.
@@ -168,6 +168,9 @@ i dobre piwo.
 8. HISTORIA ZMIAN
 =================
 
+2024.02 - 0.13
+    * poprawka błędu: program nie analizuje kontraktów, których częstość jest wyzerowana
+
 2021.02 - 0.12
     * chińskie tłumaczenie, autorstwa Li Ruisheng
     * kosmetyka wyświetlania wyników/max/IMP względem rozgrywającego
@@ -192,7 +195,7 @@ i dobre piwo.
 
 Licencja BSD (dwuklauzulowa)
 
-Copyright (c) 2012-2021, Michał Klichowicz
+Copyright (c) 2012-2024, Michał Klichowicz
 Wszystkie prawa zastrzeżone
 
 Redystrybucja i używanie, czy to w formie kodu źródłowego, czy w formie kodu
