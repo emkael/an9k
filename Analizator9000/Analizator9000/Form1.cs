@@ -379,25 +379,38 @@ namespace Analizator9000
                     throw new Exception(GetResourceManager().GetString("Form1_analyzeNoDealsError", GetCulture()));
                 }
                 List<Contract> cons = new List<Contract>();
-                foreach (int i in Enumerable.Range(1, 5))
+                // we run either "old" Accumulator or contract analysis with ScoreAccumulator,
+                // depending on the button of event origin
+                if (sender.GetHashCode().Equals(this.analyzeButton.GetHashCode()))
                 {
-                    foreach (int j in Enumerable.Range(1, 4))
+                    this.ac = new Accumulator(deals, cons, this);
+                    foreach (int i in Enumerable.Range(1, 5))
                     {
-                        if (((CheckBox)contractTable.GetControlFromPosition(i, j)).Checked)
+                        foreach (int j in Enumerable.Range(1, 4))
                         {
-                            cons.Add(new Contract(5 - i, j - 1));
+                            if (((CheckBox)contractTable.GetControlFromPosition(i, j)).Checked)
+                            {
+                                cons.Add(new Contract(5 - i, j - 1));
+                            }
                         }
                     }
+                }
+                else
+                {
+                    foreach (Contract con in this.contractsToScore)
+                    {
+                        Contract newCon = new Contract(con.Denomination, con.Declarer);
+                        if (!cons.Contains(newCon))
+                        {
+                            cons.Add(newCon);
+                        }
+                    }
+                    this.ac = new ScoreAccumulator(deals, cons, this.contractsToScore, vulnerabilityBox.SelectedIndex, this);
                 }
                 if (cons.Count == 0)
                 {
                     throw new Exception(GetResourceManager().GetString("Form1_analyzeNoContractsError", GetCulture()));
                 }
-                // we run either "old" Accumulator or contract analysis with ScoreAccumulator,
-                // depending on the button of event origin
-                this.ac = sender.GetHashCode().Equals(this.analyzeButton.GetHashCode())
-                    ? new Accumulator(deals, cons, this)
-                    : new ScoreAccumulator(deals, cons, this.contractsToScore, vulnerabilityBox.SelectedIndex, this);
                 this.ac.run(10);
             }
             catch (Exception ex)
@@ -672,7 +685,7 @@ namespace Analizator9000
                 Contract rowContract = this.getContractFromTableRow(row);
                 if (rowContract != null)
                 {
-                    if (rowContract.Level > 0)
+                    if (rowContract.Level > 0 && rowContract.Frequency > 0)
                     {
                         this.toggleBoxes(Enumerable.Range(5 - rowContract.Denomination, 1), Enumerable.Range(rowContract.Declarer + 1, 1), false); // forcing analysis of certain denomination-declarer combinations
                     }
