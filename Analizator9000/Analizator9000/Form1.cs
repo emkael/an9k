@@ -383,7 +383,6 @@ namespace Analizator9000
                 // depending on the button of event origin
                 if (sender.GetHashCode().Equals(this.analyzeButton.GetHashCode()))
                 {
-                    this.ac = new Accumulator(deals, cons, this);
                     foreach (int i in Enumerable.Range(1, 5))
                     {
                         foreach (int j in Enumerable.Range(1, 4))
@@ -394,6 +393,7 @@ namespace Analizator9000
                             }
                         }
                     }
+                    this.ac = new Accumulator(deals, cons, this);
                 }
                 else
                 {
